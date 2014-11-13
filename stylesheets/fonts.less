@@ -1,15 +1,44 @@
-@font-name: 'Hermit';
-@font-file: 'otf-hermit-1.21/Hermit-medium.otf';
+.font-face(@name, @file, @weight, @style) {
 
+  @root-path: 'atom://fonts/resources/';
+  @font-path: '@{root-path}@{file}';
 
-@font-root: 'atom://fonts/resources/';
-@font-path: '@{font-root}@{font-file}';
+  @font-face {
+    font-family: @name;
+    src: url(@font-path);
+    font-weight: @weight;
+    font-style: @style;
+  }
 
-@font-face {
-  font-family: @font-name;
-  src: url(@font-path);
 }
 
 
-.fonts {
+@name:   'Hermit';
+@file:   'otf-hermit-1.21/Hermit-medium.otf';
+@weight: normal;
+@style:  normal;
+
+
+// @name:   'Anonymous Pro';
+// @file:   'Anonymous-Pro/Anonymous_Pro.ttf';
+// @weight: normal;
+// @style:  normal;
+
+
+.font-face (@name, @file, @weight, @style);
+
+atom-text-editor {
+  font-family: @name;
 }
+
+// normal
+// normal
+//
+// bold
+// normal
+//
+// bold
+// italic
+//
+// normal
+// italic
