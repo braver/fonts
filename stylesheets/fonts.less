@@ -1,8 +1,15 @@
-// The ui-variables file is provided by base themes provided by Atom.
-//
-// See https://github.com/atom/atom-dark-ui/blob/master/stylesheets/ui-variables.less
-// for a full listing of what's available.
-@import "ui-variables";
+@font-name: 'Hermit';
+@font-file: 'otf-hermit-1.21/Hermit-medium.otf';
+
+
+@font-root: 'atom://fonts/resources/';
+@font-path: '@{font-root}@{font-file}';
+
+@font-face {
+  font-family: @font-name;
+  src: url(@font-path);
+}
+
 
 .fonts {
 }

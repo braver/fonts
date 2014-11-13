@@ -1,5 +1,3 @@
 # fonts package
 
-A short description of your package.
-
-![A screenshot of your spankin' package](https://f.cloud.github.com/assets/69169/2290250/c35d867a-a017-11e3-86be-cd7c5bf3ff9b.gif)
+Through the power of web technology inherent to Atom, you now have access to over 30 of the best and most popular programming fonts. Selected from Font Squirrel, Google Fonts and selected foundries, this package delivers them straight to Atom. You no longer need to hunt down and install your favourite font, instead you can now instantly try out any of the fonts in this package.

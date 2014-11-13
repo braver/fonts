@@ -2,10 +2,8 @@
   "name": "fonts",
   "main": "./lib/fonts",
   "version": "0.0.0",
-  "description": "A short description of your package",
-  "activationCommands": {
-    "atom-workspace": "fonts:toggle"
-  },
+  "description": "Loads of programming fonts.",
+  "activationCommands": {},
   "repository": "https://github.com/atom/fonts",
   "license": "MIT",
   "engines": {
