@@ -1,8 +1,61 @@
 @root-path: 'atom://fonts/resources';
 
-.font(@name, @weight, @style, @format) {
+
+
+.font (@name, @weight, @style, @format)
+  when (@weight = normal)
+  and (@style = normal) {
+
 
   @font-path: '@{root-path}/@{name}/@{name}.@{format}';
+
+  @font-face {
+    font-family: @name;
+    font-weight: @weight;
+    font-style: @style;
+    src: url(@font-path);
+  }
+
+}
+
+.font (@name, @weight, @style, @format)
+  when (@weight = bold)
+  and (@style = normal) {
+
+
+  @font-path: '@{root-path}/@{name}/@{name}-@{weight}.@{format}';
+
+  @font-face {
+    font-family: @name;
+    font-weight: @weight;
+    font-style: @style;
+    src: url(@font-path);
+  }
+
+}
+
+.font (@name, @weight, @style, @format)
+  when (@weight = normal)
+  and (@style = italic) {
+
+
+  @font-path: '@{root-path}/@{name}/@{name}-@{style}.@{format}';
+
+  @font-face {
+    font-family: @name;
+    font-weight: @weight;
+    font-style: @style;
+    src: url(@font-path);
+  }
+
+}
+
+.font (@name, @weight, @style, @format)
+  when (@weight = 'bold')
+  and (@style = 'italic') {
+
+
+  @font-path: '@{root-path}/@{name}/@{name}-@{weight}-@{style}.@{format}';
 
   @font-face {
     font-family: @name;
