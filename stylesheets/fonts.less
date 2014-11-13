@@ -1,34 +1,37 @@
-.font-face(@name, @file, @weight, @style) {
+.font(@name, @weight, @style, @format) {
 
   @root-path: 'atom://fonts/resources/';
-  @font-path: '@{root-path}@{file}';
+  @font-path: '@{root-path}@{name}@{name}@{format}';
 
   @font-face {
     font-family: @name;
-    src: url(@font-path);
     font-weight: @weight;
     font-style: @style;
+    src: url(@font-path);
   }
 
 }
 
 
-@name:   'Hermit';
-@file:   'otf-hermit-1.21/Hermit-medium.otf';
-@weight: normal;
-@style:  normal;
+@name:    'hermit';
+// @file:   'otf-hermit-1.21/Hermit-medium.otf';
+@weight:  normal;
+@style:   normal;
+@format:  '.otf';
 
+.font (@name, @weight, @style, @format);
 
-// @name:   'Anonymous Pro';
+@name:    'anonymous-pro';
 // @file:   'Anonymous-Pro/Anonymous_Pro.ttf';
-// @weight: normal;
-// @style:  normal;
+@weight:  normal;
+@style:   normal;
+@format:  '.ttf';
 
+.font (@name, @weight, @style, @format);
 
-.font-face (@name, @file, @weight, @style);
 
 atom-text-editor {
-  font-family: @name;
+  // font-family: @name;
 }
 
 // normal
