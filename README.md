@@ -1,45 +1,67 @@
 # fonts package
 
-Through the power of web technology inherent to Atom, you now have access to over 30 of the best and most popular programming fonts. Selected from Font Squirrel, Google Fonts and selected foundries, this package delivers them straight to Atom. You no longer need to hunt down and install your favourite font, instead you can now instantly try out any of the fonts in this package.
+Through the power of web technology inherent to Atom, you now have access to dozens of the best and most popular programming fonts. Selected from Font Squirrel, Google Fonts and selected foundries, this package delivers them straight to Atom. You no longer need to hunt down and install your favourite font, instead you can now instantly try out any of the fonts in this package.
 
 
 ## Font Squirrel
-Anonymous font family by Mark Simonson (license doesn't cover)
+Anonymous font family by Mark Simonson (requires permission)
 http://www.fontsquirrel.com/fonts/Anonymous
-Anonymous Pro font family by Mark Simonson (SIL OLF)
+Anonymous Pro font family by Mark Simonson (SIL OFL)
+http://www.fontsquirrel.com/fonts/Anonymous-Pro
 http://www.google.com/fonts/specimen/Anonymous+Pro
-Audimat Mono font family by SMeltery
-Bitstream Vera Sans Mono font family by Bitstream
-BPmono font family by Backpacker
-Cousine font family by Ascender Fonts
+Audimat Mono font family by SMeltery (requires permission)
+http://www.fontsquirrel.com/fonts/Audimat-Mono
+Bitstream Vera Sans Mono font family by Bitstream (custom open license)
+http://www.fontsquirrel.com/fonts/Bitstream-Vera-Sans-Mono
+BPmono font family by Backpacker (Creative Commons)
+http://www.fontsquirrel.com/fonts/BPmono
+Cousine font family by Ascender Fonts (Apache, or SIL OFL? Unclear but safe)
+http://www.fontsquirrel.com/fonts/cousine
 http://www.google.com/fonts/specimen/Cousine
-Droid Sans Mono font family by Google Android
+Droid Sans Mono font family by Google Android (Apache)
 http://www.google.com/fonts/specimen/Droid+Sans+Mono
-Envy Code R font family by Damien Guard
-Fira Mono font family by Mozilla
+Envy Code R font family by Damien Guard (redistribution prohibited)
+http://www.fontsquirrel.com/fonts/Envy-Code-R
+Fira Mono font family by Mozilla (SIL OFL)
+http://www.fontsquirrel.com/fonts/fira-mono
 http://www.google.com/fonts/specimen/Fira+Mono
-Inconsolata font family by Raph Levien
+Inconsolata font family by Raph Levien (SIL OFL)
 http://www.google.com/fonts/specimen/Inconsolata
-Klartext Mono font family by Heimatdesign
-LATIN MODERN MONO - GUST e-foundry
+Klartext Mono font family by Heimatdesign (requires extended license)
+http://www.fontsquirrel.com/fonts/klartext-mono
+LATIN MODERN MONO - GUST e-foundry (LPPL)
 http://www.fontsquirrel.com/fonts/Latin-Modern-Mono
-Lekton font family by Accademia di Belle Arti di Urbino
-Liberation Mono font family by Red Hat
-Luxi Mono font family by Bigelow & Holmes
-M+ 1m font family by M+ Fonts
-MonospaceTypewriter font family by Manfred Klein Fonteria
-NotCourierSans font family by Open Source Publishing
-Oxygen Mono font family by Vernon Adams
+Lekton font family by Accademia di Belle Arti di Urbino (SIL OFL)
+http://www.fontsquirrel.com/fonts/lekton
+Liberation Mono font family by Red Hat (custom open license)
+http://www.fontsquirrel.com/fonts/Liberation-Mono
+Luxi Mono font family by Bigelow & Holmes (custom open license)
+http://www.fontsquirrel.com/fonts/Luxi-Mono
+M+ 1m font family by M+ Fonts (custom open license)
+http://www.fontsquirrel.com/fonts/M-1m
+MonospaceTypewriter font family by Manfred Klein Fonteria (requires permission)
+http://www.fontsquirrel.com/fonts/MonospaceTypewriter
+NotCourierSans font family by Open Source Publishing (GPL v2)
+http://www.fontsquirrel.com/fonts/NotCourierSans
+Oxygen Mono font family by Vernon Adams (SIL OFL)
+http://www.fontsquirrel.com/fonts/oxygen-mono
 http://www.google.com/fonts/specimen/Oxygen+Mono
-PT Mono font family by Paratype
+PT Mono font family by Paratype (SIL OFL)
+http://www.fontsquirrel.com/fonts/pt-mono
 http://www.google.com/fonts/specimen/PT+Mono
-saxMono font family by s.a.x. Software
-Skyhook Mono font family by FontomType
-Source Code Pro font family by Adobe
+saxMono font family by s.a.x. Software (custom open license)
+http://www.fontsquirrel.com/fonts/saxMono
+Skyhook Mono font family by FontomType (license seems restricting)
+http://www.fontsquirrel.com/fonts/skyhook-mono
+Source Code Pro font family by Adobe (SIL OFL)
+http://www.fontsquirrel.com/fonts/source-code-pro
 http://www.google.com/fonts/specimen/Source+Code+Pro
-Telegrama font family by YOFonts
-TeX Gyre Cursor font family by GUST e-foundry
-Ubuntu Mono font family by Dalton Maag Ltd
+Telegrama font family by YOFonts (requires permission)
+http://www.fontsquirrel.com/fonts/Telegrama
+TeX Gyre Cursor font family by GUST e-foundry (LPPL)
+http://www.fontsquirrel.com/fonts/TeX-Gyre-Cursor
+Ubuntu Mono font family by Dalton Maag Ltd (Ubuntu/SIL OFL)
+http://www.fontsquirrel.com/fonts/ubuntu-mono
 http://www.google.com/fonts/specimen/Ubuntu+Mono
 
 -----Google Fonts
