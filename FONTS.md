@@ -8,7 +8,7 @@ https://code.google.com/p/anka-coder-fonts/
 **Anonymous Pro** *anonymous-pro*  
 By Mark Simonson  
 *SIL OFL*  
-http://www.fontsquirrel.com/fonts/Anonymous-Pro
+http://www.fontsquirrel.com/fonts/Anonymous-Pro  
 http://www.google.com/fonts/specimen/Anonymous+Pro
 
 **Average Mono** *average*  
@@ -34,7 +34,7 @@ http://openfontlibrary.org/en/font/consolamono
 **Cousine** *cousine*  
 By Ascender Fonts  
 *Apache*  
-http://www.fontsquirrel.com/fonts/cousine
+http://www.fontsquirrel.com/fonts/cousine  
 http://www.google.com/fonts/specimen/Cousine
 
 **Cutive Mono** *cutive*  
@@ -65,7 +65,7 @@ http://openfontlibrary.org/en/font/fifteen
 **Fira Mono** *fira*  
 By Mozilla  
 *SIL OFL*  
-http://www.fontsquirrel.com/fonts/fira-mono
+http://www.fontsquirrel.com/fonts/fira-mono  
 http://www.google.com/fonts/specimen/Fira+Mono
 
 **Generic Mono** *generic*  
@@ -77,11 +77,6 @@ http://openfontlibrary.org/en/font/generic-mono
 By Lukasz Komsta  
 *SIL OFL*  
 http://openfontlibrary.org/en/font/gnutypewriter
-
-**Gohu** *gohu*  
-By Hugo Chargois  
-*WTFPL*  
-http://font.gohu.org
 
 **Hermit** *hermit*  
 By Pablo Caro  
@@ -130,7 +125,7 @@ http://www.dafont.com/monofur.font
 **NotCourierSans** *notcouriersans*  
 By Open Source Publishing  
 *SIL OFL*  
-http://www.fontsquirrel.com/fonts/NotCourierSans
+http://www.fontsquirrel.com/fonts/NotCourierSans  
 http://openfontlibrary.org/en/font/notcouriersans
 
 **Nova Mono** *nova*  
@@ -141,7 +136,7 @@ http://www.google.com/fonts/specimen/Nova+Mono
 **Oxygen Mono** *oxygen*  
 By Vernon Adams  
 *SIL OFL*  
-http://www.fontsquirrel.com/fonts/oxygen-mono
+http://www.fontsquirrel.com/fonts/oxygen-mono  
 http://www.google.com/fonts/specimen/Oxygen+Mono
 
 **Profont** *profont*  
@@ -157,7 +152,7 @@ http://www.proggyfonts.net/
 **PT Mono** *pt*  
 By Paratype  
 *SIL OFL*  
-http://www.fontsquirrel.com/fonts/pt-mono
+http://www.fontsquirrel.com/fonts/pt-mono  
 http://www.google.com/fonts/specimen/PT+Mono
 
 **Quinze** *quinze*  
@@ -178,7 +173,7 @@ http://www.google.com/fonts/specimen/Share+Tech+Mono
 **Source Code Pro** *source-code-pro*  
 By Adobe  
 *SIL OFL*  
-http://www.fontsquirrel.com/fonts/source-code-pro
+http://www.fontsquirrel.com/fonts/source-code-pro  
 http://www.google.com/fonts/specimen/Source+Code+Pro
 
 **Sudo** *sudo*  
@@ -194,7 +189,7 @@ http://www.fontsquirrel.com/fonts/TeX-Gyre-Cursor
 **Ubuntu Mono** *ubuntu*  
 By Dalton Maag Ltd  
 *Ubuntu/SIL OFL*  
-http://www.fontsquirrel.com/fonts/ubuntu-mono
+http://www.fontsquirrel.com/fonts/ubuntu-mono  
 http://www.google.com/fonts/specimen/Ubuntu+Mono
 
 **VT323** *vt323*  
@@ -227,6 +222,12 @@ https://github.com/romeovs/creep
 By Damien Guard  
 *redistribution prohibited*  
 http://www.fontsquirrel.com/fonts/Envy-Code-R
+
+**Gohu** *gohu*  
+By Hugo Chargois  
+*WTFPL*  
+*Needs more testing*  
+http://font.gohu.org
 
 **Klartext Mono**  
 By Heimatdesign  

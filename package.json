@@ -2,9 +2,9 @@
   "name": "fonts",
   "main": "./lib/fonts",
   "version": "0.0.0",
-  "description": "Loads of programming fonts.",
+  "description": "Lots of monospace fonts.",
   "activationCommands": {},
-  "repository": "https://github.com/atom/fonts",
+  "repository": "https://github.com/braver/fonts",
   "license": "MIT",
   "engines": {
     "atom": ">0.50.0"
