@@ -15,6 +15,8 @@ I've tried to check everything re: licenses and have not included fonts where I 
 
 I cannot vouch for the completeness or correctness of included fonts.
 
+You should be able to use the font names listed here to do further tweaking in your stylesheets (e.g. use a different font for Markdown), but I have not tested that.
+
 ## Fonts in this package
 
 ### Anka/Coder - *anka-coder*
