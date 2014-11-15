@@ -1,7 +1,7 @@
 {
   "name": "fonts",
   "main": "./lib/fonts",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Lots of monospace fonts.",
   "activationCommands": {},
   "repository": "https://github.com/braver/fonts",
@@ -9,6 +9,5 @@
   "engines": {
     "atom": ">0.50.0"
   },
-  "dependencies": {
-  }
+  "dependencies": {}
 }
