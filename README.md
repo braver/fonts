@@ -4,11 +4,18 @@ Oh we do love our monospace fonts don't we? To celebrate typography and free cho
 
 Through the power of web technology inherent to Atom, you now have access to dozens of the best and most popular programming fonts. From Font Squirrel, Google Fonts, the Open Font Library and selected foundries, this package delivers them straight to Atom. You no longer need to hunt down and install your favourite font, instead you can now instantly try out any of the fonts in this package.
 
-
-## Included
-
-**All the names you can put in the settings:**  
+**All the names you can use in the settings:**  
 anka-coder, anonymous-pro, average, bitstream-vera, bpmono, consolamono, cousine, cutive, droid-sans, effects-eighty, fantasque-sans, fifteen, fira, generic, gnutypewriter, gohu, hermit, inconsolata, inconsolata-g, lekton, liberation, luxi, meslo, monofur, mplus-1m, notcouriersans, nova, oxygen, profont, proggy-clean, pt, quinze, sax, share-tech, source-code-pro, sudo, tex-gyre-cursor, ubuntu, vt323
+
+## Known issues and disclaimer
+
+Sometimes, switching fonts causes the cursor and selection to misalign. Not with all fonts, not all the time. This issue is tracked here: https://github.com/atom/atom/issues/3201 (although it doesn't seem limited to the Hermit font). Switching to a default font (e.g. Menlo), or relaunches seem to solve this for most fonts most of the time. Beta software...
+
+I've tried to check everything re: licenses and have not included fonts where I think the license does not allow it. If any font is included but shouldn't be, let me know and I'll take it out.
+
+I cannot vouch for the completeness or correctness of included fonts.
+
+## Fonts in this package
 
 ### Anka/Coder - *anka-coder*
 By Andrey Makarov  
