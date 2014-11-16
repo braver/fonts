@@ -64,12 +64,12 @@ By **Vernon Adams** (2012)
 http://www.google.com/fonts/specimen/Cutive+Mono
 https://github.com/vernnobile/CutiveFont
 
-## Deja Vu Mono
+## DejaVu Mono
 "The DejaVu fonts are a font family based on the Vera Fonts. Its purpose is to provide a wider range of characters while maintaining the original look and feel through the process of collaborative development (see authors), under a Free license."
 [...](http://dejavu-fonts.org/wiki/Main_Page)
 
 By **Deja Vu Project** (2004)  
-*Alias: deja-vu - License: Bitstream Vera License*  
+*Alias: dejavu - License: Bitstream Vera License*  
 http://dejavu-fonts.org/wiki/Main_Page
 
 ## Droid Sans Mono
@@ -176,6 +176,15 @@ By **Leonardo Maffi** (2009)
 *Alias: inconsolata-g - License: SIL OFL*  
 http://leonardo-m.livejournal.com/77079.html
 
+## Latin Modern
+"The Latin Modern fonts are derived from the famous Computer Modern fonts designed by Donald E. Knuth and described in Volume E of his Computers & Typesetting series."
+[...](http://www.gust.org.pl/gust/projects/e-foundry/latin-modern)
+
+By **Bogusław Jackowski, Janusz M. Nowacki** (2002)  
+*Alias: latin-modern - License: GUST Font License*  
+http://www.gust.org.pl/gust/projects/e-foundry/latin-modern  
+http://www.fontsquirrel.com/fonts/Latin-Modern-Mono
+
 ## Lekton
 "Lekton has been designed at ISIA Urbino, Italy, and is inspired by some of the typefaces used on the Olivetti typewriters."
 [...](http://www.google.com/fonts/specimen/Lekton)
@@ -226,15 +235,6 @@ http://mplus-fonts.sourceforge.jp
 By **Tobias Benjamin Köhler** (2000)  
 *Alias: monofur - License: Freeware*  
 http://www.dafont.com/monofur.font
-
-## Nimbus Mono L
-"Nimbus Mono is a monospaced typeface created by URW Studio in 1984, and eventually released under the GPL and AFPL (as Type 1 font for Ghostscript) in 1996 and LPPL in 2009. It features Normal, Bold, Italic, and Bold Italic weights, and is one of several freely licensed fonts offered by URW++. Although the characters are not exactly the same, Nimbus Mono has metrics that are very similar to Courier and Courier New.  
-It is one of the Ghostscript fonts, free alternatives to 35 basic PostScript fonts (which include Courier). It is a standard typeface in many GNU/Linux distributions"
-[...](https://en.wikipedia.org/wiki/Nimbus_Mono_L)
-
-By **URW++ Studio** (1984)  
-*Alias: nimbus - License: GNU GPL*  
-http://ghostscript.com/download/gsdnld.html
 
 ## NotCourierSans
 "NotCourierSans is a re-interpretation of Nimbus Mono whose design began in Wroclaw at the occasion of the Libre Graphics Meeting 2008."
@@ -406,6 +406,18 @@ http://www.fontsquirrel.com/fonts/klartext-mono
 By **Manfred Klein Fonteria**  
  - License: requires permission*  
 http://www.fontsquirrel.com/fonts/MonospaceTypewriter
+
+## Nimbus Mono L
+The fonts packaged with Ghostscript were released under LPPL and it should be possible to include them. I haven't found a suitable set however.
+
+"Nimbus Mono is a monospaced typeface created by URW Studio in 1984, and eventually released under the GPL and AFPL (as Type 1 font for Ghostscript) in 1996 and LPPL in 2009. It features Normal, Bold, Italic, and Bold Italic weights, and is one of several freely licensed fonts offered by URW++. Although the characters are not exactly the same, Nimbus Mono has metrics that are very similar to Courier and Courier New.  
+It is one of the Ghostscript fonts, free alternatives to 35 basic PostScript fonts (which include Courier). It is a standard typeface in many GNU/Linux distributions"
+[...](https://en.wikipedia.org/wiki/Nimbus_Mono_L)
+
+By **URW++ Studio** (1984)  
+*Alias: nimbus - License: GNU GPL*  
+http://ghostscript.com/download/gsdnld.html
+
 
 ## Skyhook Mono
 
