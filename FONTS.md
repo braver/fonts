@@ -116,6 +116,14 @@ https://www.mozilla.org/en-US/styleguide/products/firefox-os/typeface/
 http://www.fontsquirrel.com/fonts/fira-mono  
 http://www.google.com/fonts/specimen/Fira+Mono
 
+## Fixedsys
+"Fixedsys is a family of raster monospaced fonts. The name means fixed system, because its glyphs are monospace or fixed-width (although bolded characters are wider than non-bolded, unlike other monospace fonts such as Courier). It is the oldest font in Windows, and was the system font in Windows 1.0 and 2.0, where it was simply named "System". For Windows 3.x, the system font was changed to a proportional sans-serif font named System, but Fixedsys remained the default font in Notepad."
+
+By **Microsoft** (1980's?)
+*Alias: fixedsys - License: GNU GPL*
+http://www.moviecorner.de/en/font-fixedsys-ttf/description.html
+https://en.wikipedia.org/wiki/Fixedsys
+
 ## Generic Mono
 "A generic monospaced font"
 [...](http://openfontlibrary.org/en/font/generic-mono)  
@@ -149,6 +157,13 @@ By **Roman Czyborra** (1998)
 *Alias: gnu-unifont - License: GNU GPL*  
 http://www.unifoundry.com/unifont.html
 
+## Gohu
+"The most important goal of Gohufont is to be as legible as possible. Capitals and ascenders are tall, and rounded characters are very crisp thanks to small serifs."
+[...](http://font.gohu.org)  
+By **Hugo Chargois**  
+*Alias: gohu - License: WTFPL*  
+http://font.gohu.org
+
 ## Hermit
 "Hermit is a monospace font designed to be clear, pragmatic and very readable. Its creation has been focused on programming. Every glyph was carefully planned and calculated, according to defined principles and rules. For this reason, Hermit is coherent and regular."
 [...](https://pcaro.es/p/hermit/)
@@ -176,7 +191,7 @@ By **Leonardo Maffi** (2009)
 *Alias: inconsolata-g - License: SIL OFL*  
 http://leonardo-m.livejournal.com/77079.html
 
-## Latin Modern
+## Latin Modern Mono
 "The Latin Modern fonts are derived from the famous Computer Modern fonts designed by Donald E. Knuth and described in Volume E of his Computers & Typesetting series."
 [...](http://www.gust.org.pl/gust/projects/e-foundry/latin-modern)
 
@@ -367,78 +382,100 @@ Some fonts don't allow packaging, or don't come in a format compatible with @fon
 ## Anonymous
 
 By **Mark Simonson**  
- - License: requires permission*  
+*License: requires permission*  
 http://www.fontsquirrel.com/fonts/Anonymous
 
 ## Audimat Mono
 
 By **SMeltery**  
- - License: requires permission*  
+*License: requires permission*  
 http://www.fontsquirrel.com/fonts/Audimat-Mono
 
 ## Creep
 
 By **Romeo Van Snick**  
- - License: MIT*  
- - Format incompatible*  
+*License: MIT*  
+*Format incompatible*  
 https://github.com/romeovs/creep
 
 ## Envy Code R
 
 By **Damien Guard**  
- - License: redistribution prohibited*  
+*License: redistribution prohibited*  
 http://www.fontsquirrel.com/fonts/Envy-Code-R
-
-## Gohu
-By **Hugo Chargois**  
-*Alias: gohu - License: WTFPL*  
- - Needs more testing*  
-http://font.gohu.org
 
 ## Klartext Mono
 
 By **Heimatdesign**  
- - Requires extended license*  
+*Requires extended license*  
 http://www.fontsquirrel.com/fonts/klartext-mono
 
 ## MonospaceTypewriter
 
 By **Manfred Klein Fonteria**  
- - License: requires permission*  
+*License: requires permission*  
 http://www.fontsquirrel.com/fonts/MonospaceTypewriter
 
 ## Nimbus Mono L
 The fonts packaged with Ghostscript were released under LPPL and it should be possible to include them. I haven't found a suitable set however.
-
-"Nimbus Mono is a monospaced typeface created by URW Studio in 1984, and eventually released under the GPL and AFPL (as Type 1 font for Ghostscript) in 1996 and LPPL in 2009. It features Normal, Bold, Italic, and Bold Italic weights, and is one of several freely licensed fonts offered by URW++. Although the characters are not exactly the same, Nimbus Mono has metrics that are very similar to Courier and Courier New.  
-It is one of the Ghostscript fonts, free alternatives to 35 basic PostScript fonts (which include Courier). It is a standard typeface in many GNU/Linux distributions"
 [...](https://en.wikipedia.org/wiki/Nimbus_Mono_L)
 
 By **URW++ Studio** (1984)  
 *Alias: nimbus - License: GNU GPL*  
 http://ghostscript.com/download/gsdnld.html
 
-
 ## Skyhook Mono
 
 By **FontomType**  
- - License: custom  
+*License: custom*  
 http://www.fontsquirrel.com/fonts/skyhook-mono
 
 ## Telegrama
 
 By **YOFonts**  
- - Requires permission  
+*Requires permission*  
 http://www.fontsquirrel.com/fonts/Telegrama
 
 ## Terminus
 By **Dimitar Zhekov**  
 *Alias: terminus - License: SIL-OFL*  
- - Format incompatible
+*Format incompatible*
 http://terminus-font.sourceforge.net
 
-## Warenhaus Typenhebel
+# Commercial or shareware fonts
 
- - License: Public Domain  
- - Missing too many characters  
-http://openfontlibrary.org/en/font/warenhaus-typenhebel
+## Andale Mono
+By Steve Matteson  
+https://en.wikipedia.org/wiki/Andale_Mono
+
+## Consolas
+By Lucas de Groot  
+https://en.wikipedia.org/wiki/Consolas
+
+## Courier
+By Howard "Bud" Kettler  
+https://en.wikipedia.org/wiki/Courier_(typeface)
+
+## Everson
+By Michael Everson  
+http://www.evertype.com/emono/
+
+## Letter Gothic  
+By Roger Roberson in 1956  
+https://en.wikipedia.org/wiki/Letter_Gothic  
+http://www.fonts.com/font/monotype/letter-gothic
+
+## Lucida Console
+By Charles Bigelow and Kris Holmes in 1985  
+https://en.wikipedia.org/wiki/Lucida_(typeface)
+
+## Monaco
+By Susan Kare and Kris Holmes
+
+## PragmataPro
+By Fabrizio Schiavi  
+http://www.fsd.it/fonts/pragmatapro.htm#.VGmwnYfUk_M
+
+## Prestige Elite
+By Clayton Smith  
+http://www.fonts.com/font/linotype/prestige-elite#product_47118
