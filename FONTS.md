@@ -157,13 +157,6 @@ By **Roman Czyborra** (1998)
 *Alias: gnu-unifont - License: GNU GPL*  
 http://www.unifoundry.com/unifont.html
 
-## Gohu
-"The most important goal of Gohufont is to be as legible as possible. Capitals and ascenders are tall, and rounded characters are very crisp thanks to small serifs."
-[...](http://font.gohu.org)  
-By **Hugo Chargois**  
-*Alias: gohu - License: WTFPL*  
-http://font.gohu.org
-
 ## Hermit
 "Hermit is a monospace font designed to be clear, pragmatic and very readable. Its creation has been focused on programming. Every glyph was carefully planned and calculated, according to defined principles and rules. For this reason, Hermit is coherent and regular."
 [...](https://pcaro.es/p/hermit/)
@@ -441,6 +434,12 @@ By **Dimitar Zhekov**
 *Alias: terminus - License: SIL-OFL*  
 *Format incompatible*
 http://terminus-font.sourceforge.net
+
+## Gohu
+By **Hugo Chargois**  
+*Alias: gohu - License: WTFPL*
+*Files seem broken*
+http://font.gohu.org
 
 # Commercial or shareware fonts
 
