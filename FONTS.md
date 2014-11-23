@@ -18,6 +18,15 @@ http://www.marksimonson.com/fonts/view/anonymous-pro
 http://www.fontsquirrel.com/fonts/Anonymous-Pro  
 http://www.google.com/fonts/specimen/Anonymous+Pro
 
+## Aurulent Sans Mono
+"Aurulent Sans is a sans serif font I'm developing for use as the primary interface font on X Windows on GNU/Linux."
+[...](http://delubrum.org)
+
+By **Stephen G. Hartke** (2007)  
+*Alias: aurulent - License: SIL OFL*  
+http://delubrum.org  
+http://www.fontsquirrel.com/fonts/Aurulent-Sans-Mono
+
 ## Average Mono
 "AverageMono is an average of thirteen different fonts which are all derivatives of the public domain "Courier" typeface. Or, rather, a subset of the Western Latin characters in it, minus punctuation, are thus. Everything else is imported wholesale from the GNU FreeMono typeface."
 [...](http://openfontlibrary.org/en/font/average-mono)
@@ -362,10 +371,19 @@ http://www.google.com/fonts/specimen/Ubuntu+Mono
 "This font was created from the glyphs of the DEC VT320 text terminal, which I used in college, and for which I have retained an unaccountable nostalgia."
 [...](http://www.google.com/fonts/specimen/VT323)
 
-By **Peter Hull**  
-*Alias: vt323 - License: SIL OFL* (2014)  
+By **Peter Hull** (2014)
+*Alias: vt323 - License: SIL OFL*
 https://fedoraproject.org/wiki/VT323_Fonts
 http://www.google.com/fonts/specimen/VT323
+
+## Verily Serif Mono
+"Verily Serif Mono is derived from Bitstream Vera Serif with the same proportions as Bitstream Vera Sans Mono"
+[...](http://delubrum.org)
+
+By **Stephen G. Hartke** (2006)  
+*Alias: verily - License: Bitstream Vera License*  
+http://delubrum.org  
+http://www.fontsquirrel.com/fonts/Verily-Serif-Mono
 
 
 # Excluded
@@ -373,58 +391,66 @@ http://www.google.com/fonts/specimen/VT323
 Some fonts don't allow packaging, or don't come in a format compatible with @font-face. You can download and install from provided links.
 
 ## Anonymous
-
+Anonymous Pro is an updated version of this font, also by Mark Simonson.  
 By **Mark Simonson**  
 *License: requires permission*  
 http://www.fontsquirrel.com/fonts/Anonymous
 
 ## Audimat Mono
-
 By **SMeltery**  
 *License: requires permission*  
 http://www.fontsquirrel.com/fonts/Audimat-Mono
 
 ## Creep
-
 By **Romeo Van Snick**  
 *License: MIT*  
 *Format incompatible*  
 https://github.com/romeovs/creep
 
-## Envy Code R
+## Crystal
+I haven't found any informaion about this font or conclusive license information.  
+By **Jerry Fitzpatrick**  
+http://www.dafont.com/crystal.font
 
+## Envy Code R
 By **Damien Guard**  
 *License: redistribution prohibited*  
 http://www.fontsquirrel.com/fonts/Envy-Code-R
 
-## Klartext Mono
+## Gohu
+I'm having some issues with these files.  
+By **Hugo Chargois**  
+*Alias: gohu - License: WTFPL*
+http://font.gohu.org
 
+## Klartext Mono
 By **Heimatdesign**  
 *Requires extended license*  
 http://www.fontsquirrel.com/fonts/klartext-mono
 
 ## MonospaceTypewriter
-
 By **Manfred Klein Fonteria**  
 *License: requires permission*  
 http://www.fontsquirrel.com/fonts/MonospaceTypewriter
 
 ## Nimbus Mono L
-The fonts packaged with Ghostscript were released under LPPL and it should be possible to include them. I haven't found a suitable set however.
-[...](https://en.wikipedia.org/wiki/Nimbus_Mono_L)
-
+The fonts originally packaged with Ghostscript were released under LPPL. However, I haven't found any suitable files.
+[...](https://en.wikipedia.org/wiki/Nimbus_Mono_L)  
 By **URW++ Studio** (1984)  
 *Alias: nimbus - License: GNU GPL*  
 http://ghostscript.com/download/gsdnld.html
 
-## Skyhook Mono
+## Selectric
+I haven't found any informaion about this font or conclusive license information.  
+By **Paradox 2005**  
+http://www.dafont.com/paradox-2005.d961
 
+## Skyhook Mono
 By **FontomType**  
 *License: custom*  
 http://www.fontsquirrel.com/fonts/skyhook-mono
 
 ## Telegrama
-
 By **YOFonts**  
 *Requires permission*  
 http://www.fontsquirrel.com/fonts/Telegrama
@@ -435,11 +461,6 @@ By **Dimitar Zhekov**
 *Format incompatible*
 http://terminus-font.sourceforge.net
 
-## Gohu
-By **Hugo Chargois**  
-*Alias: gohu - License: WTFPL*
-*Files seem broken*
-http://font.gohu.org
 
 # Commercial or shareware fonts
 
@@ -469,7 +490,8 @@ By Charles Bigelow and Kris Holmes in 1985
 https://en.wikipedia.org/wiki/Lucida_(typeface)
 
 ## Monaco
-By Susan Kare and Kris Holmes
+By Susan Kare and Kris Holmes  
+https://en.wikipedia.org/wiki/Monaco_(typeface)
 
 ## PragmataPro
 By Fabrizio Schiavi  
