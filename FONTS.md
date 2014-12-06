@@ -149,14 +149,6 @@ By **Primož Peterlin, Steve White** (2002)
 *Alias: gnu-freefont - License: GNU GPL*  
 https://www.gnu.org/software/freefont/
 
-## GNUTypewriter
-"Multilingual font imitating a real typewriter."
-[...](http://openfontlibrary.org/en/font/gnutypewriter)
-
-By **Lukasz Komsta** (2011)  
-*Alias: gnutypewriter - License: SIL OFL*  
-http://openfontlibrary.org/en/font/gnutypewriter
-
 ## GNU Unifont
 "This version provides full coverage of the Unicode 7.0 Basic Mulitlingual Plane (BMP). The BMP is the first Unicode "plane" of 65,536 code points, and has character encoding for most of the world's modern scripts.  
 As of 20 June 2008 (by coincidence the Summer Solstice), GNU Unifont had a glyph for every printable code point in the Unicode BMP. That version covered Unicode 5.1, which was the current version at the time. Roman Czyborra began this effort in 1998, with earlier efforts starting around 1994. The 2008 release was thus the culmination of a more than ten-year effort."
