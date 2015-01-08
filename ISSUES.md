@@ -7,7 +7,3 @@ While I'm looking into a permanent fix, you can simply increase and decrease fon
 
 **Disclaimer**  
 I've tried to check everything re: licenses and have not included fonts where I think the license does not allow it. If any font is included but shouldn't be, let me know and I'll take it out.
-
-I cannot vouch for the completeness or correctness of included fonts.
-
-You should be able to use the font names listed here to do further tweaking in your stylesheets (e.g. use a different font for Markdown), but that's not tested at this point (you might run into measurement problems).
