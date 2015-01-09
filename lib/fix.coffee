@@ -5,7 +5,6 @@ module.exports =
 
     triggerMeasurements = () ->
       if updates <= 5 #do this a bunch of times and then stop
-        console.log('jep')
         atom.workspaceView.increaseFontSize()
         atom.workspaceView.decreaseFontSize()
 
