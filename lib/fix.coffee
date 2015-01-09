@@ -8,7 +8,7 @@ module.exports =
         atom.workspaceView.increaseFontSize()
         atom.workspaceView.decreaseFontSize()
 
-    #trigger every time tabs are switched or a new editor is opened
+    #reset and trigger every time tabs are switched or a new editor is opened
     atom.workspace.observeActivePaneItem ->
       triggerMeasurements()
 
