@@ -416,6 +416,12 @@ By **Hugo Chargois**
 *Alias: gohu - License: WTFPL*
 http://font.gohu.org
 
+## Input
+It's free to use, but the license doesn't allow inclusion in a package.  
+By **David Jonathan Ross** (2014)  
+*License: Free for personal use*  
+http://input.fontbureau.com
+
 ## Klartext Mono
 By **Heimatdesign**  
 *Requires extended license*  
