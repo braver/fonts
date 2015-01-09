@@ -259,7 +259,7 @@ http://openfontlibrary.org/en/font/notcouriersans
 [...](http://www.google.com/fonts/specimen/Nova+Mono)
 
 By **Wojciech Kalinowski** (2010)  
-*Alias: SIL OFL - License: nova*  
+*Alias: nova - License: SIL OFL*  
 http://www.google.com/fonts/specimen/Nova+Mono
 
 ## Oxygen Mono
