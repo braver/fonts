@@ -3,7 +3,6 @@
   "main": "./lib/fonts",
   "version": "0.1.2",
   "description": "Lots of monospace fonts.",
-  "activationCommands": {},
   "repository": "https://github.com/braver/fonts",
   "license": "MIT",
   "engines": {
