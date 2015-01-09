@@ -316,7 +316,7 @@ http://www.fontsquirrel.com/fonts/saxMono
 [...](http://www.google.com/fonts/specimen/Share+Tech+Mono)
 
 By **Ralph du Carrois** (2012)  
-*Alias: SIL OFL - License: share-tech*  
+*Alias: share-tech - License:  SIL OFL*  
 http://www.google.com/fonts/specimen/Share+Tech+Mono
 
 ## Source Code Pro
