@@ -8,3 +8,6 @@
 
 ## 0.1.2 - Stephen G. Hartke
 * Added Aurulent Sans and Verily Serif
+
+## 0.2.0 - Measurements
+* Measurements are fixed in most cases now, bold and italic still fail sometimes
