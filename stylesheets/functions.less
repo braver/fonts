@@ -67,8 +67,8 @@
 }
 
 .no-smoothing() {
-  atom-text-editor,
-  atom-text-editor::shadow {
+  atom-text-editor:not(.mini),
+  atom-text-editor:not(.mini)::shadow {
     font-smooth: never;
     -webkit-font-smoothing : none;
   }
