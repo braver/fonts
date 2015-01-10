@@ -5,7 +5,7 @@
 [...](https://code.google.com/p/anka-coder-fonts/)
 
 By **Andrey Makarov** (2010)  
-*Alias: anka-coder - License: SIL OFL*  
+*License: SIL OFL*  
 https://code.google.com/p/anka-coder-fonts/
 
 ## Anonymous Pro
@@ -13,7 +13,7 @@ https://code.google.com/p/anka-coder-fonts/
 [...](http://www.google.com/fonts/specimen/Anonymous+Pro)
 
 By **Mark Simonson** (2009)  
-*Alias: anonymous-pro  - License: SIL OFL*  
+*License: SIL OFL*  
 http://www.marksimonson.com/fonts/view/anonymous-pro  
 http://www.fontsquirrel.com/fonts/Anonymous-Pro  
 http://www.google.com/fonts/specimen/Anonymous+Pro
@@ -23,7 +23,7 @@ http://www.google.com/fonts/specimen/Anonymous+Pro
 [...](http://delubrum.org)
 
 By **Stephen G. Hartke** (2007)  
-*Alias: aurulent - License: SIL OFL*  
+*License: SIL OFL*  
 http://delubrum.org  
 http://www.fontsquirrel.com/fonts/Aurulent-Sans-Mono
 
@@ -32,7 +32,7 @@ http://www.fontsquirrel.com/fonts/Aurulent-Sans-Mono
 [...](http://openfontlibrary.org/en/font/average-mono)
 
 By **Richard Alexander Hall** (2013)  
-*Alias: average - License: Bitstream Vera License*  
+*License: Bitstream Vera License*  
 http://openfontlibrary.org/en/font/average-mono
 
 ## Bitstream Vera Sans Mono
@@ -40,12 +40,12 @@ http://openfontlibrary.org/en/font/average-mono
 [...](https://en.wikipedia.org/wiki/Bitstream_Vera)
 
 By **Jim Lyles** (2002)  
-*Alias: bitstream-vera-sans - License: Bitstream Vera License*  
+*License: Bitstream Vera License*  
 http://www.fontsquirrel.com/fonts/Bitstream-Vera-Sans-Mono
 
 ## BPmono
 By **Backpacker**  
-*Alias: bpmono - License: Creative Commons*  
+*License: Creative Commons*  
 http://www.fontsquirrel.com/fonts/BPmono
 
 ## Consolamono
@@ -53,7 +53,7 @@ http://www.fontsquirrel.com/fonts/BPmono
 [...](http://openfontlibrary.org/en/font/consolamono)
 
 By **Wojciech Kalinowski** (2011)  
-*Alias: consolamono - License: SIL OFL*  
+*License: SIL OFL*  
 http://openfontlibrary.org/en/font/consolamono
 
 ## Cousine
@@ -61,7 +61,7 @@ http://openfontlibrary.org/en/font/consolamono
 [...](http://www.google.com/fonts/specimen/Cousine)
 
 By **Steve Matteson** (2010?)  
-*Alias: cousine - License: Apache*  
+*License: Apache*  
 http://www.fontsquirrel.com/fonts/cousine  
 http://www.google.com/fonts/specimen/Cousine
 
@@ -69,8 +69,8 @@ http://www.google.com/fonts/specimen/Cousine
 "The design of Cutive, and this monospace sister family Cutive Mono, is based on a number of classic typewriter typefaces, in particular the faces of IBM's 'Executive,' and the older 'Smith-Premier.' In Cutive these old faces re-emerge as webfonts that are useful for adding character to body texts as well as in larger sizes for headers and display." [...](http://www.google.com/fonts/specimen/Cutive+Mono)
 
 By **Vernon Adams** (2012)  
-*Alias: cutive - License: SIL OFL*  
-http://www.google.com/fonts/specimen/Cutive+Mono
+*License: SIL OFL*  
+http://www.google.com/fonts/specimen/Cutive+Mono  
 https://github.com/vernnobile/CutiveFont
 
 ## DejaVu Mono
@@ -78,7 +78,7 @@ https://github.com/vernnobile/CutiveFont
 [...](http://dejavu-fonts.org/wiki/Main_Page)
 
 By **Deja Vu Project** (2004)  
-*Alias: dejavu - License: Bitstream Vera License*  
+*License: Bitstream Vera License*  
 http://dejavu-fonts.org/wiki/Main_Page
 
 ## Droid Sans Mono
@@ -86,16 +86,16 @@ http://dejavu-fonts.org/wiki/Main_Page
 [...](http://www.droidfonts.com)
 
 By **Steve Matteson** (2006)  
-*Alias: droid-sans - License: Apache*  
-http://www.google.com/fonts/specimen/Droid+Sans+Mono
+*License: Apache*  
+http://www.google.com/fonts/specimen/Droid+Sans+Mono  
 http://www.droidfonts.com
 
 ## Effects Eighty
 "Effects Eighty is an homage to the dot-matrix printers of the 1980s. It is a very faithful reproduction of the output of one of that class of printers. The family includes normal, italic, bold, and bold italic versions. It supports the ASCII printable character set. An update with at least some Latin-1 support is planned."
 [...](http://openfontlibrary.org/en/font/effects-eighty)
 
-By **Peter Hull** (2013)
-*Alias: effects-eighty - License: SIL OFL*  
+By **Peter Hull** (2013)  
+*License: SIL OFL*  
 http://openfontlibrary.org/en/font/effects-eighty
 
 ## Fantasque Sans Mono
@@ -103,8 +103,8 @@ http://openfontlibrary.org/en/font/effects-eighty
 [...](https://github.com/belluzj/fantasque-sans)
 
 By **Jany Belluz** (2013)  
-*Alias: fantasque-sans - License: SIL OFL*  
-http://openfontlibrary.org/en/font/fantasque-sans-mono
+*License: SIL OFL*  
+http://openfontlibrary.org/en/font/fantasque-sans-mono  
 https://github.com/belluzj/fantasque-sans
 
 ## Fifteen
@@ -112,7 +112,7 @@ https://github.com/belluzj/fantasque-sans
 [...](http://openfontlibrary.org/en/font/fifteen)
 
 By **James Kilfiger** (2013?)  
-*Alias: fifteen - License: SIL OFL*  
+*License: SIL OFL*  
 http://openfontlibrary.org/en/font/fifteen
 
 ## Fira Mono
@@ -120,7 +120,7 @@ http://openfontlibrary.org/en/font/fifteen
 [...](http://www.google.com/fonts/specimen/Fira+Mono)
 
 By **Erik Spiekerman, Carois Type Design** (2013)  
-*Alias: fira - License: SIL OFL*  
+*License: SIL OFL*  
 https://www.mozilla.org/en-US/styleguide/products/firefox-os/typeface/  
 http://www.fontsquirrel.com/fonts/fira-mono  
 http://www.google.com/fonts/specimen/Fira+Mono
@@ -128,9 +128,9 @@ http://www.google.com/fonts/specimen/Fira+Mono
 ## Fixedsys
 "Fixedsys is a family of raster monospaced fonts. The name means fixed system, because its glyphs are monospace or fixed-width (although bolded characters are wider than non-bolded, unlike other monospace fonts such as Courier). It is the oldest font in Windows, and was the system font in Windows 1.0 and 2.0, where it was simply named "System". For Windows 3.x, the system font was changed to a proportional sans-serif font named System, but Fixedsys remained the default font in Notepad."
 
-By **Microsoft** (1980's?)
-*Alias: fixedsys - License: GNU GPL*
-http://www.moviecorner.de/en/font-fixedsys-ttf/description.html
+By **Microsoft** (1980's?)  
+*License: GNU GPL*  
+http://www.moviecorner.de/en/font-fixedsys-ttf/description.html  
 https://en.wikipedia.org/wiki/Fixedsys
 
 ## Generic Mono
@@ -138,7 +138,7 @@ https://en.wikipedia.org/wiki/Fixedsys
 [...](http://openfontlibrary.org/en/font/generic-mono)  
 
 By **Luc Devroye** (2014)  
-*Alias: generic - License: SIL OFL*  
+*License: SIL OFL*  
 http://openfontlibrary.org/en/font/generic-mono
 
 ## GNU Freefont
@@ -146,7 +146,7 @@ http://openfontlibrary.org/en/font/generic-mono
 [...](https://www.gnu.org/software/freefont/)
 
 By **Primož Peterlin, Steve White** (2002)  
-*Alias: gnu-freefont - License: GNU GPL*  
+*License: GNU GPL*  
 https://www.gnu.org/software/freefont/
 
 ## GNU Unifont
@@ -155,7 +155,7 @@ As of 20 June 2008 (by coincidence the Summer Solstice), GNU Unifont had a glyph
 [...](http://www.unifoundry.com/unifont.html)
 
 By **Roman Czyborra** (1998)  
-*Alias: gnu-unifont - License: GNU GPL*  
+*License: GNU GPL*  
 http://www.unifoundry.com/unifont.html
 
 ## Hermit
@@ -163,7 +163,7 @@ http://www.unifoundry.com/unifont.html
 [...](https://pcaro.es/p/hermit/)
 
 By **Pablo Caro** (2013)  
-*Alias: hermit - License: SIL OFL*  
+*License: SIL OFL*  
 https://pcaro.es/p/hermit/
 
 ## Inconsolata
@@ -172,8 +172,8 @@ Inconsolata draws from many inspirations and sources. I was particularly struck 
 [...](http://www.levien.com/type/myfonts/inconsolata.html)
 
 By **Raph Levien** (2001)  
-*Alias: inconsolata - License: SIL OFL*  
-http://www.levien.com/type/myfonts/inconsolata.html
+*License: SIL OFL*  
+http://www.levien.com/type/myfonts/inconsolata.html  
 http://www.google.com/fonts/specimen/Inconsolata
 
 ## Inconsolata-g
@@ -182,7 +182,7 @@ So I've uses FontForge to modify more his Inconsolata version, to fix some of th
 [...](http://leonardo-m.livejournal.com/77079.html)
 
 By **Leonardo Maffi** (2009)  
-*Alias: inconsolata-g - License: SIL OFL*  
+*License: SIL OFL*  
 http://leonardo-m.livejournal.com/77079.html
 
 ## Latin Modern Mono
@@ -190,7 +190,7 @@ http://leonardo-m.livejournal.com/77079.html
 [...](http://www.gust.org.pl/gust/projects/e-foundry/latin-modern)
 
 By **Bogusław Jackowski, Janusz M. Nowacki** (2002)  
-*Alias: latin-modern - License: GUST Font License*  
+*License: GUST Font License*  
 http://www.gust.org.pl/gust/projects/e-foundry/latin-modern  
 http://www.fontsquirrel.com/fonts/Latin-Modern-Mono
 
@@ -199,8 +199,8 @@ http://www.fontsquirrel.com/fonts/Latin-Modern-Mono
 [...](http://www.google.com/fonts/specimen/Lekton)
 
 By **Accademia di Belle Arti di Urbino** (2008)  
-*Alias: lekton - License: SIL OFL*  
-http://www.fontsquirrel.com/fonts/lekton
+*License: SIL OFL*  
+http://www.fontsquirrel.com/fonts/lekton  
 http://www.google.com/fonts/specimen/Lekton
 
 ## Liberation Mono
@@ -210,8 +210,8 @@ The Liberation fonts are intended as free, open-source replacements of the afore
 [...](https://fedorahosted.org/liberation-fonts/)
 
 By **Steve Matteson** (2007)  
-*Alias: liberation - License: Red Hat Liberation License*  
-https://fedorahosted.org/liberation-fonts/
+*License: Red Hat Liberation License*  
+https://fedorahosted.org/liberation-fonts/  
 http://www.fontsquirrel.com/fonts/Liberation-Mono
 
 ## Luxi Mono
@@ -219,7 +219,7 @@ http://www.fontsquirrel.com/fonts/Liberation-Mono
 [...](https://en.wikipedia.org/wiki/Luxi_fonts)
 
 By **Kris Holmes, Charles Bigelow** (2001)  
-*Alias: luxi - License: Luxi font license*  
+*License: Luxi font license*  
 http://www.fontsquirrel.com/fonts/Luxi-Mono
 
 ## Meslo
@@ -228,7 +228,7 @@ http://www.fontsquirrel.com/fonts/Luxi-Mono
 [...](https://github.com/andreberg/Meslo-Font)
 
 By **André Berg** (2010)  
-*Alias: meslo - License: Apache*  
+*License: Apache*  
 https://github.com/andreberg/Meslo-Font
 
 ## M+
@@ -236,13 +236,13 @@ https://github.com/andreberg/Meslo-Font
 [...](http://mplus-fonts.sourceforge.jp/mplus-outline-fonts/design/index-en.html)
 
 By **Coji Morishita** (2003)  
-*Alias: mplus - License: custom*  
+*License: custom*  
 http://www.fontsquirrel.com/fonts/M-1m  
 http://mplus-fonts.sourceforge.jp
 
 ## Monofur
 By **Tobias Benjamin Köhler** (2000)  
-*Alias: monofur - License: Freeware*  
+*License: Freeware*  
 http://www.dafont.com/monofur.font
 
 ## NotCourierSans
@@ -250,7 +250,7 @@ http://www.dafont.com/monofur.font
 [...](http://openfontlibrary.org/en/font/notcouriersans)
 
 By **Open Source Publishing** (2008)  
-*Alias: notcouriersans - License: SIL OFL*  
+*License: SIL OFL*  
 http://www.fontsquirrel.com/fonts/NotCourierSans  
 http://openfontlibrary.org/en/font/notcouriersans
 
@@ -259,7 +259,7 @@ http://openfontlibrary.org/en/font/notcouriersans
 [...](http://www.google.com/fonts/specimen/Nova+Mono)
 
 By **Wojciech Kalinowski** (2010)  
-*Alias: nova - License: SIL OFL*  
+*License: SIL OFL*  
 http://www.google.com/fonts/specimen/Nova+Mono
 
 ## Oxygen Mono
@@ -267,7 +267,7 @@ http://www.google.com/fonts/specimen/Nova+Mono
 [...](http://www.google.com/fonts/specimen/Oxygen+Mono)
 
 By **Vernon Adams** (2012)  
-*Alias: oxygen - License: SIL OFL*  
+*License: SIL OFL*  
 http://www.fontsquirrel.com/fonts/oxygen-mono  
 http://www.google.com/fonts/specimen/Oxygen+Mono
 
@@ -276,8 +276,8 @@ http://www.google.com/fonts/specimen/Oxygen+Mono
 [...](http://infohost.nmt.edu/tcc/help/fonts/profont/MProFont/profontdoc.txt)
 
 By **Andrew Welch** (1987)  
-*Alias: profont - License: MIT*  
-http://tobiasjung.name/profont/
+*License: MIT*  
+http://tobiasjung.name/profont/  
 http://www.fontsquirrel.com/fonts/ProFontWindows
 
 ## Proggy Clean
@@ -285,7 +285,7 @@ http://www.fontsquirrel.com/fonts/ProFontWindows
 [...](http://www.proggyfonts.net/)
 
 By **Tristan Grimmer** (2004)  
-*Alias: proggy-clean - License: MIT*  
+*License: MIT*  
 http://www.proggyfonts.net/
 
 ## PT Mono
@@ -293,7 +293,7 @@ http://www.proggyfonts.net/
 [...](http://paratype.com/public/)
 
 By **Alexandra Korolkova, Isabella Chaeva** (2011)  
-*Alias: pt - License: SIL OFL*  
+*License: SIL OFL*  
 http://paratype.com/public/  
 http://www.fontsquirrel.com/fonts/pt-mono  
 http://www.google.com/fonts/specimen/PT+Mono
@@ -303,12 +303,12 @@ http://www.google.com/fonts/specimen/PT+Mono
 [...](http://openfontlibrary.org/en/font/fifteen)
 
 By **James Kilfiger** (2013)  
-*Alias: quinze - License: SIL OFL*  
+*License: SIL OFL*  
 http://openfontlibrary.org/en/font/fifteen
 
 ## saxMono
 By **s.a.x. Software**  
-*Alias: sax - License: custom*  
+*License: custom*  
 http://www.fontsquirrel.com/fonts/saxMono
 
 ## Share Tech Mono
@@ -316,7 +316,7 @@ http://www.fontsquirrel.com/fonts/saxMono
 [...](http://www.google.com/fonts/specimen/Share+Tech+Mono)
 
 By **Ralph du Carrois** (2012)  
-*Alias: share-tech - License:  SIL OFL*  
+*License:  SIL OFL*  
 http://www.google.com/fonts/specimen/Share+Tech+Mono
 
 ## Source Code Pro
@@ -324,7 +324,7 @@ http://www.google.com/fonts/specimen/Share+Tech+Mono
 [...](http://blog.typekit.com/2012/09/24/source-code-pro/)
 
 By **Paul D. Hunt** (2012)  
-*Alias: source-code-pro - License: SIL OFL*  
+*License: SIL OFL*  
 http://blog.typekit.com/2012/09/24/source-code-pro/  
 http://www.fontsquirrel.com/fonts/source-code-pro  
 http://www.google.com/fonts/specimen/Source+Code+Pro
@@ -337,7 +337,7 @@ Note: Not all weights of this awesome font are currently available in this packa
 [...](http://www.netzallee.de/extra/sudo)
 
 By **Jens Kutilek** (2009)  
-*Alias: sudo - License: SIL OFL*  
+*License: SIL OFL*  
 http://www.netzallee.de/extra/sudo
 
 ## TeX Gyre Cursor
@@ -346,7 +346,7 @@ TeX Gyre Cursor can be used as a replacement for a well-known Courier typeface (
 [...](http://www.gust.org.pl/projects/e-foundry/tex-gyre)
 
 By **GUST e-foundry** (2006)  
-*Alias: tex-gyre-cursor - License: LPPL*  
+*License: LPPL*  
 http://www.gust.org.pl/projects/e-foundry/tex-gyre  
 http://www.fontsquirrel.com/fonts/TeX-Gyre-Cursor
 
@@ -355,7 +355,7 @@ http://www.fontsquirrel.com/fonts/TeX-Gyre-Cursor
 [...](http://www.fontsquirrel.com/fonts/ubuntu-mono)
 
 By **Dalton Maag** (2010)  
-*Alias: ubuntu - License: Ubuntu/SIL OFL*  
+*License: Ubuntu/SIL OFL*  
 http://font.ubuntu.com  
 http://www.fontsquirrel.com/fonts/ubuntu-mono  
 http://www.google.com/fonts/specimen/Ubuntu+Mono
@@ -365,7 +365,7 @@ http://www.google.com/fonts/specimen/Ubuntu+Mono
 [...](http://www.google.com/fonts/specimen/VT323)
 
 By **Peter Hull** (2014)
-*Alias: vt323 - License: SIL OFL*
+*License: SIL OFL*
 https://fedoraproject.org/wiki/VT323_Fonts
 http://www.google.com/fonts/specimen/VT323
 
@@ -374,7 +374,7 @@ http://www.google.com/fonts/specimen/VT323
 [...](http://delubrum.org)
 
 By **Stephen G. Hartke** (2006)  
-*Alias: verily - License: Bitstream Vera License*  
+*License: Bitstream Vera License*  
 http://delubrum.org  
 http://www.fontsquirrel.com/fonts/Verily-Serif-Mono
 
@@ -413,13 +413,13 @@ http://www.fontsquirrel.com/fonts/Envy-Code-R
 ## Gohu
 I'm having some issues with these files.  
 By **Hugo Chargois**  
-*Alias: gohu - License: WTFPL*
+*License: WTFPL*  
 http://font.gohu.org
 
 ## Input
 It's free to use, but the license doesn't allow inclusion in a package.  
 By **David Jonathan Ross** (2014)  
-*License: Free for personal use*  
+*License: free for personal use*  
 http://input.fontbureau.com
 
 ## Klartext Mono
@@ -436,7 +436,7 @@ http://www.fontsquirrel.com/fonts/MonospaceTypewriter
 The fonts originally packaged with Ghostscript were released under LPPL. However, I haven't found any suitable files.
 [...](https://en.wikipedia.org/wiki/Nimbus_Mono_L)  
 By **URW++ Studio** (1984)  
-*Alias: nimbus - License: GNU GPL*  
+*License: GNU GPL*  
 http://ghostscript.com/download/gsdnld.html
 
 ## Selectric
@@ -456,7 +456,7 @@ http://www.fontsquirrel.com/fonts/Telegrama
 
 ## Terminus
 By **Dimitar Zhekov**  
-*Alias: terminus - License: SIL-OFL*  
+*License: SIL-OFL*  
 *Format incompatible*
 http://terminus-font.sourceforge.net
 
