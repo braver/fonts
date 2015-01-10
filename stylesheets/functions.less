@@ -5,7 +5,6 @@
   when (@weight = normal)
   and (@style = normal) {
 
-
   @font-path: '@{root-path}/@{file}';
 
   @font-face {
@@ -14,14 +13,12 @@
     font-style: @style;
     src: url(@font-path);
   }
-
 }
 
 .font (@name, @weight, @style, @file)
   when (@weight = bold)
   and (@style = normal) {
 
-
   @font-path: '@{root-path}/@{file}';
 
   @font-face {
@@ -30,14 +27,12 @@
     font-style: @style;
     src: url(@font-path);
   }
-
 }
 
 .font (@name, @weight, @style, @file)
   when (@weight = normal)
   and (@style = italic) {
 
-
   @font-path: '@{root-path}/@{file}';
 
   @font-face {
@@ -46,14 +41,12 @@
     font-style: @style;
     src: url(@font-path);
   }
-
 }
 
 .font (@name, @weight, @style, @file)
   when (@weight = 'bold')
   and (@style = 'italic') {
 
-
   @font-path: '@{root-path}/@{file}';
 
   @font-face {
@@ -62,5 +55,21 @@
     font-style: @style;
     src: url(@font-path);
   }
+}
 
+
+.editor-font (@fontFamily) {
+  .fonts-fixer,
+  atom-text-editor,
+  atom-text-editor::shadow {
+    font-family: @fontFamily;
+  }
+}
+
+.no-smoothing() {
+  atom-text-editor,
+  atom-text-editor::shadow {
+    font-smooth: never;
+    -webkit-font-smoothing : none;
+  }
 }
