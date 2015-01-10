@@ -9,5 +9,12 @@
 ## 0.1.2 - Stephen G. Hartke
 * Added Aurulent Sans and Verily Serif
 
-## 0.2.0 - Measurements
+## 0.2.0 - Measurements fixes
 * Measurements are fixed in most cases now, bold and italic still fail sometimes
+
+## 0.3.0 - More weights, select from a list
+* Source Code Pro in Light, Extra Light and Medium
+* M+ in Light, Thin and Medium
+* Latin Modern and Hermit in Light
+* Measurements now fully fixed
+* Easily pick from a list of fonts in Settings
