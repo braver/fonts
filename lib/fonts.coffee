@@ -2,10 +2,9 @@ module.exports =
 
   config:
     fontFamily:
-      description: 'Use one of the fonts available in this package.
-        View the README for descriptions of each.'
+      description: 'Use one of the fonts available in this package.'
       type: 'string'
-      default: 'Inconsolata'
+      default: 'Source Code Pro'
       enum: [
         'Anka/Coder'
         'Anonymous Pro'
