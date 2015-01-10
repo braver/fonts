@@ -7,58 +7,58 @@ module.exports =
       type: 'string'
       default: 'Inconsolata'
       enum: [
-        'Anka/Coder',
-        'Anonymous Pro',
-        'Aurulent Sans Mono',
-        'Average Mono',
-        'Bitstream Vera Sans Mono',
-        'BPmono',
-        'Consolamono',
-        'Cousine',
-        'Cutive Mono',
-        'DejaVu Mono',
-        'Droid Sans Mono',
-        'Effects Eighty',
-        'Fantasque Sans Mono',
+        'Anka/Coder'
+        'Anonymous Pro'
+        'Aurulent Sans Mono'
+        'Average Mono'
+        'BPmono'
+        'Bitstream Vera Sans Mono'
+        'Consolamono'
+        'Cousine'
+        'Cutive Mono'
+        'DejaVu Mono'
+        'Droid Sans Mono'
+        'Effects Eighty'
+        'Fantasque Sans Mono'
         'Fifteen'
-        'Fira Mono',
-        'Fixedsys',
-        'Generic Mono',
-        'GNU Freefont',
-        'GNU Unifont',
-        'Hermit',
-        'Hermit Light',
-        'Inconsolata',
-        'Inconsolata-g',
-        'Latin Modern Mono',
-        'Latin Modern Mono Light',
-        'Lekton',
-        'Liberation Mono',
-        'Luxi Mono',
-        'Meslo',
-        'M+',
-        'M+ Light',
-        'M+ Medium',
-        'M+ Thin',
-        'Monofur',
-        'NotCourierSans',
-        'Nova Mono',
-        'Oxygen Mono',
-        'Profont',
-        'Proggy Clean',
-        'PT Mono',
-        'Quinze',
-        'saxMono',
-        'Share Tech Mono',
-        'Source Code Pro',
-        'Source Code Pro Extra Light',
-        'Source Code Pro Light',
-        'Source Code Pro Medium',
-        'Sudo',
-        'TeX Gyre Cursor',
-        'Ubuntu Mono',
-        'VT323',
+        'Fira Mono'
+        'Fixedsys'
+        'GNU Freefont'
+        'GNU Unifont'
+        'Generic Mono'
+        'Hermit Light'
+        'Hermit'
+        'Inconsolata'
+        'Inconsolata-g'
+        'Latin Modern Mono Light'
+        'Latin Modern Mono'
+        'Lekton'
+        'Liberation Mono'
+        'Luxi Mono'
+        'M+ Light'
+        'M+ Medium'
+        'M+ Thin'
+        'M+'
+        'Meslo'
+        'Monofur'
+        'NotCourierSans'
+        'Nova Mono'
+        'Oxygen Mono'
+        'PT Mono'
+        'Profont'
+        'Proggy Clean'
+        'Quinze'
+        'Share Tech Mono'
+        'Source Code Pro Extra Light'
+        'Source Code Pro Light'
+        'Source Code Pro Medium'
+        'Source Code Pro'
+        'Sudo'
+        'TeX Gyre Cursor'
+        'Ubuntu Mono'
+        'VT323'
         'Verily Serif Mono'
+        'saxMono'
       ]
 
   activate: (state) ->
