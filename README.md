@@ -4,11 +4,12 @@ Oh we do love our monospace fonts don't we? To celebrate typography and free cho
 
 This package delivers them straight to Atom through the power of @font-face. You no longer need to hunt down and install your favourite font, instead you can now instantly try out any of the fonts in this package.
 
-* [Known issues](ISSUES.md)
-* [These and more fonts and download links](FONTS.md)
+Fonts can be selected from a list in the settings for this package. Disable the package to re-enable the normal font settings.
 
-## All the names you can use
-anka-coder, anonymous-pro, aurulent, average, bitstream-vera, bpmono, consolamono, cousine, cutive, dejavu, droid-sans, effects-eighty, fantasque-sans, fifteen, fira, fixedsys, generic, gnu-freefont, hermit, inconsolata, inconsolata-g, lekton, latin-modern, liberation, luxi, meslo, monofur, mplus, notcouriersans, nova, oxygen, profont, proggy-clean, pt, quinze, sax, share-tech, source-code-pro, sudo, tex-gyre-cursor, ubuntu, unifont, verily, vt323
+* [These fonts (and more) and download links](FONTS.md)
+
+## All fonts
+Anka/Coder, Anonymous Pro, Aurulent Sans Mono, Average Mono, BPmono, Bitstream Vera Sans Mono, Consolamono, Cousine, Cutive Mono, DejaVu Mono, Droid Sans Mono, Effects Eighty, Fantasque Sans Mono, Fifteen, Fira Mono, Fixedsys, GNU Freefont, GNU Unifont, Generic Mono, Hermit Light, Hermit, Inconsolata, Inconsolata-g, Latin Modern Mono Light, Latin Modern Mono, Lekton, Liberation Mono, Luxi Mono, M+ Light, M+ Medium, M+ Thin, M+, Meslo, Monofur, NotCourierSans, Nova Mono, Oxygen Mono, PT Mono, Profont, Proggy Clean, Quinze, Share Tech Mono, Source Code Pro Extra Light, Source Code Pro Light, Source Code Pro Medium, Source Code Pro, Sudo, TeX Gyre Cursor, Ubuntu Mono, VT323, Verily Serif Mono, saxMono
 
 ## More programming fonts
 Test drive these fonts in your browser using the [Programming Fonts Test Drive App](http://app.programmingfonts.org)
