@@ -6,7 +6,7 @@ This package delivers them straight to Atom through the power of @font-face. You
 
 Fonts can be selected from a list in the settings for this package. Disable the package to re-enable the normal font settings.
 
-* [These fonts (and more) and download links](FONTS.md)
+* [These fonts (and more) and download links](http://programmingfonts.org/list)
 
 ## All fonts
 Anka/Coder, Anonymous Pro, Aurulent Sans Mono, Average Mono, BPmono, Bitstream Vera Sans Mono, Consolamono, Cousine, Cutive Mono, DejaVu Mono, Droid Sans Mono, Effects Eighty, Fantasque Sans Mono, Fifteen, Fira Mono, Fixedsys, GNU Freefont, GNU Unifont, Generic Mono, Hermit Light, Hermit, Inconsolata, Inconsolata-g, Latin Modern Mono Light, Latin Modern Mono, Lekton, Liberation Mono, Luxi Mono, M+ Light, M+ Medium, M+ Thin, M+, Meslo, Monofur, NotCourierSans, Nova Mono, Oxygen Mono, PT Mono, Profont, Proggy Clean, Quinze, Share Tech Mono, Source Code Pro Extra Light, Source Code Pro Light, Source Code Pro Medium, Source Code Pro, Sudo, TeX Gyre Cursor, Ubuntu Mono, VT323, Verily Serif Mono, saxMono
