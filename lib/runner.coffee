@@ -1,36 +1,38 @@
 module.exports =
   run: () ->
 
-    updates = 0
+    body = document.querySelector('body')
+    #editor = atom.workspace.getActiveTextEditor()
 
     triggerMeasurements = (force) ->
-      if force or updates <= 5 #do this a bunch of times and then stop
-        atom.workspaceView.increaseFontSize()
-        atom.workspaceView.decreaseFontSize()
+      atom.workspace.increaseFontSize()
+      atom.workspace.decreaseFontSize()
 
     applyFont = (font) ->
-      atom.workspaceView.attr('fonts-editor-font', font)
+      body.setAttribute('fonts-editor-font', font)
       triggerMeasurements()
 
     # apply fonts when atom is ready
-    atom.workspaceView.ready ->
-      applyFont(atom.config.get('fonts.fontFamily'))
+    applyFont(
+      atom.config.get('fonts.fontFamily')
+    )
 
     # apply fonts when config changes
+    # after config changes measurements are already triggered by atom
     atom.config.observe 'fonts.fontFamily', ->
-      updates = 0
       applyFont(atom.config.get('fonts.fontFamily'))
 
-    #this triggers all the time something happens in an editor
-    atom.workspaceView.on 'editor:display-updated', ->
+    # give chromium some time to load the fonts
+    # then trigger measurements
+    setTimeout (->
       triggerMeasurements()
-      if updates <= 5
-        updates = updates + 1
+    ), 500
 
-    #force chromium to load all font files regardless of editor content
+    # force chromium to load all font files regardless of editor content
+    # this also makes sure fonts are loaded as soon as config changes
     atom.workspaceView.append '<div class="fonts-fixer">
-        <span class="regular">r</span>
-        <span class="bold">b</span>
-        <span class="italic">i</span>
-        <span class="bolditalic">bi</span>
-      </div>'
+      <span class="regular">r</span>
+      <span class="bold">b</span>
+      <span class="italic">i</span>
+      <span class="bolditalic">bi</span>
+    </div>'
