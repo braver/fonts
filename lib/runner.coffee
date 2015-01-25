@@ -35,7 +35,7 @@ module.exports =
       @innerHTML = "regular<b>bold<i>italic<i></b><i>italic<i>"
       return
 
-    fixer = document.registerElement("font-fixer",
+    fixer = document.registerElement("fonts-fixer",
       prototype: fixerProto
     )
 
