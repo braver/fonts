@@ -28,14 +28,14 @@ module.exports =
     ), 500
 
 
-    // create a fixer element that forces chrome to load font styles
-    // contains *r*egular, *b*old, *i*talic and i in b
+    # create a fixer element that forces chrome to load font styles
+    # contains *r*egular, *b*old, *i*talic and i in b
     fixerProto = Object.create(HTMLElement::)
     fixerProto.createdCallback = ->
       @innerHTML = "regular<b>bold<i>italic<i></b><i>italic<i>"
       return
 
-    fixer = document.registerElement("fonts-fixer",
+    fixer = document.registerElement("font-fixer",
       prototype: fixerProto
     )
 
