@@ -2,7 +2,6 @@ module.exports =
   run: () ->
 
     body = document.querySelector('body')
-    #editor = atom.workspace.getActiveTextEditor()
 
     triggerMeasurements = (force) ->
       atom.workspace.increaseFontSize()
@@ -28,11 +27,16 @@ module.exports =
       triggerMeasurements()
     ), 500
 
-    # force chromium to load all font files regardless of editor content
-    # this also makes sure fonts are loaded as soon as config changes
-    atom.workspaceView.append '<div class="fonts-fixer">
-      <span class="regular">r</span>
-      <span class="bold">b</span>
-      <span class="italic">i</span>
-      <span class="bolditalic">bi</span>
-    </div>'
+
+    // create a fixer element that forces chrome to load font styles
+    // contains *r*egular, *b*old, *i*talic and i in b
+    fixerProto = Object.create(HTMLElement::)
+    fixerProto.createdCallback = ->
+      @innerHTML = "regular<b>bold<i>italic<i></b><i>italic<i>"
+      return
+
+    fixer = document.registerElement("fonts-fixer",
+      prototype: fixerProto
+    )
+
+    atom.views.getView(atom.workspace).appendChild(new fixer())
