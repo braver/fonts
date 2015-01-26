@@ -1,6 +1,5 @@
 @root-path: 'atom://fonts/resources';
 
-
 .font (@name, @weight, @style, @file)
   when (@weight = normal)
   and (@style = normal) {
@@ -57,9 +56,8 @@
   }
 }
 
-
 .editor-font (@fontFamily) {
-  .fonts-fixer,
+  fonts-fixer,
   atom-text-editor,
   atom-text-editor::shadow {
     font-family: @fontFamily;

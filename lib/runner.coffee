@@ -27,7 +27,6 @@ module.exports =
       triggerMeasurements()
     ), 500
 
-
     # create a fixer element that forces chrome to load font styles
     # contains *r*egular, *b*old, *i*talic and i in b
     fixerProto = Object.create(HTMLElement::)
