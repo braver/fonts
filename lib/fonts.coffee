@@ -1,6 +1,9 @@
 module.exports =
 
   config:
+    preview:
+      type: 'string'
+      default: 'The Quick brown fox { 0 !== "O" }'
     fontFamily:
       description: 'Use one of the fonts available in this package.'
       type: 'string'
