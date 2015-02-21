@@ -31,7 +31,7 @@ module.exports =
     # contains *r*egular, *b*old, *i*talic and i in b
     fixerProto = Object.create(HTMLElement::)
     fixerProto.createdCallback = ->
-      @innerHTML = "regular<b>bold<i>italic<i></b><i>italic<i>"
+      @innerHTML = "regular<b>bold<i>italic</i></b><i>italic</i>"
       return
 
     fixer = document.registerElement("fonts-fixer",
