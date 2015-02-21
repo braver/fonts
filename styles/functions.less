@@ -57,9 +57,14 @@
 }
 
 .editor-font (@fontFamily) {
+  //force loading all styles
   fonts-fixer,
+  //set the base editor font
   atom-text-editor,
-  atom-text-editor::shadow {
+  atom-text-editor::shadow,
+  //force the mini editor in settings for ui themes that change that (i.e. Isotope)
+  .settings-view atom-text-editor.mini,
+  .settings-view atom-text-editor.mini::shadow {
     font-family: @fontFamily;
   }
 }
