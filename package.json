@@ -8,5 +8,12 @@
   "engines": {
     "atom": ">0.50.0"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "keywords": [
+    "fonts",
+    "monospace",
+    "programming",
+    "typography",
+    "@fontface"
+  ]
 }
