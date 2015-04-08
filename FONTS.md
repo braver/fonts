@@ -298,14 +298,6 @@ http://paratype.com/public/
 http://www.fontsquirrel.com/fonts/pt-mono  
 http://www.google.com/fonts/specimen/PT+Mono
 
-## Quinze
-"Quinze is a narrow monospaced font, for programming and terminal emulators. It is designed to be narrow, and allow 132 columns to be comfortably fitted on a screen The 1, l and I are clearly distinguished, as are O and 0. The ascii circumflex is presented as an arrow, consistent with its use as exponentiation operator."
-[...](http://openfontlibrary.org/en/font/fifteen)
-
-By **James Kilfiger** (2013)  
-*License: SIL OFL*  
-http://openfontlibrary.org/en/font/fifteen
-
 ## saxMono
 By **s.a.x. Software**  
 *License: custom*  

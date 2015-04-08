@@ -49,7 +49,6 @@ module.exports =
         'PT Mono'
         'Profont'
         'Proggy Clean'
-        'Quinze'
         'Share Tech Mono'
         'Source Code Pro Extra Light'
         'Source Code Pro Light'
