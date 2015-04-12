@@ -1,6 +1,8 @@
+# 0.4.2
+* Restored Quinze because the author seems to have resolved the issue
+
 # 0.4.1
-* Removed Quinze because of a possible malware issue:  
-https://www.virustotal.com/en/file/6aeb556331b45004ca6cfaf8a74a7d4da477f8fe0381a3807a7a0c4aa48aeef2/analysis/1428488280/
+* Removed Quinze because of a possible malware issue
 
 # 0.4.0
 * Immediately see the font in effect in a preview editor.mini
