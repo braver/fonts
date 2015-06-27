@@ -1,3 +1,6 @@
+# 0.6.0
+* Added Code New Roman and Office Code Pro
+
 # 0.5.0
 * Added Hack and Roboto Mono
 
