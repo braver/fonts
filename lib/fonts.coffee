@@ -28,6 +28,7 @@ module.exports =
         'GNU Freefont'
         'GNU Unifont'
         'Generic Mono'
+        'Hack'
         'Hermit Light'
         'Hermit'
         'Inconsolata'
