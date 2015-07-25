@@ -1,3 +1,6 @@
+# 0.7.0
+* Updated Source Code Pro with the new release, adding true italics
+
 # 0.6.0
 * Added Code New Roman and Office Code Pro
 
