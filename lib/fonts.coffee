@@ -29,6 +29,8 @@ module.exports =
         'GNU Freefont'
         'GNU Unifont'
         'Generic Mono'
+        'Gohufont 11'
+        'Gohufont 14'
         'Hack'
         'Hermit Light'
         'Hermit'
