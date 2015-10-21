@@ -12,7 +12,7 @@ This package delivers them straight to Atom through the power of @font-face. You
 
 <img src="https://raw.githubusercontent.com/braver/fonts/master/howto.jpg" height="150" width="780">
 
-Fonts can be selected from a list in the settings for this package. Disable the package to re-enable the normal font settings.
+Disable the package to re-enable the normal font settings.
 
 ## All fonts
 Anka/Coder, Anonymous Pro, Aurulent Sans Mono, Average Mono, BPmono, Bitstream Vera Sans Mono, Code New Roman, Consolamono, Cousine, Cutive Mono, DejaVu Mono, Droid Sans Mono, Effects Eighty, Fantasque Sans Mono, Fifteen, Fira Mono, Fixedsys, GNU Freefont, GNU Unifont, Generic Mono, Hack, Hermit Light, Hermit, Inconsolata, Inconsolata-g, Latin Modern Mono Light, Latin Modern Mono, Lekton, Liberation Mono, Luxi Mono, M+ Light, M+ Medium, M+ Thin, M+, Meslo, Monofur, NotCourierSans, Nova Mono, Office Code Pro, Oxygen Mono, PT Mono, Profont, Proggy Clean, Quinze, Roboto, Share Tech Mono, Source Code Pro Extra Light, Source Code Pro Light, Source Code Pro Medium, Source Code Pro, Sudo, TeX Gyre Cursor, Ubuntu Mono, VT323, Verily Serif Mono, saxMono
