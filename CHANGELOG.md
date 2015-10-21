@@ -1,7 +1,8 @@
 # 0.7.0
-* Updated Source Code Pro with the new release, adding true italics
+* Added a version of Gohu that actually works (and looks awesome!)
 
 # 0.6.0
+* Updated Source Code Pro with the new release, adding true italics
 * Added Code New Roman and Office Code Pro
 
 # 0.5.0
