@@ -15,6 +15,7 @@ module.exports =
         'Average Mono'
         'BPmono'
         'Bitstream Vera Sans Mono'
+        'CamingoCode'
         'Code New Roman'
         'Consolamono'
         'Cousine'
