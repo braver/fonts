@@ -1,3 +1,6 @@
+# 1.5.0
+* Added SK Modernist Mono
+
 # 1.4.0
 * Added Fixedsys Excelsior with ligatures!
 

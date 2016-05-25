@@ -73,6 +73,7 @@ module.exports =
         'Roboto Mono Thin'
         'Roboto Mono Medium'
         'Share Tech Mono'
+        'SK Modernist'
         'Source Code Pro Extra Light'
         'Source Code Pro Light'
         'Source Code Pro Medium'
