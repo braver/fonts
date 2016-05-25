@@ -28,6 +28,7 @@ module.exports =
         'Fira Mono'
         'FiraCode'
         'Fixedsys'
+        'Fixedsys Ligatures'
         'GNU Freefont'
         'GNU Unifont'
         'Generic Mono'
