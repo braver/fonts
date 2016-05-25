@@ -1,4 +1,7 @@
-# 1.3.0 - a7madgamal
+# 1.4.0
+* Added Fixedsys Excelsior with ligatures!
+
+# 1.3.0 - a7madgamal and opatel99
 * Added Mononoki
 
 # 1.0.0
