@@ -7,6 +7,12 @@
 # 1.3.0 - a7madgamal and opatel99
 * Added Mononoki
 
+# 1.2.0
+* Added Camingocode
+
+# 1.1.0
+* Added Iosevka
+
 # 1.0.0
 * Ligatures are here! Hasklig, FiraCode and Monoid are now included and the appropriate text-rendering styles are set automatically.
 
