@@ -1,3 +1,6 @@
+# 1.3.0 - a7madgamal
+* Added Mononoki
+
 # 1.0.0
 * Ligatures are here! Hasklig, FiraCode and Monoid are now included and the appropriate text-rendering styles are set automatically.
 

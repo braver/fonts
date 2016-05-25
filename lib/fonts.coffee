@@ -56,6 +56,7 @@ module.exports =
         'Meslo'
         'Monofur'
         'Monoid'
+        'Mononoki'
         'NotCourierSans'
         'Nova Mono'
         'Office Code Pro'
