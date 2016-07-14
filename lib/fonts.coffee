@@ -9,6 +9,7 @@ module.exports =
       type: 'string'
       default: 'Source Code Pro'
       enum: [
+        '3270'
         'Anka/Coder'
         'Anonymous Pro'
         'Aurulent Sans Mono'
