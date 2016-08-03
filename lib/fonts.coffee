@@ -28,6 +28,7 @@ module.exports =
         'Fifteen'
         'Fira Mono'
         'FiraCode'
+        'FiraCode Light'
         'Fixedsys'
         'Fixedsys Ligatures'
         'GNU Freefont'
