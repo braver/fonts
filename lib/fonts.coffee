@@ -36,6 +36,7 @@ module.exports =
         'Generic Mono'
         'Gohufont 11'
         'Gohufont 14'
+        'Go Mono'
         'Hack'
         'Hasklig'
         'Hermit Light'
