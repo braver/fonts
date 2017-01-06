@@ -1,10 +1,3 @@
-# Seeking new maintainer
-
-I'm not using Atom anymore and will not be updating this package. There are some issues relating to package activation, and some changes need to be made for upcoming deprecations in Atom. It's all not too complicated, but I simply can't find the time. 
-
-If anyone is interested in getting access to this package I'll be happy to arrange it!
-
-
 # Fonts package for Atom
 
 Oh we do love our monospace fonts don't we? To celebrate typography and free choice, I've packaged all the great fonts I could get my hands on (over 45 of them at this point).
