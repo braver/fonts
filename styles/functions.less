@@ -60,20 +60,17 @@
   //force loading all styles
   fonts-fixer,
   //set the base editor font
-  atom-text-editor,
-  atom-text-editor::shadow {
+  atom-text-editor {
     font-family: @fontFamily;
   }
   //force the mini editor in settings for ui themes that change that (i.e. Isotope)
-  .settings-view atom-text-editor.mini,
-  .settings-view atom-text-editor.mini::shadow {
+  .settings-view atom-text-editor.mini {
     font-family: @fontFamily !important;
   }
 }
 
 .no-smoothing() {
-  atom-text-editor:not(.mini),
-  atom-text-editor:not(.mini)::shadow {
+  atom-text-editor:not(.mini) {
     font-smooth: never;
     -webkit-font-smoothing : none;
   }
