@@ -1,6 +1,8 @@
 module.exports =
   activate: ->
-    # code in separate file so deferral keeps activation time down
-    atom.packages.onDidActivateInitialPackages ->
-      Runner = require './runner'
-      Runner.run()
+    Runner = require './runner'
+    Runner.run()
+
+  deactivate: ->
+    Runner = require './runner'
+    Runner.stop()
