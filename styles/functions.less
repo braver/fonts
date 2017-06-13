@@ -56,19 +56,6 @@
   }
 }
 
-.editor-font (@fontFamily) {
-  //force loading all styles
-  fonts-fixer,
-  //set the base editor font
-  atom-text-editor {
-    font-family: @fontFamily;
-  }
-  //force the mini editor in settings for ui themes that change that (i.e. Isotope)
-  .settings-view atom-text-editor.mini {
-    font-family: @fontFamily !important;
-  }
-}
-
 .no-smoothing() {
   atom-text-editor:not(.mini) {
     font-smooth: never;
@@ -80,4 +67,9 @@
   atom-text-editor {
     text-rendering: optimizeLegibility;
   }
+}
+
+fonts-fixer,
+atom-text-editor {
+  font-family: var(--font);
 }

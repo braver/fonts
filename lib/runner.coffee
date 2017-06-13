@@ -6,19 +6,24 @@ module.exports =
       atom.workspace.increaseFontSize()
       atom.workspace.decreaseFontSize()
 
-    applyFont = (font) ->
-      body.setAttribute('fonts-editor-font', font)
+    applyFont = () ->
+      font =
+        atom.config.get('fonts.fontFamily') +
+        ", " +
+        atom.config.get('fonts.secondaryFonts')
+
+      body.setAttribute('style', '--font: ' + font + ';')
       triggerMeasurements()
 
     # apply fonts when atom is ready
-    applyFont(
-      atom.config.get('fonts.fontFamily')
-    )
+    applyFont()
 
     # apply fonts when config changes
     # after config changes measurements are already triggered by atom
     @observer = atom.config.observe 'fonts.fontFamily', ->
-      applyFont(atom.config.get('fonts.fontFamily'))
+      applyFont()
+    @observer = atom.config.observe 'fonts.secondaryFonts', ->
+      applyFont()
 
     # give chromium some time to load the fonts
     # then trigger measurements

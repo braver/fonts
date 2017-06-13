@@ -113,6 +113,11 @@
         "Verily Serif Mono",
         "saxMono"
       ]
+    },
+    "secondaryFonts": {
+      "description": "Additional fonts for glyphs missing in the main font (e.g. for CJK characters).",
+      "type": "string",
+      "default": "monospace"
     }
   }
 }
