@@ -8,8 +8,9 @@ module.exports =
 
     applyFont = () ->
       font =
+        "'" +
         atom.config.get('fonts.fontFamily') +
-        ", " +
+        "', " +
         atom.config.get('fonts.secondaryFonts')
 
       body.setAttribute('style', '--font: ' + font + ';')
