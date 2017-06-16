@@ -13,7 +13,7 @@ module.exports =
         "', " +
         atom.config.get('fonts.secondaryFonts')
 
-      body.setAttribute('style', '--font: ' + font + ';')
+      body.setAttribute('style', '--fonts-package-editorfont: ' + font + ';')
       triggerMeasurements()
 
     # apply fonts when atom is ready
