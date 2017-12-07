@@ -27,6 +27,9 @@ atom-workspace {
 ## All fonts
 3270, Anka/Coder, Anonymous Pro, Aurulent Sans Mono, Average Mono, BPmono, Bitstream Vera Sans Mono, Code New Roman, Consolamono, Cousine, Cutive Mono, DejaVu Mono, Droid Sans Mono, Effects Eighty, Fantasque Sans Mono, Fifteen, Fira Mono, FiraCode, Fixedsys, Fixedsys with ligatures, GNU Freefont, GNU Unifont, Generic Mono, Hack, Hasklig, Hermit Light, Hermit, Inconsolata, Inconsolata-g, Latin Modern Mono Light, Latin Modern Mono, Lekton, Liberation Mono, Luxi Mono, M+ Light, M+ Medium, M+ Thin, M+, Meslo, Monofur, Monoid, Mononoki, NotCourierSans, Nova Mono, Office Code Pro, Oxygen Mono, PT Mono, Profont, Proggy Clean, Quinze, Roboto, Share Tech Mono, Source Code Pro Extra Light, Source Code Pro Light, Source Code Pro Medium, Source Code Pro, Sudo, TeX Gyre Cursor, Terminus, Ubuntu Mono, VT323, Verily Serif Mono, saxMono
 
+... and a couple more I forgot to list, there are too many! 
+
+
 ## More programming fonts
 
 * [These fonts (and more) and download links](http://programmingfonts.org/list)
