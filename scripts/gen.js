@@ -1,20 +1,39 @@
 const yaml = require('js-yaml');
 const fs   = require('fs');
 
+const types = {
+  'bold-italic': ['bold', 'italic'],
+  'bold': ['bold', 'normal'],
+  'italic': ['normal', 'italic'],
+  'normal': ['normal', 'normal'],
+}
+const rootPath = 'atom://fonts/resources'
+
+function fontFace(font, type, path) {
+  if (!types[type]) throw new Error(`Unknown type for ${font}: ${type}`)
+  const [weight, style] = types[type]
+  return `.font ( '${font}', ${weight}, ${style}, '${path}' );`;
+}
+
+const fontLessTemplate = `\
+.font(@font, @weight, @style, @path) {
+  @font-face {
+    font-family: @font;
+    font-weight: @weight;
+    font-style: @style;
+    src: url('${rootPath}/@{path}');
+  }
+}
+`
+
 try {
   const doc = yaml.safeLoad(fs.readFileSync('scripts/fonts.yaml', 'utf8'));
-  const types = {
-    'bold-italic': 'bold, italic',
-    'bold': 'bold, normal',
-    'italic': 'normal, italic',
-    'normal': 'normal, normal',
-  }
 
   // write styles/fonts.less
-  const fontsless = ["@import 'functions';", ""]
+  const fontsless = [fontLessTemplate]
   for (const [font, conf] of Object.entries(doc)) {
     if (typeof conf === 'string') {
-      fontsless.push(`.font ( '${font}', normal, normal, '${conf}' );`)
+      fontsless.push(fontFace(font, 'normal', conf))
     } else {
       if (Object.keys(conf).length === 1 && Object.keys(conf)[0] === 'normal') {
         console.warn(`Invalid normal-only font definition: ${font}`)
@@ -23,12 +42,7 @@ try {
         throw new Error(`No normal variant for: ${font}`)
       }
       for (const [type, path] of Object.entries(conf)) {
-        const css = types[type]
-        if (css) {
-          fontsless.push(`.font ( '${font}', ${css}, '${path}' );`)
-        } else {
-          throw new Error(`Unknown type for ${font}: ${type}`)
-        }
+        fontsless.push(fontFace(font, type, path))
       }
     }
   }
