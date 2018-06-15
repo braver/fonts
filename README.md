@@ -6,9 +6,9 @@ This package delivers them straight to Atom through the power of @font-face. You
 
 # How to use
 
-1. Install the package
-2. Go to the package's settings page
-3. Select a font from the drop-down list
+1.  Install the package
+2.  Go to the package's settings page
+3.  Select a font from the drop-down list
 
 <img src="https://raw.githubusercontent.com/braver/fonts/master/howto.jpg" height="150" width="780">
 
