@@ -39,6 +39,14 @@ try {
   const packagejson = JSON.parse(fs.readFileSync('package.json', 'utf8'))
   packagejson.configSchema.fontFamily.enum = allfonts
   fs.writeFileSync('package.json', JSON.stringify(packagejson, null, 2)+'\n', 'utf8')
+
+  // write README.md
+  const readme = fs.readFileSync('README.md', 'utf8')
+  const newreadme = readme.replace(
+    /<!-- BEGIN FONTS -->[^]*<!-- END FONTS -->/,
+    `<!-- BEGIN FONTS -->\n${allfonts.join(', ')}\n<!-- END FONTS -->`
+  )
+  fs.writeFileSync('README.md', newreadme, 'utf8')
 } catch (e) {
   console.log(e);
 }
