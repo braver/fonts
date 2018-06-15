@@ -33,6 +33,12 @@ try {
     }
   }
   fs.writeFileSync('styles/fonts.less', fontsless.join('\n')+'\n', 'utf8')
+
+  // write package.json
+  const allfonts = Object.keys(doc).sort()
+  const packagejson = JSON.parse(fs.readFileSync('package.json', 'utf8'))
+  packagejson.configSchema.fontFamily.enum = allfonts
+  fs.writeFileSync('package.json', JSON.stringify(packagejson, null, 2)+'\n', 'utf8')
 } catch (e) {
   console.log(e);
 }
