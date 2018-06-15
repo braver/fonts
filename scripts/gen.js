@@ -9,6 +9,8 @@ try {
     'italic': 'normal, italic',
     'normal': 'normal, normal',
   }
+
+  // write styles/fonts.less
   const fontsless = ["@import 'functions';", ""]
   for (const [font, conf] of Object.entries(doc)) {
     if (typeof conf === 'string') {
@@ -18,14 +20,14 @@ try {
         console.warn(`Invalid normal-only font definition: ${font}`)
       }
       if (!Object.keys(conf).includes('normal')) {
-        console.warn(`No normal variant for: ${font}`)
+        throw new Error(`No normal variant for: ${font}`)
       }
       for (const [type, path] of Object.entries(conf)) {
         const css = types[type]
         if (css) {
           fontsless.push(`.font ( '${font}', ${css}, '${path}' );`)
         } else {
-          console.warn(`Unknown type for ${font}: ${type}`)
+          throw new Error(`Unknown type for ${font}: ${type}`)
         }
       }
     }
