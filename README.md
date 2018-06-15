@@ -10,7 +10,7 @@ This package delivers them straight to Atom through the power of @font-face. You
 2.  Go to the package's settings page
 3.  Select a font from the drop-down list
 
-<img src="https://raw.githubusercontent.com/braver/fonts/master/howto.jpg" height="150" width="780">
+![Settings page screenshot](https://raw.githubusercontent.com/braver/fonts/master/howto.jpg)
 
 Disable the package to re-enable the normal font settings.
 
@@ -18,7 +18,7 @@ Disable the package to re-enable the normal font settings.
 
 Add this rule (with your favorite font-family) to your style.less file
 
-```
+```css
 atom-workspace {
     font-family: Mononoki;
 }
@@ -33,5 +33,5 @@ atom-workspace {
 
 ## More programming fonts
 
-* [These fonts (and more) and download links](http://programmingfonts.org/list)
-* Test drive these fonts in your browser using the [Programming Fonts Test Drive App](http://app.programmingfonts.org)
+-   [These fonts (and more) and download links](http://programmingfonts.org/list)
+-   Test drive these fonts in your browser using the [Programming Fonts Test Drive App](http://app.programmingfonts.org)
