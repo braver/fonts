@@ -16,6 +16,9 @@
     "typography",
     "@fontface"
   ],
+  "scripts": {
+    "build": "node scripts/gen.js"
+  },
   "configSchema": {
     "preview": {
       "type": "string",
@@ -125,5 +128,8 @@
       "type": "string",
       "default": "monospace"
     }
+  },
+  "devDependencies": {
+    "js-yaml": "^3.12.0"
   }
 }
