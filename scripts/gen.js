@@ -1,5 +1,6 @@
-const yaml = require('js-yaml');
-const fs   = require('fs');
+const yaml  = require('js-yaml')
+const fs    = require('fs')
+const npath = require('path')
 
 const types = {
   'bold-italic': ['bold', 'italic'],
@@ -28,12 +29,21 @@ const fontLessTemplate = `\
 
 try {
   const doc = yaml.safeLoad(fs.readFileSync('scripts/fonts.yaml', 'utf8'));
+  const resourceDir = npath.join(__dirname, '..', 'resources')
 
   // write styles/fonts.less
   const fontsless = [fontLessTemplate]
+
+  function addFont(font, type, path) {
+    if (!fs.existsSync(npath.join(resourceDir, path))) {
+      throw new Error(`File ${path} does not exist for ${type} variant of font ${font}`)
+    }
+    fontsless.push(fontFace(font, type, path))
+  }
+
   for (const [font, conf] of Object.entries(doc)) {
     if (typeof conf === 'string') {
-      fontsless.push(fontFace(font, 'normal', conf))
+      addFont(font, 'normal', conf)
     } else {
       if (Object.keys(conf).length === 1 && Object.keys(conf)[0] === 'normal') {
         console.warn(`Invalid normal-only font definition: ${font}`)
@@ -42,7 +52,7 @@ try {
         throw new Error(`No normal variant for: ${font}`)
       }
       for (const [type, path] of Object.entries(conf)) {
-        fontsless.push(fontFace(font, type, path))
+        addFont(font, type, path)
       }
     }
   }
