@@ -46,7 +46,7 @@ try {
       addFont(font, 'normal', conf)
     } else {
       if (Object.keys(conf).length === 1 && Object.keys(conf)[0] === 'normal') {
-        console.warn(`Invalid normal-only font definition: ${font}`)
+        console.warn(`Found long form normal-only font definition: ${font}`)
       }
       if (!Object.keys(conf).includes('normal')) {
         throw new Error(`No normal variant for: ${font}`)
