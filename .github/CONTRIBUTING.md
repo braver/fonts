@@ -53,7 +53,8 @@ Property values are YAML objects with the following properties:
 -   `italic`: string, path to the font file for italic font-face; *optional*
 -   `bold-italic`: string, path to the font file for bold-italic font-face; *optional*
 
-All paths are relative to `resources` directory.
+All paths are relative to `resources` directory. Always use forward slash `/`
+as the path separator.
 
 For the sake of brevity, a shortened form is supported, in case the font file
 only has a `normal` version. In that case, instead of specifying the full YAML
