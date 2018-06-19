@@ -28,14 +28,14 @@ const fontLessTemplate = `\
 `
 
 try {
-  const doc = yaml.safeLoad(fs.readFileSync('scripts/fonts.yaml', 'utf8'));
+  const doc = yaml.safeLoad(fs.readFileSync(npath.join('scripts', 'fonts.yaml'), 'utf8'));
   const resourceDir = npath.join(__dirname, '..', 'resources')
 
   // write styles/fonts.less
   const fontsless = [fontLessTemplate]
 
   function addFont(font, type, path) {
-    if (!fs.existsSync(npath.join(resourceDir, path))) {
+    if (!fs.existsSync(npath.join(resourceDir, ...path.split('/')))) {
       throw new Error(`File ${path} does not exist for ${type} variant of font ${font}`)
     }
     fontsless.push(fontFace(font, type, path))
@@ -56,7 +56,7 @@ try {
       }
     }
   }
-  fs.writeFileSync('styles/fonts.less', fontsless.join('\n')+'\n', 'utf8')
+  fs.writeFileSync(npath.join('styles', 'fonts.less'), fontsless.join('\n')+'\n', 'utf8')
 
   // write package.json
   const allfonts = Object.keys(doc).sort()
