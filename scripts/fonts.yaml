@@ -228,11 +228,11 @@ Overpass Mono:
    normal: 'overpass/overpass.woff'
    bold: 'overpass/overpass-bold.woff'
 Oxygen Mono: 'oxygen/oxygen.otf'
-Plex:
-   bold-italic: 'plex/plex-bold-italic.woff'
-   bold: 'plex/plex-bold.woff'
-   italic: 'plex/plex-italic.woff'
-   normal: 'plex/plex.woff'
+Plex Mono:
+   bold-italic: 'plex-mono/plex-mono-semibold-italic.woff'
+   bold: 'plex-mono/plex-mono-semibold.woff'
+   italic: 'plex-mono/plex-mono-italic.woff'
+   normal: 'plex-mono/plex-mono.woff'
 PT Mono: 'pt/pt.ttf'
 Profont: 'profont/profont.ttf'
 Proggy Clean: 'proggy-clean/proggy-clean.ttf'
