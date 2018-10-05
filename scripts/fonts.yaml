@@ -1,0 +1,309 @@
+3270: '3270/3270.woff'
+Anka/Coder:
+   bold-italic: 'anka-coder/anka-coder-bold-italic.ttf'
+   bold: 'anka-coder/anka-coder-bold.ttf'
+   italic: 'anka-coder/anka-coder-italic.ttf'
+   normal: 'anka-coder/anka-coder.ttf'
+Anonymous Pro:
+   bold-italic: 'anonymous-pro/anonymous-pro-bold-italic.ttf'
+   bold: 'anonymous-pro/anonymous-pro-bold.ttf'
+   italic: 'anonymous-pro/anonymous-pro-italic.ttf'
+   normal: 'anonymous-pro/anonymous-pro.ttf'
+Aurulent Sans Mono: 'aurulent/aurulent.otf'
+Average Mono:
+   bold-italic: 'average/average-bold-italic.otf'
+   bold: 'average/average-bold.otf'
+   italic: 'average/average-italic.otf'
+   normal: 'average/average.otf'
+BPmono:
+   bold: 'bpmono/bpmono-bold.woff'
+   italic: 'bpmono/bpmono-italic.woff'
+   normal: 'bpmono/bpmono.woff'
+Bitstream Vera Sans Mono:
+   bold-italic: 'bitstream-vera/bitstream-vera-bold-italic.woff'
+   bold: 'bitstream-vera/bitstream-vera-bold.woff'
+   italic: 'bitstream-vera/bitstream-vera-italic.woff'
+   normal: 'bitstream-vera/bitstream-vera.woff'
+CamingoCode:
+   bold-italic: 'camingocode/camingocode-bold-italic.woff'
+   bold: 'camingocode/camingocode-bold.woff'
+   italic: 'camingocode/camingocode-italic.woff'
+   normal: 'camingocode/camingocode.woff'
+Code New Roman: 'code-new-roman/code-new-roman.otf'
+Consolamono:
+   bold: 'consolamono/consolamono-bold.ttf'
+   normal: 'consolamono/consolamono.ttf'
+Courier Prime:
+   bold-italic: 'courier-prime/courier-prime-bold-italic.ttf'
+   bold: 'courier-prime/courier-prime-bold.ttf'
+   italic: 'courier-prime/courier-prime-italic.ttf'
+   normal: 'courier-prime/courier-prime.ttf'
+Courier Prime Code:
+   italic: 'courier-prime-code/courier-prime-code-italic.ttf'
+   normal: 'courier-prime-code/courier-prime-code.ttf'
+Cousine:
+   bold-italic: 'cousine/cousine-bold-italic.ttf'
+   bold: 'cousine/cousine-bold.ttf'
+   italic: 'cousine/cousine-italic.ttf'
+   normal: 'cousine/cousine.ttf'
+Cutive Mono: 'cutive/cutive.ttf'
+DejaVu Mono:
+   bold-italic: 'dejavu/dejavu-bold-italic.ttf'
+   bold: 'dejavu/dejavu-bold.ttf'
+   italic: 'dejavu/dejavu-italic.ttf'
+   normal: 'dejavu/dejavu.ttf'
+Droid Sans Mono: 'droid-sans/droid-sans.woff'
+Droid Sans Mono Dotted: 'droid-sans-dotted/droid-sans-dotted.ttf'
+Droid Sans Mono Slashed: 'droid-sans-slashed/droid-sans-slashed.ttf'
+Effects Eighty:
+   bold-italic: 'effects-eighty/effects-eighty-bold-italic.otf'
+   bold: 'effects-eighty/effects-eighty-bold.otf'
+   italic: 'effects-eighty/effects-eighty-italic.otf'
+   normal: 'effects-eighty/effects-eighty.otf'
+Fantasque Sans Mono:
+   bold-italic: 'fantasque-sans/fantasque-sans-bold-italic.woff'
+   bold: 'fantasque-sans/fantasque-sans-bold.woff'
+   italic: 'fantasque-sans/fantasque-sans-italic.woff'
+   normal: 'fantasque-sans/fantasque-sans.woff'
+Fifteen: 'fifteen/fifteen.ttf'
+Fira Mono:
+   bold: 'fira/fira-bold.otf'
+   normal: 'fira/fira.otf'
+Fixedsys: 'fixedsys/fixedsys.woff'
+Fixedsys Excelsior: 'fixedsys-excelsior/fixedsys-excelsior.ttf'
+Fixedsys Ligatures: 'fixedsys-ligatures/fixedsys-ligatures.ttf'
+FiraCode:
+   normal: 'firacode/firacode.woff'
+   bold: 'firacode/firacode-bold.woff'
+FiraCode Light:
+   normal: 'firacode/firacode-light.woff'
+   bold: 'firacode/firacode-medium.woff'
+GNU Freefont:
+   bold-italic: 'gnu-freefont/gnu-freefont-bold-italic.otf'
+   bold: 'gnu-freefont/gnu-freefont-bold.otf'
+   italic: 'gnu-freefont/gnu-freefont-italic.otf'
+   normal: 'gnu-freefont/gnu-freefont.otf'
+GNU Unifont: 'unifont/unifont.ttf'
+Go Mono:
+   bold-italic: 'go-mono/go-mono-bold-italic.ttf'
+   bold: 'go-mono/go-mono-bold.ttf'
+   italic: 'go-mono/go-mono-italic.ttf'
+   normal: 'go-mono/go-mono.ttf'
+Gohufont 11: 'gohu/koemaeda/gohufont-uni-11.ttf'
+Gohufont 14: 'gohu/koemaeda/gohufont-uni-14.ttf'
+Hack:
+   bold-italic: 'hack/hack-bold-italic.woff2'
+   bold: 'hack/hack-bold.woff2'
+   italic: 'hack/hack-italic.woff2'
+   normal: 'hack/hack.woff2'
+Hasklig:
+   bold: 'hasklig/hasklig-bold.otf'
+   bold-italic: 'hasklig/hasklig-bold-italic.otf'
+   normal: 'hasklig/hasklig.otf'
+   italic: 'hasklig/hasklig-italic.otf'
+Hasklig Light:
+   bold: 'hasklig/hasklig-semibold.otf'
+   bold-italic: 'hasklig/hasklig-semibold-italic.otf'
+   normal: 'hasklig/hasklig-light.otf'
+   italic: 'hasklig/hasklig-light-italic.otf'
+Hasklig Medium:
+   bold: 'hasklig/hasklig-bold.otf'
+   bold-italic: 'hasklig/hasklig-bold-italic.otf'
+   normal: 'hasklig/hasklig-medium.otf'
+   italic: 'hasklig/hasklig-medium-italic.otf'
+Generic Mono: 'generic/generic.otf'
+Hermit:
+   bold: 'hermit/hermit-bold.otf'
+   normal: 'hermit/hermit.otf'
+Hermit Light:
+   bold: 'hermit/hermit-bold.otf'
+   normal: 'hermit/hermit-light.otf'
+Iosevka:
+   normal: 'iosevka/iosevka-regular.ttf'
+   italic: 'iosevka/iosevka-italic.ttf'
+   bold: 'iosevka/iosevka-bold.ttf'
+   bold-italic: 'iosevka/iosevka-bold-italic.ttf'
+Iosevka Thin:
+   normal: 'iosevka/iosevka-thin.ttf'
+   italic: 'iosevka/iosevka-thin-italic.ttf'
+   bold: 'iosevka/iosevka-bold.ttf'
+   bold-italic: 'iosevka/iosevka-bold-italic.ttf'
+Iosevka Light:
+   normal: 'iosevka/iosevka-light.ttf'
+   italic: 'iosevka/iosevka-light-italic.ttf'
+   bold: 'iosevka/iosevka-bold.ttf'
+   bold-italic: 'iosevka/iosevka-bold-italic.ttf'
+Iosevka Extra Light:
+   normal: 'iosevka/iosevka-extralight.ttf'
+   italic: 'iosevka/iosevka-extralight-italic.ttf'
+   bold: 'iosevka/iosevka-bold.ttf'
+   bold-italic: 'iosevka/iosevka-bold-italic.ttf'
+Iosevka Medium:
+   normal: 'iosevka/iosevka-medium.ttf'
+   italic: 'iosevka/iosevka-medium-italic.ttf'
+   bold: 'iosevka/iosevka-bold.ttf'
+   bold-italic: 'iosevka/iosevka-bold-italic.ttf'
+Inconsolata: 'inconsolata/inconsolata.otf'
+Inconsolata-g: 'inconsolata-g/inconsolata-g.otf'
+Latin Modern Mono:
+   italic: 'latin-modern/latin-modern-italic.otf'
+   normal: 'latin-modern/latin-modern.otf'
+Latin Modern Mono Light:
+   bold-italic: 'latin-modern-light/latin-modern-light-bold-italic.otf'
+   bold: 'latin-modern-light/latin-modern-light-bold.otf'
+   italic: 'latin-modern-light/latin-modern-light-italic.otf'
+   normal: 'latin-modern-light/latin-modern-light.otf'
+League:
+   bold: 'league/league-bold.woff'
+   normal: 'league/league.woff'
+Lekton:
+   bold: 'lekton/lekton-bold.ttf'
+   italic: 'lekton/lekton-italic.ttf'
+   normal: 'lekton/lekton.ttf'
+Liberation Mono:
+   bold-italic: 'liberation/liberation-bold-italic.woff'
+   bold: 'liberation/liberation-bold.woff'
+   italic: 'liberation/liberation-italic.woff'
+   normal: 'liberation/liberation.woff'
+Luculent:
+   bold-italic: 'luculent/luculent-bold-italic.woff'
+   bold: 'luculent/luculent-bold.woff'
+   italic: 'luculent/luculent-italic.woff'
+   normal: 'luculent/luculent.woff'
+Luxi Mono:
+   bold-italic: 'luxi/luxi-bold-italic.woff'
+   bold: 'luxi/luxi-bold.woff'
+   italic: 'luxi/luxi-italic.woff'
+   normal: 'luxi/luxi.woff'
+M+:
+   bold: 'mplus/mplus-bold.woff'
+   normal: 'mplus/mplus.woff'
+M+ Light:
+   bold: 'mplus/mplus-bold.woff'
+   normal: 'mplus/mplus-light.woff'
+M+ Medium:
+   bold: 'mplus/mplus-bold.woff'
+   normal: 'mplus/mplus-medium.woff'
+M+ Thin:
+   bold: 'mplus/mplus-bold.woff'
+   normal: 'mplus/mplus-thin.woff'
+Meslo:
+   bold-italic: 'meslo/meslo-bold-italic.ttf'
+   bold: 'meslo/meslo-bold.ttf'
+   italic: 'meslo/meslo-italic.ttf'
+   normal: 'meslo/meslo.ttf'
+Monofur:
+   italic: 'monofur/monofur-italic.ttf'
+   normal: 'monofur/monofur.ttf'
+Monoid:
+   bold: 'monoid/monoid-bold.ttf'
+   italic: 'monoid/monoid-italic.ttf'
+   normal: 'monoid/monoid.ttf'
+Mononoki:
+   bold: 'mononoki/mononoki-bold.woff'
+   bold-italic: 'mononoki/mononoki-bold-italic.woff'
+   italic: 'mononoki/mononoki-italic.woff'
+   normal: 'mononoki/mononoki.woff'
+NotCourierSans:
+   bold: 'notcouriersans/notcouriersans-bold.woff'
+   normal: 'notcouriersans/notcouriersans.woff'
+Noto: 'noto/noto.ttf'
+Nova Mono: 'nova/nova.ttf'
+Office Code Pro:
+   bold-italic: 'office-code-pro/office-code-pro-bold-italic.woff'
+   bold: 'office-code-pro/office-code-pro-bold.woff'
+   italic: 'office-code-pro/office-code-pro-italic.woff'
+   normal: 'office-code-pro/office-code-pro.woff'
+Office Code Pro Light:
+   bold-italic: 'office-code-pro/office-code-pro-medium-italic.woff'
+   bold: 'office-code-pro/office-code-pro-medium.woff'
+   italic: 'office-code-pro/office-code-pro-light-italic.woff'
+   normal: 'office-code-pro/office-code-pro-light.woff'
+Office Code Pro Medium:
+   bold-italic: 'office-code-pro/office-code-pro-bold-italic.woff'
+   bold: 'office-code-pro/office-code-pro-bold.woff'
+   italic: 'office-code-pro/office-code-pro-medium-italic.woff'
+   normal: 'office-code-pro/office-code-pro-medium.woff'
+Overpass Mono:
+   normal: 'overpass/overpass.woff'
+   bold: 'overpass/overpass-bold.woff'
+Oxygen Mono: 'oxygen/oxygen.otf'
+Plex Mono:
+   bold-italic: 'plex-mono/plex-mono-semibold-italic.woff'
+   bold: 'plex-mono/plex-mono-semibold.woff'
+   italic: 'plex-mono/plex-mono-italic.woff'
+   normal: 'plex-mono/plex-mono.woff'
+PT Mono: 'pt/pt.ttf'
+Profont: 'profont/profont.ttf'
+Proggy Clean: 'proggy-clean/proggy-clean.ttf'
+Quinze: 'quinze/quinze.ttf'
+Roboto Mono:
+   bold-italic: 'roboto/roboto-bold-italic.ttf'
+   bold: 'roboto/roboto-bold.ttf'
+   italic: 'roboto/roboto-italic.ttf'
+   normal: 'roboto/roboto.ttf'
+Roboto Mono Light:
+   bold-italic: 'roboto/roboto-bold-italic.ttf'
+   bold: 'roboto/roboto-bold.ttf'
+   italic: 'roboto/roboto-light-italic.ttf'
+   normal: 'roboto/roboto-light.ttf'
+Roboto Mono Thin:
+   bold-italic: 'roboto/roboto-medium-italic.ttf'
+   bold: 'roboto/roboto-medium.ttf'
+   italic: 'roboto/roboto-thin-italic.ttf'
+   normal: 'roboto/roboto-thin.ttf'
+Roboto Mono Medium:
+   bold-italic: 'roboto/roboto-bold-italic.ttf'
+   bold: 'roboto/roboto-bold.ttf'
+   italic: 'roboto/roboto-medium-italic.ttf'
+   normal: 'roboto/roboto-medium.ttf'
+Share Tech Mono: 'share-tech/share-tech.ttf'
+SK Modernist: 'sk-modernist/sk-modernist.woff'
+Source Code Pro:
+   bold: 'source-code-pro/source-code-pro-bold.otf'
+   normal: 'source-code-pro/source-code-pro.otf'
+   bold-italic: 'source-code-pro/source-code-pro-bold-italic.otf'
+   italic: 'source-code-pro/source-code-pro-italic.otf'
+Source Code Pro Extra Light:
+   bold: 'source-code-pro/source-code-pro-bold.otf'
+   normal: 'source-code-pro/source-code-pro-extralight.otf'
+   bold-italic: 'source-code-pro/source-code-pro-bold-italic.otf'
+   italic: 'source-code-pro/source-code-pro-extralight-italic.otf'
+Source Code Pro Light:
+   bold: 'source-code-pro/source-code-pro-bold.otf'
+   normal: 'source-code-pro/source-code-pro-light.otf'
+   bold-italic: 'source-code-pro/source-code-pro-bold-italic.otf'
+   italic: 'source-code-pro/source-code-pro-light-italic.otf'
+Source Code Pro Medium:
+   bold: 'source-code-pro/source-code-pro-bold.otf'
+   normal: 'source-code-pro/source-code-pro-medium.otf'
+   bold-italic: 'source-code-pro/source-code-pro-bold-italic.otf'
+   italic: 'source-code-pro/source-code-pro-medium-italic.otf'
+Sudo:
+   bold-italic: 'sudo/sudo-bold-italic.ttf'
+   bold: 'sudo/sudo-bold.ttf'
+   italic: 'sudo/sudo-italic.ttf'
+   normal: 'sudo/sudo.ttf'
+Space Mono:
+   bold-italic: 'space/space-bold-italic.ttf'
+   bold: 'space/space-bold.ttf'
+   italic: 'space/space-italic.ttf'
+   normal: 'space/space.ttf'
+TeX Gyre Cursor:
+   bold-italic: 'tex-gyre-cursor/tex-gyre-cursor-bold-italic.woff'
+   bold: 'tex-gyre-cursor/tex-gyre-cursor-bold.woff'
+   italic: 'tex-gyre-cursor/tex-gyre-cursor-italic.woff'
+   normal: 'tex-gyre-cursor/tex-gyre-cursor.woff'
+Terminus:
+   bold-italic: 'terminus/terminus-bold-italic.ttf'
+   bold: 'terminus/terminus-bold.ttf'
+   italic: 'terminus/terminus-italic.ttf'
+   normal: 'terminus/terminus.ttf'
+Ubuntu Mono:
+   bold-italic: 'ubuntu/ubuntu-bold-italic.ttf'
+   bold: 'ubuntu/ubuntu-bold.ttf'
+   italic: 'ubuntu/ubuntu-italic.ttf'
+   normal: 'ubuntu/ubuntu.ttf'
+VT323: 'vt323/vt323.ttf'
+Verily Serif Mono: 'verily/verily.otf'
+saxMono: 'sax/sax.woff'

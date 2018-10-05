@@ -1,4 +1,11 @@
-@import 'functions';
+.font(@font, @weight, @style, @path) {
+  @font-face {
+    font-family: @font;
+    font-weight: @weight;
+    font-style: @style;
+    src: url('atom://fonts/resources/@{path}');
+  }
+}
 
 .font ( '3270', normal, normal, '3270/3270.woff' );
 .font ( 'Anka/Coder', bold, italic, 'anka-coder/anka-coder-bold-italic.ttf' );
