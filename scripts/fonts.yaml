@@ -24,6 +24,7 @@ Bitstream Vera Sans Mono:
    bold: 'bitstream-vera/bitstream-vera-bold.woff'
    italic: 'bitstream-vera/bitstream-vera-italic.woff'
    normal: 'bitstream-vera/bitstream-vera.woff'
+Borg Sans Mono: 'borg-sans-mono/borg-sans-mono.ttf'
 CamingoCode:
    bold-italic: 'camingocode/camingocode-bold-italic.woff'
    bold: 'camingocode/camingocode-bold.woff'
