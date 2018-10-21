@@ -1,3 +1,33 @@
+## 3.2.0
+
+### New fonts
+
+-   Borg Sans Mono (Marnen Laibow-Koser)
+
+### Updated fonts
+
+-   FiraCode updated from 1.205 to 1.206
+
+### Fixes
+
+Fixed CSS styles for the following fonts:
+
+-   Plex Mono
+-   Average Mono bold-italic
+
+### General maintenance
+
+-   Added FiraCode license
+-   Added contribution guide and PR template
+-   Cleaned-up styles
+-   Sorted fonts list in config schema
+
+### README updates
+
+-   We have over 70 fonts now! (Marnen Laibow-Koser)
+-   List all fonts (generated)
+-   Fix formatting
+
 ## 3.1.0
 
 -   Use atom.styles to set CSS style
