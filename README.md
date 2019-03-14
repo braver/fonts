@@ -33,5 +33,4 @@ atom-workspace {
 
 ## More programming fonts
 
--   [These fonts (and more) and download links](http://programmingfonts.org/list)
--   Test drive these fonts in your browser using the [Programming Fonts Test Drive App](http://app.programmingfonts.org)
+-   Test drive these (and more) fonts in your browser using the [Programming Fonts Test Drive App](http://app.programmingfonts.org)
