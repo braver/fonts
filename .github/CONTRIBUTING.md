@@ -64,6 +64,36 @@ object, a string of form `<dir_name>/<font_name>.<extension>` can be used, which
 normal: '<font_name>/<font_name>.<extension>'
 ```
 
+### YAML description generator
+
+If you follow the naming convention, you can use `scripts/fontDesc.py` Python
+script to generate YAML description automatically. The script accepts a list of
+font directories in `resources/` as command line arguments. For instance,
+running
+
+```bash
+scripts/fontDesc.py resources/3270 resources/anka-coder
+```
+
+will produce
+
+```yaml
+IBM 3270: '3270/3270.woff'
+Anka/Coder:
+  bold: 'anka-coder/anka-coder-bold.ttf'
+  italic: 'anka-coder/anka-coder-italic.ttf'
+  normal: 'anka-coder/anka-coder.ttf'
+  bold-italic: 'anka-coder/anka-coder-bold-italic.ttf'
+```
+
+on the standard output.
+
+You need Python 3 and fonttools library to run the script, plus brotlipy
+library if you plan to use it with WOFF2 fonts.
+
+Using the script is by no means mandatory or even recommended, but it can be a
+bit of a time saver when adding multiple fonts.
+
 ### Example
 
 Office Code Pro has four weights (Regular, Light, Bold and Medium), and each of
@@ -103,6 +133,8 @@ Office Code Pro:
    italic: 'office-code-pro/office-code-pro-italic.woff'
    normal: 'office-code-pro/office-code-pro.woff'
 ```
+
+This one can also be produced by running `scripts/fontDesc.py resources/office-code-pro` (which will also list all other font files as comments)
 
 For the Light version,
 
