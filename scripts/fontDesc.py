@@ -65,12 +65,16 @@ for fontpath in sys.argv[1:]:
                 fam = fam.intersection(fams)
             else:
                 fam = fams
-    if len(fam) == 0 or len(fam) > 1:
+    if (len(fam) == 0 or len(fam) > 1) and (len(allfams) > 0):
         print("# no consistent font family name for '{}'; possible options: '{}'".format(fontdir, ', '.join(sorted(allfams))))
-    if len(fam) == 0:
+
+    if len(fam) > 0:
+        famname, *famnames = sorted(fam)
+    elif len(allfams) > 0:
+        famname, *famnames = sorted(allfams)
+    else:
         print("# skipping '{}' since can't choose family name".format(fontdir))
         continue
-    famname, *famnames = sorted(fam)
     if len(types) == 1 and 'normal' in types:
         print("{}: '{}'".format(famname, types['normal'][0]))
         for famn in famnames:
