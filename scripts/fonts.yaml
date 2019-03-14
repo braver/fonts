@@ -308,3 +308,5 @@ Ubuntu Mono:
 VT323: 'vt323/vt323.ttf'
 Verily Serif Mono: 'verily/verily.otf'
 saxMono: 'sax/sax.woff'
+# https://www.opendyslexic.org/
+Open Dyslexic Mono: 'open-dyslexic-mono/open-dyslexic-mono.otf'
