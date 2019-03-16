@@ -1,3 +1,34 @@
+## 3.3.0
+
+### New fonts
+
+With many thanks to [vekuda](https://github.com/vekuda)
+
+-   agave
+-   APL2741
+-   APL385 Unicode
+-   B612 Mono
+-   Bedstead
+-   Bedstead Condensed
+-   Bedstead Extended
+-   Bedstead Extra Condensed
+-   Bedstead Ultra Condensed
+-   DaddyTimeMono
+-   DejaVu Sans Mono - Bront
+-   iA Writer Mono S
+-   OpenDyslexicMono
+-   Press Start 2P
+-   Ubuntu Mono - Bront
+
+### Updated fonts
+
+-   BPMono
+
+### General maintenance
+
+-   Added yaml font description generator
+-   Removed broken link from README
+
 ## 3.2.0
 
 ### New fonts
