@@ -41,7 +41,14 @@ try {
     fontsless.push(fontFace(font, type, path))
   }
 
-  for (const [font, conf] of Object.entries(doc)) {
+  function cmp(a,b) {
+    return a[0].localeCompare(b[0], 'en', {
+      sensitivity: 'base',
+      ignorePunctuation: true,
+    })
+  }
+
+  for (const [font, conf] of Object.entries(doc).sort(cmp)) {
     if (typeof conf === 'string') {
       addFont(font, 'normal', conf)
     } else {
@@ -51,7 +58,7 @@ try {
       if (!Object.keys(conf).includes('normal')) {
         throw new Error(`No normal variant for: ${font}`)
       }
-      for (const [type, path] of Object.entries(conf)) {
+      for (const [type, path] of Object.entries(conf).sort(cmp)) {
         addFont(font, type, path)
       }
     }
