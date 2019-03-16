@@ -29,7 +29,7 @@ def families( fontPath ):
     return families
 
 exts=['ttf', 'otf', 'woff', 'woff2']
-suffixes=['', '-bold', '-italic', '-bold-italic']
+suffixes=['', '-regular', '-bold', '-italic', '-bold-italic']
 
 for fontpath in sys.argv[1:]:
     if fontpath.endswith('/'):
@@ -41,49 +41,51 @@ for fontpath in sys.argv[1:]:
         if any(file.endswith('.'+ext) for ext in exts):
             fn = '{}/{}'.format(fontdir, file)
             fp = '{}/{}'.format(fontpath, file)
-            rx = '^{}({})\\.(?:{})$'.format(
-                re.escape(fontdir),
+            rx = '^(.*?)({})\\.(?:{})$'.format(
                 '|'.join(suffixes),
                 '|'.join(exts)
                 )
             m = re.match(rx, file)
             if m:
-                if m[1] == '':
+                if m[2] == '' or m[2] == '-regular':
                     type = 'normal'
                 else:
-                    type = m[1][1:]
-                types[type] = (fn, fp)
+                    type = m[2][1:]
+                fontpfx = m[1]
+                types.setdefault(fontpfx, {})[type] = (fn, fp)
             else:
                 unknowns.append(fn)
-    fam = set()
-    allfams = set()
-    for (fn, file) in types.values():
-        if any(file.endswith('.'+ext) for ext in exts):
+    for (fontpfx, ftypes) in sorted(types.items()):
+        fam = set()
+        allfams = set()
+        for (fn, file) in ftypes.values():
             fams = families(file)
             allfams = allfams.union(fams)
             if len(fam) > 0:
                 fam = fam.intersection(fams)
             else:
                 fam = fams
-    if (len(fam) == 0 or len(fam) > 1) and (len(allfams) > 0):
-        print("# no consistent font family name for '{}'; possible options: '{}'".format(fontdir, ', '.join(sorted(allfams))))
+        if (len(fam) == 0 or len(fam) > 1) and (len(allfams) > 0):
+            print("# no consistent font family name for '{}'; possible options: '{}'".format(fontdir, ', '.join(sorted(allfams))))
 
-    if len(fam) > 0:
-        famname, *famnames = sorted(fam)
-    elif len(allfams) > 0:
-        famname, *famnames = sorted(allfams)
-    else:
-        print("# skipping '{}' since can't choose family name".format(fontdir))
-        continue
-    if len(types) == 1 and 'normal' in types:
-        print("{}: '{}'".format(famname, types['normal'][0]))
-        for famn in famnames:
-            print("#{}: '{}'".format(famn, types['normal'][0]))
-    else:
-        print('{}:'.format(famname))
-        for famn in famnames:
-            print('#{}:'.format(famn))
-        for (type, (fn, fp)) in sorted(types.items()):
-            print("   {}: '{}'".format(type, fn))
-    for fn in sorted(unknowns):
-        print("#   unknown font variant: '{}'".format(fn))
+        if len(fam) > 0:
+            famname, *famnames = sorted(fam)
+        elif len(allfams) > 0:
+            famname, *famnames = sorted(allfams)
+        else:
+            print("# can't choose any family name for '{}'".format(fontdir))
+            famname = '??'
+            famnames = []
+            continue
+        if len(ftypes) == 1 and 'normal' in ftypes:
+            print("{}: '{}'".format(famname, ftypes['normal'][0]))
+            for famn in famnames:
+                print("#{}: '{}'".format(famn, ftypes['normal'][0]))
+        else:
+            print('{}:'.format(famname))
+            for famn in famnames:
+                print('#{}:'.format(famn))
+            for (type, (fn, fp)) in sorted(ftypes.items()):
+                print("   {}: '{}'".format(type, fn))
+        for fn in sorted(unknowns):
+            print("#   unknown font variant: '{}'".format(fn))
