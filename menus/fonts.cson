@@ -1,0 +1,10 @@
+menu: [
+  label: "Packages"
+  submenu: [
+      label: "Fonts"
+      submenu: [
+        label: "Open Font Selector"
+        command: "fonts:open-font-selector"
+      ]
+    ]
+]
