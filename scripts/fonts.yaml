@@ -261,25 +261,25 @@ Roboto Mono Medium:
 Share Tech Mono: 'share-tech/share-tech.ttf'
 SK Modernist: 'sk-modernist/sk-modernist.woff'
 Source Code Pro:
-   bold: 'source-code-pro/source-code-pro-bold.otf'
    normal: 'source-code-pro/source-code-pro.otf'
-   bold-italic: 'source-code-pro/source-code-pro-bold-italic.otf'
    italic: 'source-code-pro/source-code-pro-italic.otf'
+   bold: 'source-code-pro/source-code-pro-bold.otf'
+   bold-italic: 'source-code-pro/source-code-pro-bold-italic.otf'
 Source Code Pro Extra Light:
-   bold: 'source-code-pro/source-code-pro-bold.otf'
    normal: 'source-code-pro/source-code-pro-extralight.otf'
-   bold-italic: 'source-code-pro/source-code-pro-bold-italic.otf'
    italic: 'source-code-pro/source-code-pro-extralight-italic.otf'
+   bold: 'source-code-pro/source-code-pro-medium.otf'
+   bold-italic: 'source-code-pro/source-code-pro-medium-italic.otf'
 Source Code Pro Light:
-   bold: 'source-code-pro/source-code-pro-bold.otf'
    normal: 'source-code-pro/source-code-pro-light.otf'
-   bold-italic: 'source-code-pro/source-code-pro-bold-italic.otf'
    italic: 'source-code-pro/source-code-pro-light-italic.otf'
+   bold: 'source-code-pro/source-code-pro-semibold.otf'
+   bold-italic: 'source-code-pro/source-code-pro-semibold-italic.otf'
 Source Code Pro Medium:
-   bold: 'source-code-pro/source-code-pro-bold.otf'
    normal: 'source-code-pro/source-code-pro-medium.otf'
-   bold-italic: 'source-code-pro/source-code-pro-bold-italic.otf'
    italic: 'source-code-pro/source-code-pro-medium-italic.otf'
+   bold: 'source-code-pro/source-code-pro-black.otf'
+   bold-italic: 'source-code-pro/source-code-pro-black-italic.otf'
 Sudo:
    bold-italic: 'sudo/sudo-bold-italic.ttf'
    bold: 'sudo/sudo-bold.ttf'
