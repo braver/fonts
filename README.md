@@ -1,6 +1,7 @@
 # Fonts package for Atom
 
-Oh we do love our monospace fonts don't we? To celebrate typography and free choice, I've packaged all the great fonts I could get my hands on (over 70 of them at this point).
+Oh we do love our monospace fonts don't we? To celebrate typography and free choice, I've packaged all the great fonts I could get my hands on
+(<!-- BEGIN NUM_FONTS -->108<!-- END NUM_FONTS --> of them at this point).
 
 This package delivers them straight to Atom through the power of @font-face. You no longer need to hunt down and install your favourite font, instead you can now instantly try out any of the fonts in this package.
 

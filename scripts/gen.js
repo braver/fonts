@@ -76,6 +76,9 @@ try {
   const newreadme = readme.replace(
     /<!-- BEGIN FONTS -->[^]*<!-- END FONTS -->/,
     `<!-- BEGIN FONTS -->\n${allfonts.join(', ')}\n<!-- END FONTS -->`
+  ).replace(
+    /<!-- BEGIN NUM_FONTS -->[0-9]+<!-- END NUM_FONTS -->/,
+    `<!-- BEGIN NUM_FONTS -->${allfonts.length}<!-- END NUM_FONTS -->`,
   )
   fs.writeFileSync('README.md', newreadme, 'utf8')
 } catch (e) {
