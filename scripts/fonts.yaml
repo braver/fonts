@@ -92,6 +92,7 @@ Go Mono:
    normal: 'go-mono/go-mono.ttf'
 Gohufont 11: 'gohu/koemaeda/gohufont-uni-11.ttf'
 Gohufont 14: 'gohu/koemaeda/gohufont-uni-14.ttf'
+Great Vibes: 'great-vibes/greatvibes.otf'
 Hack:
    bold-italic: 'hack/hack-bold-italic.woff2'
    bold: 'hack/hack-bold.woff2'
@@ -146,6 +147,11 @@ Iosevka Medium:
    bold-italic: 'iosevka/iosevka-bold-italic.ttf'
 Inconsolata: 'inconsolata/inconsolata.otf'
 Inconsolata-g: 'inconsolata-g/inconsolata-g.otf'
+Josefin Sans:
+   bold-italic: 'josefin-sans/josefinsans-bold-italic.ttf'
+   bold: 'josefin-sans/josefinsans-bold.ttf'
+   italic: 'josefin-sans/josefinsans-italic.ttf'
+   normal: 'josefin-sans/josefinsans.ttf'
 Latin Modern Mono:
    italic: 'latin-modern/latin-modern-italic.otf'
    normal: 'latin-modern/latin-modern.otf'
@@ -166,6 +172,7 @@ Liberation Mono:
    bold: 'liberation/liberation-bold.woff'
    italic: 'liberation/liberation-italic.woff'
    normal: 'liberation/liberation.woff'
+Lobster: 'lobster/lobster.ttf'
 Luculent:
    bold-italic: 'luculent/luculent-bold-italic.woff'
    bold: 'luculent/luculent-bold.woff'
@@ -243,6 +250,27 @@ Roboto Mono:
    bold: 'roboto/roboto-bold.ttf'
    italic: 'roboto/roboto-italic.ttf'
    normal: 'roboto/roboto.ttf'
+Rakkas: 'rakkas/rakkas.ttf'
+Raleway:
+   bold-italic: 'raleway/raleway-bold-italic.ttf'
+   bold: 'raleway/raleway-bold.ttf'
+   italic: 'raleway/raleway-italic.ttf'
+   normal: 'raleway/raleway.ttf'
+Raleway Black:
+   italic: 'raleway/raleway-black-italic.ttf'
+   normal: 'raleway/raleway-black.ttf'
+Raleway Extra Bold:
+     italic: 'raleway/raleway-extra-bold-italic.ttf'
+     normal: 'raleway/raleway-extra-bold.ttf'
+Raleway Extra Thin:
+   italic: 'raleway/raleway-extra-thin-italic.ttf'
+   normal: 'raleway/raleway-extra-thin.ttf'
+ Raleway Light:
+    italic: 'raleway/raleway-light-italic.ttf'
+    normal: 'raleway/raleway-light.ttf'
+ Raleway Thin:
+    italic: 'raleway/raleway-thin-italic.ttf'
+    normal: 'raleway/raleway-thin.ttf'
 Roboto Mono Light:
    bold-italic: 'roboto/roboto-bold-italic.ttf'
    bold: 'roboto/roboto-bold.ttf'
@@ -280,6 +308,9 @@ Source Code Pro Medium:
    italic: 'source-code-pro/source-code-pro-medium-italic.otf'
    bold: 'source-code-pro/source-code-pro-black.otf'
    bold-italic: 'source-code-pro/source-code-pro-black-italic.otf'
+Srisakdi:
+  bold: 'srisakdi/srisakdi-bold.ttf'
+  normal: 'srisakdi/srisakdi-regular.ttf'
 Sudo:
    bold-italic: 'sudo/sudo-bold-italic.ttf'
    bold: 'sudo/sudo-bold.ttf'
