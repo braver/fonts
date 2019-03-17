@@ -16,6 +16,17 @@ function fontFace(font, type, path) {
   return `.font ( '${font}', ${weight}, ${style}, '${path}' );`;
 }
 
+function cmp1(a, b) {
+  return a.localeCompare(b, 'en', {
+    sensitivity: 'base',
+    ignorePunctuation: true,
+  })
+}
+
+function cmp(a, b) {
+  return cmp1(a[0], b[0])
+}
+
 const fontLessTemplate = `\
 .font(@font, @weight, @style, @path) {
   @font-face {
@@ -41,13 +52,6 @@ try {
     fontsless.push(fontFace(font, type, path))
   }
 
-  function cmp(a,b) {
-    return a[0].localeCompare(b[0], 'en', {
-      sensitivity: 'base',
-      ignorePunctuation: true,
-    })
-  }
-
   for (const [font, conf] of Object.entries(doc).sort(cmp)) {
     if (typeof conf === 'string') {
       addFont(font, 'normal', conf)
@@ -66,7 +70,7 @@ try {
   fs.writeFileSync(npath.join('styles', 'fonts.less'), fontsless.join('\n')+'\n', 'utf8')
 
   // write package.json
-  const allfonts = Object.keys(doc).sort()
+  const allfonts = Object.keys(doc).sort(cmp1)
   const packagejson = JSON.parse(fs.readFileSync('package.json', 'utf8'))
   packagejson.configSchema.fontFamily.enum = allfonts
   fs.writeFileSync('package.json', JSON.stringify(packagejson, null, 2)+'\n', 'utf8')
