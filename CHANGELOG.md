@@ -1,3 +1,53 @@
+## 3.4.0
+
+### New fonts
+
+With many thanks to [vekuda](https://github.com/vekuda)
+
+-   CatV 6x12 9
+-   CMU Typewriter Text
+-   Corbi Mono S
+-   Fairfax HD
+-   Kawkab Mono
+-   Kawkab Mono Light
+-   Libertinus Mono
+-   Meyrin
+-   Monodeco
+-   Monodeco Light
+
+### Updated fonts
+
+-   Updated IBM 3270 font to v2.0.0 (also, name it correctly)
+
+    **Notice:** '3270' font face has been renamed to 'IBM 3270'. If you used
+    '3270' then your config should be updated automatically. If it isn't,
+    however, just open font selector (or fonts package config) and select
+    'IBM 3270' font-face.
+
+-   Fixed Source Code Pro bold weights in Light and Medium variants
+
+### New features
+
+-   Interactive font selector. Now you don't have to go into package settings
+    to try out new fonts. Access through "Packages" → "Fonts" → "Open Font
+    Selector" menu option, or by running `fonts:open-font-selector` command (
+    e.g. from command palette)
+
+### Other changes
+
+-   Convert all fonts to woff2
+
+    This dramatically reduces resources size at the cost of a slightly more
+    processing overhead when loading fonts. Keeping your data limit safe.
+
+### Maintenance
+
+-   Case-insensitive sort for fonts in settings, readme and fonts.less
+-   Put precise number of fonts in readme
+-   Added specs (checks if all fonts can be loaded, are rendered correctly, and
+    are used in TextEditor)
+-   Fix OpenDyslexic license
+
 ## 3.3.0
 
 ### New fonts
