@@ -331,3 +331,25 @@ iA Writer Mono S:
    bold-italic: 'ia-writer-mono/ia-writer-mono-static-bold-italic.ttf'
    italic: 'ia-writer-mono/ia-writer-mono-static-italic.ttf'
    normal: 'ia-writer-mono/ia-writer-mono-static-regular.ttf'
+CatV 6x12 9: 'catv-6x12-9/catv-6x12-9.ttf'
+CMU Typewriter Text:
+   bold: 'cmu-typewriter/cmu-typewriter-text-bold.ttf'
+   bold-italic: 'cmu-typewriter/cmu-typewriter-text-bold-italic.ttf'
+   italic: 'cmu-typewriter/cmu-typewriter-text-italic.ttf'
+   normal: 'cmu-typewriter/cmu-typewriter-text-regular.ttf'
+Corbi Mono S: 'corbi-mono-s/corbi-mono-s-regular.otf'
+Fairfax HD: 'fairfax-hd/fairfax-hd.ttf'
+Kawkab Mono:
+   bold: 'kawkab-mono/kawkab-mono-bold.otf'
+   normal: 'kawkab-mono/kawkab-mono-regular.otf'
+Kawkab Mono Light:
+   normal: 'kawkab-mono/kawkab-mono-light.otf'
+   bold: 'kawkab-mono/kawkab-mono-regular.otf'
+Libertinus Mono: 'libertinus-mono/libertinus-mono-regular.otf'
+Meyrin: 'meyrin/meyrin.ttf'
+Monodeco:
+   bold: 'monodeco/monodeco-bold.ttf'
+   normal: 'monodeco/monodeco.ttf'
+Monodeco Light:
+   normal: 'monodeco/monodeco-light.ttf'
+   bold: 'monodeco/monodeco.ttf'
