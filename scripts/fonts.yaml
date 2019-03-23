@@ -1,4 +1,6 @@
-3270: '3270/3270.woff2'
+IBM 3270: '3270/3270Medium.woff2'
+IBM 3270 Narrow: '3270/3270Narrow.woff2'
+IBM 3270 Semi-Narrow: '3270/3270SemiNarrow.woff2'
 Anka/Coder:
    bold-italic: 'anka-coder/anka-coder-bold-italic.woff2'
    bold: 'anka-coder/anka-coder-bold.woff2'

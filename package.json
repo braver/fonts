@@ -29,7 +29,6 @@
       "type": "string",
       "default": "Source Code Pro",
       "enum": [
-        "3270",
         "agave",
         "Anka/Coder",
         "Anonymous Pro",
@@ -85,6 +84,9 @@
         "Hermit",
         "Hermit Light",
         "iA Writer Mono S",
+        "IBM 3270",
+        "IBM 3270 Narrow",
+        "IBM 3270 Semi-Narrow",
         "Inconsolata",
         "Inconsolata-g",
         "Iosevka",
