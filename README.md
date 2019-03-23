@@ -11,7 +11,13 @@ This package delivers them straight to Atom through the power of @font-face. You
 2.  Go to the package's settings page
 3.  Select a font from the drop-down list
 
-![Settings page screenshot](https://raw.githubusercontent.com/braver/fonts/master/howto.jpg)
+![Settings page screenshot](images/howto.jpg)
+
+Alternatively, open the interactive font selector by choosing "Packages" → "Fonts" → "Open Font Selector" menu option, or running `fonts:open-font-selector` command (e.g. from command palette)
+
+![Command palette command screenshot](images/6d3e3ceb369aca4d14db8250ace95c1a.png)
+
+![Font selector window screenshot](images/e105294f54356a95c4c72d2b2ba703e7.png)
 
 Disable the package to re-enable the normal font settings.
 
