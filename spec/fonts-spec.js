@@ -53,11 +53,12 @@ async function compareFonts(fontName, fontPath, fontStyle) {
   document.fonts.add(f)
 
   const [nameIm, nic] = await getFontImage(fontName, 'monospace', fontStyle)
-  // NOTE: fallback is different in case both fonts silently fail to load
-  // NOTE: fontStyle is intentionally empty here, since we're loading a particular font shape
-  const [fileIm, fic] = await getFontImage(tempFontName, 'serif', '')
+  const [fileIm, fic] = await getFontImage(tempFontName, 'monospace', '')
 
   document.fonts.delete(f)
+
+  nic.remove()
+  fic.remove()
 
   for (var j = 0; j < nameIm.length; j++) {
     if (nameIm[j] !== fileIm[j]) {
@@ -65,10 +66,41 @@ async function compareFonts(fontName, fontPath, fontStyle) {
     }
   }
 
-  nic.remove()
-  fic.remove()
   return true
 }
+
+describe("Fonts from resources/ are distinct from fallback serif (i.e. they load)", function() {
+  beforeEach(function() {
+    let package
+    waitsForPromise(async () => package = await atom.packages.activatePackage('fonts'))
+    waitsFor(() => atom.packages.isPackageActive('fonts'))
+    waitsFor(() => package.stylesheetsActivated)
+  })
+
+  function testFont(file, style) {
+    let result
+    waitsForPromise(async function() {
+      result = await compareFonts('serif', file, style)
+    })
+    runs(function() {
+      expect(result).toBe(false)
+    })
+  }
+
+  for (const [font, conf] of Object.entries(doc)) {
+    if (typeof conf === "string") {
+      it(`Font '${font}' with style 'normal' from file '${conf}'`, function() {
+        testFont(conf, 'normal')
+      })
+    } else {
+      for (const [type, path] of Object.entries(conf)) {
+        it(`Font '${font}' with style '${type}' from file '${path}'`, function() {
+          testFont(path, type)
+        })
+      }
+    }
+  }
+})
 
 describe("Font rendering", function() {
   beforeEach(function() {
