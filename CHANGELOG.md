@@ -1,3 +1,11 @@
+## 3.5.0
+
+### New font
+
+With many thanks to [Sighery](https://github.com/Sighery)
+
+-   Fantasque Sans Mono variant without loop k
+
 ## 3.4.0
 
 ### New fonts
