@@ -81,11 +81,14 @@ Fixedsys: 'fixedsys/fixedsys.woff2'
 Fixedsys Excelsior: 'fixedsys-excelsior/fixedsys-excelsior.woff2'
 Fixedsys Ligatures: 'fixedsys-ligatures/fixedsys-ligatures.woff2'
 FiraCode:
-   normal: 'firacode/firacode.woff2'
-   bold: 'firacode/firacode-bold.woff2'
+  normal: 'firacode/FiraCode-Regular.woff2'
+  bold: 'firacode/FiraCode-Bold.woff2'
+FiraCode Retina:
+  normal: 'firacode/FiraCode-Retina.woff2'
+  bold: 'firacode/FiraCode-Bold.woff2'
 FiraCode Light:
-   normal: 'firacode/firacode-light.woff2'
-   bold: 'firacode/firacode-medium.woff2'
+  normal: 'firacode/FiraCode-Light.woff2'
+  bold: 'firacode/FiraCode-Medium.woff2'
 GNU Freefont:
    bold-italic: 'gnu-freefont/gnu-freefont-bold-italic.woff2'
    bold: 'gnu-freefont/gnu-freefont-bold.woff2'
