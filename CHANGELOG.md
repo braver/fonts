@@ -1,3 +1,7 @@
+## 3.6.0
+
+-   Bump FiraCode to v2, add FiraCode Retina
+
 ## 3.5.0
 
 ### New font
