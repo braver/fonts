@@ -1,3 +1,7 @@
+## 3.7.1
+
+-   Compress cascadia-code to woff2
+
 ## 3.7.0
 
 -   Add Microsoft Cascadia Code
