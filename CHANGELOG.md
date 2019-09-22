@@ -1,3 +1,7 @@
+## 3.7.2
+
+-   Fix cascadia code style
+
 ## 3.7.1
 
 -   Compress cascadia-code to woff2
