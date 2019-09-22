@@ -1,3 +1,7 @@
+## 3.7.0
+
+-   Add Microsoft Cascadia Code
+
 ## 3.6.0
 
 -   Bump FiraCode to v2, add FiraCode Retina
