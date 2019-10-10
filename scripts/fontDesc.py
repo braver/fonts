@@ -86,6 +86,6 @@ for fontpath in sys.argv[1:]:
             for famn in famnames:
                 print('#{}:'.format(famn))
             for (type, (fn, fp)) in sorted(ftypes.items()):
-                print("   {}: '{}'".format(type, fn))
+                print("  {}: '{}'".format(type, fn))
         for fn in sorted(unknowns):
-            print("#   unknown font variant: '{}'".format(fn))
+            print("#  unknown font variant: '{}'".format(fn))
