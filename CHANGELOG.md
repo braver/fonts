@@ -1,3 +1,16 @@
+## 3.8.0
+
+### New font
+
+-   Victor Mono, with both oblique and true italic faces.
+
+### Maintenance
+
+-   Generator script became smarter. For one, it doesn't count
+    font variants as different fonts anymore. For two, defining
+    font families with a lot of variants became easier. See contribution
+    guide for a more or less comprehensive description.
+
 ## 3.7.2
 
 -   Fix cascadia code style
