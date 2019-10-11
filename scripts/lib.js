@@ -2,11 +2,22 @@ const npath = require('path')
 const fs    = require('fs')
 
 const types = [
-  'bold-italic',
-  'bold',
-  'italic',
   'normal',
+  'italic',
+  'bold',
+  'bold-italic',
 ]
+
+function cmp1(a, b) {
+  return a.localeCompare(b, 'en', {
+    sensitivity: 'base',
+    ignorePunctuation: true,
+  })
+}
+
+function cmp(a, b) {
+  return cmp1(a[0], b[0])
+}
 
 function constructFullFontName(inheritedName, key) {
   if (key === '*') return inheritedName
@@ -25,7 +36,7 @@ function strToObj(strOrObj, propName = 'normal') {
 }
 
 function *walkFonts(f, doc, inheritedProps, inheritedName) {
-  for(const [k, v] of Object.entries(doc)) {
+  for(const [k, v] of Object.entries(doc).sort(cmp)) {
     if (k.startsWith('x-')) continue
     const font = constructFullFontName(inheritedName, k)
     checkLongForm(font, v, 'normal')

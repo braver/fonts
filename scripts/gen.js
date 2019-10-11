@@ -32,14 +32,6 @@ const revtypedict = {
   'bolditalic': 'bold-italic',
 }
 
-function cmpless(a, b) {
-  const [a0, af, ab, ai, ap] = /.font \( '([^']+)', (\w+), (\w+), '([^']+)' \);/.exec(a)
-  const [b0, bf, bb, bi, bp] = /.font \( '([^']+)', (\w+), (\w+), '([^']+)' \);/.exec(b)
-  const as = revtypedict[ab+ai]
-  const bs = revtypedict[bb+bi]
-  return cmp1(af, bf) || cmp1(as, bs)
-}
-
 const fontLessTemplate = `\
 .font(@font, @weight, @style, @path) {
   @font-face {
@@ -70,7 +62,7 @@ try {
 
   fs.writeFileSync(
     npath.join('styles', 'fonts.less'),
-    fontLessTemplate+'\n'+fontsless.sort(cmpless).join('\n')+'\n',
+    fontLessTemplate+'\n'+fontsless.join('\n')+'\n',
     'utf8',
   )
 
@@ -80,7 +72,7 @@ try {
     doc, {}, null
   ))
   const packagejson = JSON.parse(fs.readFileSync('package.json', 'utf8'))
-  packagejson.configSchema.fontFamily.enum = Array.from(fontVariantsSet).sort(cmp1)
+  packagejson.configSchema.fontFamily.enum = Array.from(fontVariantsSet)
   fs.writeFileSync('package.json', JSON.stringify(packagejson, null, 2)+'\n', 'utf8')
 
   // write README.md
