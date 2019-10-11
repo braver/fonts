@@ -233,12 +233,21 @@ Office Code Pro:
     - Medium
   bold: 2
   step: 1
-  italic-template: '{dir}/{name}-italic{ext}'
-  weight:
-    - 'office-code-pro/office-code-pro-light.woff2'
-    - 'office-code-pro/office-code-pro.woff2'
-    - 'office-code-pro/office-code-pro-medium.woff2'
-    - 'office-code-pro/office-code-pro-bold.woff2'
+  variants:
+    '*':
+      italic-template: '{dir}/{name}-italic{ext}'
+      weight:
+        - 'office-code-pro/office-code-pro-light.woff2'
+        - 'office-code-pro/office-code-pro.woff2'
+        - 'office-code-pro/office-code-pro-medium.woff2'
+        - 'office-code-pro/office-code-pro-bold.woff2'
+    'D':
+      italic-template: '{dir}/{name}Italic{ext}'
+      weight:
+        - 'office-code-pro-d/OfficeCodeProD-Light.woff2'
+        - 'office-code-pro-d/OfficeCodeProD-Regular.woff2'
+        - 'office-code-pro-d/OfficeCodeProD-Medium.woff2'
+        - 'office-code-pro-d/OfficeCodeProD-Bold.woff2'
 Overpass Mono:
   normal: 'overpass/overpass.woff2'
   bold: 'overpass/overpass-bold.woff2'
