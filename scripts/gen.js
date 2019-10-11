@@ -1,6 +1,9 @@
 const yaml  = require('js-yaml')
 const fs    = require('fs')
 const npath = require('path')
+const lib   = require('./lib')
+
+const rootPath = 'atom://fonts/resources'
 
 const types = {
   'bold-italic': ['bold', 'italic'],
@@ -8,7 +11,6 @@ const types = {
   'italic': ['normal', 'italic'],
   'normal': ['normal', 'normal'],
 }
-const rootPath = 'atom://fonts/resources'
 
 function fontFace(font, type, path) {
   if (!types[type]) throw new Error(`Unknown type for ${font}: ${type}`)
@@ -23,8 +25,19 @@ function cmp1(a, b) {
   })
 }
 
-function cmp(a, b) {
-  return cmp1(a[0], b[0])
+const revtypedict = {
+  'normalnormal': 'normal',
+  'boldnormal': 'bold',
+  'normalitalic': 'italic',
+  'bolditalic': 'bold-italic',
+}
+
+function cmpless(a, b) {
+  const [a0, af, ab, ai, ap] = /.font \( '([^']+)', (\w+), (\w+), '([^']+)' \);/.exec(a)
+  const [b0, bf, bb, bi, bp] = /.font \( '([^']+)', (\w+), (\w+), '([^']+)' \);/.exec(b)
+  const as = revtypedict[ab+ai]
+  const bs = revtypedict[bb+bi]
+  return cmp1(af, bf) || cmp1(as, bs)
 }
 
 const fontLessTemplate = `\
@@ -38,44 +51,41 @@ const fontLessTemplate = `\
 }
 `
 
+function *addFont(font, type, path) {
+  if (!lib.resourceExists(path)) {
+    throw new Error(`File ${path} does not exist for ${type} variant of font ${font}`)
+  }
+  yield fontFace(font, type, path)
+}
+
 try {
   const doc = yaml.safeLoad(fs.readFileSync(npath.join('scripts', 'fonts.yaml'), 'utf8'));
-  const resourceDir = npath.join(__dirname, '..', 'resources')
 
   // write styles/fonts.less
-  const fontsless = [fontLessTemplate]
 
-  function addFont(font, type, path) {
-    if (!fs.existsSync(npath.join(resourceDir, ...path.split('/')))) {
-      throw new Error(`File ${path} does not exist for ${type} variant of font ${font}`)
-    }
-    fontsless.push(fontFace(font, type, path))
-  }
+  const fontsless = Array.from(lib.walkFonts(
+    lib.handleFontsDefinition.bind(this, lib.addFontByDesc.bind(this, addFont)),
+    doc, {}, null
+  ))
 
-  for (const [font, conf] of Object.entries(doc).sort(cmp)) {
-    if (typeof conf === 'string') {
-      addFont(font, 'normal', conf)
-    } else {
-      if (Object.keys(conf).length === 1 && Object.keys(conf)[0] === 'normal') {
-        console.warn(`Found long form normal-only font definition: ${font}`)
-      }
-      if (!Object.keys(conf).includes('normal')) {
-        throw new Error(`No normal variant for: ${font}`)
-      }
-      for (const [type, path] of Object.entries(conf).sort(cmp)) {
-        addFont(font, type, path)
-      }
-    }
-  }
-  fs.writeFileSync(npath.join('styles', 'fonts.less'), fontsless.join('\n')+'\n', 'utf8')
+  fs.writeFileSync(
+    npath.join('styles', 'fonts.less'),
+    fontLessTemplate+'\n'+fontsless.sort(cmpless).join('\n')+'\n',
+    'utf8',
+  )
 
   // write package.json
-  const allfonts = Object.keys(doc).sort(cmp1)
+  const fontVariantsSet = new Set(lib.walkFonts(
+    lib.handleFontsDefinition.bind(this, function*(font) { yield font }),
+    doc, {}, null
+  ))
   const packagejson = JSON.parse(fs.readFileSync('package.json', 'utf8'))
-  packagejson.configSchema.fontFamily.enum = allfonts
+  packagejson.configSchema.fontFamily.enum = Array.from(fontVariantsSet).sort(cmp1)
   fs.writeFileSync('package.json', JSON.stringify(packagejson, null, 2)+'\n', 'utf8')
 
   // write README.md
+  const fontNamesSet = new Set(Object.keys(doc).filter(x => !x.startsWith('x-')))
+  const allfonts = Array.from(fontNamesSet).sort(cmp1)
   const readme = fs.readFileSync('README.md', 'utf8')
   const newreadme = readme.replace(
     /<!-- BEGIN FONTS -->[^]*<!-- END FONTS -->/,
@@ -83,6 +93,9 @@ try {
   ).replace(
     /<!-- BEGIN NUM_FONTS -->[0-9]+<!-- END NUM_FONTS -->/,
     `<!-- BEGIN NUM_FONTS -->${allfonts.length}<!-- END NUM_FONTS -->`,
+  ).replace(
+    /<!-- BEGIN NUM_VARIANTS -->[0-9]+<!-- END NUM_VARIANTS -->/,
+    `<!-- BEGIN NUM_VARIANTS -->${fontVariantsSet.size}<!-- END NUM_VARIANTS -->`,
   )
   fs.writeFileSync('README.md', newreadme, 'utf8')
 } catch (e) {

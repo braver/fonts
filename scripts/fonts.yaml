@@ -1,6 +1,8 @@
-IBM 3270: '3270/3270Medium.woff2'
-IBM 3270 Narrow: '3270/3270Narrow.woff2'
-IBM 3270 Semi-Narrow: '3270/3270SemiNarrow.woff2'
+IBM 3270:
+  variants:
+    '*': '3270/3270Medium.woff2'
+    Narrow: '3270/3270Narrow.woff2'
+    Semi-Narrow: '3270/3270SemiNarrow.woff2'
 Anka/Coder:
   bold-italic: 'anka-coder/anka-coder-bold-italic.woff2'
   bold: 'anka-coder/anka-coder-bold.woff2'
@@ -55,24 +57,28 @@ DejaVu Mono:
   bold: 'dejavu/dejavu-bold.woff2'
   italic: 'dejavu/dejavu-italic.woff2'
   normal: 'dejavu/dejavu.woff2'
-Droid Sans Mono: 'droid-sans/droid-sans.woff2'
-Droid Sans Mono Dotted: 'droid-sans-dotted/droid-sans-dotted.woff2'
-Droid Sans Mono Slashed: 'droid-sans-slashed/droid-sans-slashed.woff2'
+Droid Sans Mono:
+  variants:
+    '*': 'droid-sans/droid-sans.woff2'
+    Dotted: 'droid-sans-dotted/droid-sans-dotted.woff2'
+    Slashed: 'droid-sans-slashed/droid-sans-slashed.woff2'
 Effects Eighty:
   bold-italic: 'effects-eighty/effects-eighty-bold-italic.woff2'
   bold: 'effects-eighty/effects-eighty-bold.woff2'
   italic: 'effects-eighty/effects-eighty-italic.woff2'
   normal: 'effects-eighty/effects-eighty.woff2'
 Fantasque Sans Mono:
-  bold-italic: 'fantasque-sans/fantasque-sans-bold-italic.woff2'
-  bold: 'fantasque-sans/fantasque-sans-bold.woff2'
-  italic: 'fantasque-sans/fantasque-sans-italic.woff2'
-  normal: 'fantasque-sans/fantasque-sans.woff2'
-Fantasque Sans Mono No Loop K:
-  bold-italic: 'fantasque-sans-no-loop-k/fantasque-sans-no-loop-k-bold-italic.woff2'
-  bold: 'fantasque-sans-no-loop-k/fantasque-sans-no-loop-k-bold.woff2'
-  italic: 'fantasque-sans-no-loop-k/fantasque-sans-no-loop-k-italic.woff2'
-  normal: 'fantasque-sans-no-loop-k/fantasque-sans-no-loop-k.woff2'
+  variants:
+    '*':
+      bold-italic: 'fantasque-sans/fantasque-sans-bold-italic.woff2'
+      bold: 'fantasque-sans/fantasque-sans-bold.woff2'
+      italic: 'fantasque-sans/fantasque-sans-italic.woff2'
+      normal: 'fantasque-sans/fantasque-sans.woff2'
+    No Loop K:
+      bold-italic: 'fantasque-sans-no-loop-k/fantasque-sans-no-loop-k-bold-italic.woff2'
+      bold: 'fantasque-sans-no-loop-k/fantasque-sans-no-loop-k-bold.woff2'
+      italic: 'fantasque-sans-no-loop-k/fantasque-sans-no-loop-k-italic.woff2'
+      normal: 'fantasque-sans-no-loop-k/fantasque-sans-no-loop-k.woff2'
 Fifteen: 'fifteen/fifteen.woff2'
 Fira Mono:
   bold: 'fira/fira-bold.woff2'
@@ -81,14 +87,13 @@ Fixedsys: 'fixedsys/fixedsys.woff2'
 Fixedsys Excelsior: 'fixedsys-excelsior/fixedsys-excelsior.woff2'
 Fixedsys Ligatures: 'fixedsys-ligatures/fixedsys-ligatures.woff2'
 FiraCode:
-  normal: 'firacode/FiraCode-Regular.woff2'
   bold: 'firacode/FiraCode-Bold.woff2'
-FiraCode Retina:
-  normal: 'firacode/FiraCode-Retina.woff2'
-  bold: 'firacode/FiraCode-Bold.woff2'
-FiraCode Light:
-  normal: 'firacode/FiraCode-Light.woff2'
-  bold: 'firacode/FiraCode-Medium.woff2'
+  variants:
+    '*': 'firacode/FiraCode-Regular.woff2'
+    Retina: 'firacode/FiraCode-Retina.woff2'
+    Light:
+      normal: 'firacode/FiraCode-Light.woff2'
+      bold: 'firacode/FiraCode-Medium.woff2'
 GNU Freefont:
   bold-italic: 'gnu-freefont/gnu-freefont-bold-italic.woff2'
   bold: 'gnu-freefont/gnu-freefont-bold.woff2'
@@ -100,70 +105,69 @@ Go Mono:
   bold: 'go-mono/go-mono-bold.woff2'
   italic: 'go-mono/go-mono-italic.woff2'
   normal: 'go-mono/go-mono.woff2'
-Gohufont 11: 'gohu/koemaeda/gohufont-uni-11.woff2'
-Gohufont 14: 'gohu/koemaeda/gohufont-uni-14.woff2'
+Gohufont:
+  variants:
+    11: 'gohu/koemaeda/gohufont-uni-11.woff2'
+    14: 'gohu/koemaeda/gohufont-uni-14.woff2'
 Hack:
   bold-italic: 'hack/hack-bold-italic.woff2'
   bold: 'hack/hack-bold.woff2'
   italic: 'hack/hack-italic.woff2'
   normal: 'hack/hack.woff2'
 Hasklig:
-  bold: 'hasklig/hasklig-bold.woff2'
-  bold-italic: 'hasklig/hasklig-bold-italic.woff2'
-  normal: 'hasklig/hasklig.woff2'
-  italic: 'hasklig/hasklig-italic.woff2'
-Hasklig Light:
-  bold: 'hasklig/hasklig-semibold.woff2'
-  bold-italic: 'hasklig/hasklig-semibold-italic.woff2'
-  normal: 'hasklig/hasklig-light.woff2'
-  italic: 'hasklig/hasklig-light-italic.woff2'
-Hasklig Medium:
-  bold: 'hasklig/hasklig-bold.woff2'
-  bold-italic: 'hasklig/hasklig-bold-italic.woff2'
-  normal: 'hasklig/hasklig-medium.woff2'
-  italic: 'hasklig/hasklig-medium-italic.woff2'
+  names:
+    - Light
+    - '*'
+    - Medium
+  italic-template: '{dir}/{name}-italic{ext}'
+  bold: 3
+  step: 1
+  weight:
+    - 'hasklig/hasklig-light.woff2'
+    - 'hasklig/hasklig.woff2'
+    - 'hasklig/hasklig-medium.woff2'
+    - 'hasklig/hasklig-semibold.woff2'
+    - 'hasklig/hasklig-bold.woff2'
 Generic Mono: 'generic/generic.woff2'
 Hermit:
-  bold: 'hermit/hermit-bold.woff2'
-  normal: 'hermit/hermit.woff2'
-Hermit Light:
-  bold: 'hermit/hermit-bold.woff2'
-  normal: 'hermit/hermit-light.woff2'
+  names:
+    - Light
+    - '*'
+  bold: 2
+  step: 1
+  weight:
+    - 'hermit/hermit-light.woff2'
+    - 'hermit/hermit.woff2'
+    - 'hermit/hermit-bold.woff2'
 Iosevka:
-  normal: 'iosevka/iosevka-regular.woff2'
-  italic: 'iosevka/iosevka-italic.woff2'
-  bold: 'iosevka/iosevka-bold.woff2'
-  bold-italic: 'iosevka/iosevka-bold-italic.woff2'
-Iosevka Thin:
-  normal: 'iosevka/iosevka-thin.woff2'
-  italic: 'iosevka/iosevka-thin-italic.woff2'
-  bold: 'iosevka/iosevka-bold.woff2'
-  bold-italic: 'iosevka/iosevka-bold-italic.woff2'
-Iosevka Light:
-  normal: 'iosevka/iosevka-light.woff2'
-  italic: 'iosevka/iosevka-light-italic.woff2'
-  bold: 'iosevka/iosevka-bold.woff2'
-  bold-italic: 'iosevka/iosevka-bold-italic.woff2'
-Iosevka Extra Light:
-  normal: 'iosevka/iosevka-extralight.woff2'
-  italic: 'iosevka/iosevka-extralight-italic.woff2'
-  bold: 'iosevka/iosevka-bold.woff2'
-  bold-italic: 'iosevka/iosevka-bold-italic.woff2'
-Iosevka Medium:
-  normal: 'iosevka/iosevka-medium.woff2'
-  italic: 'iosevka/iosevka-medium-italic.woff2'
-  bold: 'iosevka/iosevka-bold.woff2'
-  bold-italic: 'iosevka/iosevka-bold-italic.woff2'
+  names:
+    - Thin
+    - Extra Light
+    - Light
+    - '*'
+    - Medium
+  italic-template: '{dir}/{name}-italic{ext}'
+  bold: 5
+  step: 1
+  weight:
+    - 'iosevka/iosevka-thin.woff2'
+    - 'iosevka/iosevka-extralight.woff2'
+    - 'iosevka/iosevka-light.woff2'
+    - 'iosevka/iosevka-regular.woff2'
+    - 'iosevka/iosevka-medium.woff2'
+    - 'iosevka/iosevka-bold.woff2'
 Inconsolata: 'inconsolata/inconsolata.woff2'
 Inconsolata-g: 'inconsolata-g/inconsolata-g.woff2'
 Latin Modern Mono:
-  italic: 'latin-modern/latin-modern-italic.woff2'
-  normal: 'latin-modern/latin-modern.woff2'
-Latin Modern Mono Light:
-  bold-italic: 'latin-modern-light/latin-modern-light-bold-italic.woff2'
-  bold: 'latin-modern-light/latin-modern-light-bold.woff2'
-  italic: 'latin-modern-light/latin-modern-light-italic.woff2'
-  normal: 'latin-modern-light/latin-modern-light.woff2'
+  italic-template: '{dir}/{name}-italic{ext}'
+  bold-template: '{dir}/{name}-bold{ext}'
+  bold-italic-template: '{dir}/{name}-bold-italic{ext}'
+  variants:
+    '*':
+      normal: 'latin-modern/latin-modern.woff2'
+      bold: False
+      bold-italic: False
+    Light: 'latin-modern-light/latin-modern-light.woff2'
 League:
   bold: 'league/league-bold.woff2'
   normal: 'league/league.woff2'
@@ -187,17 +191,19 @@ Luxi Mono:
   italic: 'luxi/luxi-italic.woff2'
   normal: 'luxi/luxi.woff2'
 M+:
-  bold: 'mplus/mplus-bold.woff2'
-  normal: 'mplus/mplus.woff2'
-M+ Light:
-  bold: 'mplus/mplus-bold.woff2'
-  normal: 'mplus/mplus-light.woff2'
-M+ Medium:
-  bold: 'mplus/mplus-bold.woff2'
-  normal: 'mplus/mplus-medium.woff2'
-M+ Thin:
-  bold: 'mplus/mplus-bold.woff2'
-  normal: 'mplus/mplus-thin.woff2'
+  names:
+    - Thin
+    - Light
+    - '*'
+    - Medium
+  bold: 4
+  step: 1
+  weight:
+    - 'mplus/mplus-thin.woff2'
+    - 'mplus/mplus-light.woff2'
+    - 'mplus/mplus.woff2'
+    - 'mplus/mplus-medium.woff2'
+    - 'mplus/mplus-bold.woff2'
 Meslo:
   bold-italic: 'meslo/meslo-bold-italic.woff2'
   bold: 'meslo/meslo-bold.woff2'
@@ -221,20 +227,18 @@ NotCourierSans:
 Noto: 'noto/noto.woff2'
 Nova Mono: 'nova/nova.woff2'
 Office Code Pro:
-  bold-italic: 'office-code-pro/office-code-pro-bold-italic.woff2'
-  bold: 'office-code-pro/office-code-pro-bold.woff2'
-  italic: 'office-code-pro/office-code-pro-italic.woff2'
-  normal: 'office-code-pro/office-code-pro.woff2'
-Office Code Pro Light:
-  bold-italic: 'office-code-pro/office-code-pro-medium-italic.woff2'
-  bold: 'office-code-pro/office-code-pro-medium.woff2'
-  italic: 'office-code-pro/office-code-pro-light-italic.woff2'
-  normal: 'office-code-pro/office-code-pro-light.woff2'
-Office Code Pro Medium:
-  bold-italic: 'office-code-pro/office-code-pro-bold-italic.woff2'
-  bold: 'office-code-pro/office-code-pro-bold.woff2'
-  italic: 'office-code-pro/office-code-pro-medium-italic.woff2'
-  normal: 'office-code-pro/office-code-pro-medium.woff2'
+  names:
+    - Light
+    - '*'
+    - Medium
+  bold: 2
+  step: 1
+  italic-template: '{dir}/{name}-italic{ext}'
+  weight:
+    - 'office-code-pro/office-code-pro-light.woff2'
+    - 'office-code-pro/office-code-pro.woff2'
+    - 'office-code-pro/office-code-pro-medium.woff2'
+    - 'office-code-pro/office-code-pro-bold.woff2'
 Overpass Mono:
   normal: 'overpass/overpass.woff2'
   bold: 'overpass/overpass-bold.woff2'
@@ -249,47 +253,39 @@ Profont: 'profont/profont.woff2'
 Proggy Clean: 'proggy-clean/proggy-clean.woff2'
 Quinze: 'quinze/quinze.woff2'
 Roboto Mono:
-  bold-italic: 'roboto/roboto-bold-italic.woff2'
-  bold: 'roboto/roboto-bold.woff2'
-  italic: 'roboto/roboto-italic.woff2'
-  normal: 'roboto/roboto.woff2'
-Roboto Mono Light:
-  bold-italic: 'roboto/roboto-bold-italic.woff2'
-  bold: 'roboto/roboto-bold.woff2'
-  italic: 'roboto/roboto-light-italic.woff2'
-  normal: 'roboto/roboto-light.woff2'
-Roboto Mono Thin:
-  bold-italic: 'roboto/roboto-medium-italic.woff2'
-  bold: 'roboto/roboto-medium.woff2'
-  italic: 'roboto/roboto-thin-italic.woff2'
-  normal: 'roboto/roboto-thin.woff2'
-Roboto Mono Medium:
-  bold-italic: 'roboto/roboto-bold-italic.woff2'
-  bold: 'roboto/roboto-bold.woff2'
-  italic: 'roboto/roboto-medium-italic.woff2'
-  normal: 'roboto/roboto-medium.woff2'
+  names:
+  - Thin
+  - Light
+  - '*'
+  - Medium
+  bold: 3
+  step: 1
+  italic-template: '{dir}/{name}-italic{ext}'
+  weight:
+  - 'roboto/roboto-thin.woff2'
+  - 'roboto/roboto-light.woff2'
+  - 'roboto/roboto.woff2'
+  - 'roboto/roboto-medium.woff2'
+  - 'roboto/roboto-bold.woff2'
 Share Tech Mono: 'share-tech/share-tech.woff2'
 SK Modernist: 'sk-modernist/sk-modernist.woff2'
 Source Code Pro:
-  normal: 'source-code-pro/source-code-pro.woff2'
-  italic: 'source-code-pro/source-code-pro-italic.woff2'
-  bold: 'source-code-pro/source-code-pro-bold.woff2'
-  bold-italic: 'source-code-pro/source-code-pro-bold-italic.woff2'
-Source Code Pro Extra Light:
-  normal: 'source-code-pro/source-code-pro-extralight.woff2'
-  italic: 'source-code-pro/source-code-pro-extralight-italic.woff2'
-  bold: 'source-code-pro/source-code-pro-medium.woff2'
-  bold-italic: 'source-code-pro/source-code-pro-medium-italic.woff2'
-Source Code Pro Light:
-  normal: 'source-code-pro/source-code-pro-light.woff2'
-  italic: 'source-code-pro/source-code-pro-light-italic.woff2'
-  bold: 'source-code-pro/source-code-pro-semibold.woff2'
-  bold-italic: 'source-code-pro/source-code-pro-semibold-italic.woff2'
-Source Code Pro Medium:
-  normal: 'source-code-pro/source-code-pro-medium.woff2'
-  italic: 'source-code-pro/source-code-pro-medium-italic.woff2'
-  bold: 'source-code-pro/source-code-pro-black.woff2'
-  bold-italic: 'source-code-pro/source-code-pro-black-italic.woff2'
+  names:
+  - Extra Light
+  - Light
+  - '*'
+  - Medium
+  bold: 3
+  step: 1
+  italic-template: '{dir}/{name}-italic{ext}'
+  weight:
+  - 'source-code-pro/source-code-pro-extralight.woff2'
+  - 'source-code-pro/source-code-pro-light.woff2'
+  - 'source-code-pro/source-code-pro.woff2'
+  - 'source-code-pro/source-code-pro-medium.woff2'
+  - 'source-code-pro/source-code-pro-semibold.woff2'
+  - 'source-code-pro/source-code-pro-bold.woff2'
+  - 'source-code-pro/source-code-pro-black.woff2'
 Sudo:
   bold-italic: 'sudo/sudo-bold-italic.woff2'
   bold: 'sudo/sudo-bold.woff2'
@@ -319,11 +315,13 @@ VT323: 'vt323/vt323.woff2'
 Verily Serif Mono: 'verily/verily.woff2'
 saxMono: 'sax/sax.woff2'
 agave: 'agave/agave-regular.woff2'
-Bedstead: 'bedstead/bedstead.woff2'
-Bedstead Condensed: 'bedstead/bedstead-condensed.woff2'
-Bedstead Extended: 'bedstead/bedstead-extended.woff2'
-Bedstead Extra Condensed: 'bedstead/bedstead-extracondensed.woff2'
-Bedstead Ultra Condensed: 'bedstead/bedstead-ultracondensed.woff2'
+Bedstead:
+  variants:
+    '*': 'bedstead/bedstead.woff2'
+    Condensed: 'bedstead/bedstead-condensed.woff2'
+    Extended: 'bedstead/bedstead-extended.woff2'
+    Extra Condensed: 'bedstead/bedstead-extracondensed.woff2'
+    Ultra Condensed: 'bedstead/bedstead-ultracondensed.woff2'
 DaddyTimeMono: 'daddytimemono/daddytimemono.woff2'
 DejaVu Sans Mono - Bront: 'dejavu-sans-mono-bront/dejavu-sans-mono-bront.woff2'
 OpenDyslexicMono: 'opendyslexic-mono/opendyslexic-mono-regular.woff2'
@@ -350,17 +348,25 @@ CMU Typewriter Text:
 Corbi Mono S: 'corbi-mono-s/corbi-mono-s-regular.woff2'
 Fairfax HD: 'fairfax-hd/fairfax-hd.woff2'
 Kawkab Mono:
-  bold: 'kawkab-mono/kawkab-mono-bold.woff2'
-  normal: 'kawkab-mono/kawkab-mono-regular.woff2'
-Kawkab Mono Light:
-  normal: 'kawkab-mono/kawkab-mono-light.woff2'
-  bold: 'kawkab-mono/kawkab-mono-regular.woff2'
+  names:
+    - Light
+    - '*'
+  bold: 1
+  step: 1
+  weight:
+  - 'kawkab-mono/kawkab-mono-light.woff2'
+  - 'kawkab-mono/kawkab-mono-regular.woff2'
+  - 'kawkab-mono/kawkab-mono-bold.woff2'
 Libertinus Mono: 'libertinus-mono/libertinus-mono-regular.woff2'
 Meyrin: 'meyrin/meyrin.woff2'
 Monodeco:
-  bold: 'monodeco/monodeco-bold.woff2'
-  normal: 'monodeco/monodeco.woff2'
-Monodeco Light:
-  normal: 'monodeco/monodeco-light.woff2'
-  bold: 'monodeco/monodeco.woff2'
+  names:
+    - Light
+    - '*'
+  bold: 1
+  step: 1
+  weight:
+  - 'monodeco/monodeco-light.woff2'
+  - 'monodeco/monodeco.woff2'
+  - 'monodeco/monodeco-bold.woff2'
 Cascadia Code: 'cascadia-code/Cascadia.woff2'

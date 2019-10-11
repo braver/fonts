@@ -1,6 +1,7 @@
 const yaml = require("js-yaml")
 const fs = require("fs")
 const npath = require("path")
+const lib = require("../scripts/lib")
 
 const doc = yaml.safeLoad(
   fs.readFileSync(npath.join(__dirname, "..", "scripts", "fonts.yaml"), "utf8")
@@ -77,29 +78,23 @@ describe("Fonts from resources/ are distinct from fallback serif (i.e. they load
     waitsFor(() => package.stylesheetsActivated)
   })
 
-  function testFont(file, style) {
+  const testFont = function (font, style, file) {
     let result
-    waitsForPromise(async function() {
-      result = await compareFonts('serif', file, style)
+    it(`Loads ${font} with ${style} from ${file}`, function() {
+      waitsForPromise(async function() {
+        result = await compareFonts('serif', file, style)
+      })
+      runs(function() {
+        expect(result).toBe(false)
+      })
     })
-    runs(function() {
-      expect(result).toBe(false)
-    })
+    return []
   }
 
-  for (const [font, conf] of Object.entries(doc)) {
-    if (typeof conf === "string") {
-      it(`Font '${font}' with style 'normal' from file '${conf}'`, function() {
-        testFont(conf, 'normal')
-      })
-    } else {
-      for (const [type, path] of Object.entries(conf)) {
-        it(`Font '${font}' with style '${type}' from file '${path}'`, function() {
-          testFont(path, type)
-        })
-      }
-    }
-  }
+  Array.from(lib.walkFonts(
+    lib.handleFontsDefinition.bind(this, lib.addFontByDesc.bind(this, testFont)),
+    doc, {}, null
+  ))
 })
 
 describe("Font rendering", function() {
@@ -110,29 +105,23 @@ describe("Font rendering", function() {
     waitsFor(() => package.stylesheetsActivated)
   })
 
-  function testFont(font, file, style) {
+  function testFont(font, style, file) {
     let result
-    waitsForPromise(async function() {
-      result = await compareFonts(font, file, style)
+    it(`matches between named '${font}' with style '${style}' and file '${file}'`, function() {
+      waitsForPromise(async function() {
+        result = await compareFonts(font, file, style)
+      })
+      runs(function() {
+        expect(result).toBe(true)
+      })
     })
-    runs(function() {
-      expect(result).toBe(true)
-    })
+    return []
   }
 
-  for (const [font, conf] of Object.entries(doc)) {
-    if (typeof conf === "string") {
-      it(`matches between named '${font}' with style 'normal' and file '${conf}'`, function() {
-        testFont(font, conf, 'normal')
-      })
-    } else {
-      for (const [type, path] of Object.entries(conf)) {
-        it(`matches between named '${font}' with style '${type}' and file '${path}'`, function() {
-          testFont(font, path, type)
-        })
-      }
-    }
-  }
+  Array.from(lib.walkFonts(
+    lib.handleFontsDefinition.bind(this, lib.addFontByDesc.bind(this, testFont)),
+    doc, {}, null
+  ))
 })
 
 describe("Computed TextEditor font family", function() {
@@ -154,8 +143,13 @@ describe("Computed TextEditor font family", function() {
     })
   })
 
-  for (const font of Object.keys(doc)) {
-    it(`it matches ${font} when set in config`, function() {
+  const fontVariantsSet = new Set(lib.walkFonts(
+    lib.handleFontsDefinition.bind(this, function*(font) { yield font }),
+    doc, {}, null
+  ))
+
+  for (const font of fontVariantsSet.values()) {
+    it(`matches ${font} when set in config`, function() {
       let editorFontName
       atom.config.set('fonts.fontFamily', font)
       editorFontName =

@@ -43,10 +43,12 @@ For example, Office Code Pro has two variations: Light and Medium, and bold
 Office Code Pro Light is the same as regular Office Code Pro Medium. Hence,
 to avoid duplication, the naming convention is broken.
 
+In any case, treat this convention as more of a guideline. Following the convention will let you generate YAML description automatically, but it's easy enough to write by hand.
+
 ### `scripts/fonts.yaml` format
 
 `fonts.yaml` is a YAML object. The object property names are full font names.
-Property values are YAML objects with the following properties:
+Property values are font descriptions. Font description is a YAML object with the following properties:
 
 -   `normal`: string, path to the font file for normal font-face; **required**
 -   `bold`: string, path to the font file for bold font-face; *optional*
@@ -63,6 +65,174 @@ object, a string of form `<dir_name>/<font_name>.<extension>` can be used, which
 ```yaml
 normal: '<font_name>/<font_name>.<extension>'
 ```
+
+#### Fonts with multiple variants
+
+When adding several variants of the same font, it's preferable to use the following format: root font object contains a property named `variants`, which itself is a YAML object, where property names are font variant names, and values are font descriptions. Special variant name `'*'` is treated as "default variant" and hence the generated font name will match the root font property name.
+
+For example:
+
+```yaml
+Droid Sans Mono:
+  variants:
+    '*': 'droid-sans/droid-sans.woff2'
+    Dotted: 'droid-sans-dotted/droid-sans-dotted.woff2'
+    Slashed: 'droid-sans-slashed/droid-sans-slashed.woff2'
+```
+is functionally equivalent to
+```yaml
+Droid Sans Mono: 'droid-sans/droid-sans.woff2'
+Droid Sans Mono Dotted: 'droid-sans-dotted/droid-sans-dotted.woff2'
+Droid Sans Mono Slashed: 'droid-sans-slashed/droid-sans-slashed.woff2'
+```
+
+Any properties except `variants` on the root object will be applied to all child objects (unless child object redefines those explicitly).
+
+For example:
+
+```yaml
+FiraCode:
+  bold: 'firacode/FiraCode-Bold.woff2'
+  variants:
+    '*': 'firacode/FiraCode-Regular.woff2'
+    Retina: 'firacode/FiraCode-Retina.woff2'
+    Light:
+      normal: 'firacode/FiraCode-Light.woff2'
+      bold: 'firacode/FiraCode-Medium.woff2'
+```
+is functionally equivalent to
+```yaml
+FiraCode:
+  normal: 'firacode/FiraCode-Regular.woff2'
+  bold: 'firacode/FiraCode-Bold.woff2'
+FiraCode Retina:
+  normal: 'firacode/FiraCode-Retina.woff2'
+  bold: 'firacode/FiraCode-Bold.woff2'
+FiraCode Light:
+  normal: 'firacode/FiraCode-Light.woff2'
+  bold: 'firacode/FiraCode-Medium.woff2'
+```
+
+Please note that font variants format is used for computing statistics in the README, so it's highly preferable to use this format when appropriate.
+
+Also of note is that `variants` is actually recursive, i.e. anywhere a font description could be, `variants` can appear instead. Please do not get carried away with it though.
+
+#### Advanced syntax
+
+You can skip this section if basic syntax is enough for you.
+
+##### Fonts with multiple weight variants
+
+Handling fonts with multiple weight variants using the "variants" feature described above can get tedious rather quickly. So when you intend on using systematic weights (e.g. "Regular" to "Thin" is the same as "Bold" to "Regular"), there is a special syntax for that.
+
+If instead of the usual font description, the following properties are specified:
+
+- `names`: array of strings
+- `bold`: integer
+- `step`: integer
+- `weight`: array of font descriptions without `bold` and `bold-italic` properties (can be strings); assumed to be in the increasing weight order
+
+then `length(names)` font variants will be inferred by generator, using the following algorithm:
+
+-  `i`-th font variant is named "(root name) + `names[i]`". If `names[i]` is `'*'`, then font variant is named "root name"
+-  font description for `i`-th font variant for `normal` and `italic` is taken from `weight[step*i]`
+-  font description for `i`-th font variant for `bold` and `bold-italic` is taken from `weight[step*i+bold]`
+-  if `step*i+bold` is larger than `length(weight)`, use the highest weight available.
+
+So, for instance, `Source Code Pro` has 7 weights, namely, Extra Light, Light, Regular, Medium, Semibold, Bold, and Black. Let's say we want to consistently use a weight three "levels" up, i.e. for Extra Light, the bold version would be Medium, for Light, the bold version would be Semibold, etc. In that case, we could write:
+
+```yaml
+Source Code Pro:
+  names:
+  - Extra Light
+  - Light
+  - '*'
+  - Medium
+  bold: 3
+  step: 1
+  weight:
+  - 'source-code-pro/source-code-pro-extralight.woff2'
+  - 'source-code-pro/source-code-pro-light.woff2'
+  - 'source-code-pro/source-code-pro.woff2'
+  - 'source-code-pro/source-code-pro-medium.woff2'
+  - 'source-code-pro/source-code-pro-semibold.woff2'
+  - 'source-code-pro/source-code-pro-bold.woff2'
+  - 'source-code-pro/source-code-pro-black.woff2'
+```
+
+which would be functionally equivalent to
+
+```yaml
+Source Code Pro:
+  variants:
+    Extra Light:
+      normal: 'source-code-pro/source-code-pro-extralight.woff2'
+      bold: 'source-code-pro/source-code-pro-medium.woff2'
+    Light:
+      normal: 'source-code-pro/source-code-pro-light.woff2'
+      bold: 'source-code-pro/source-code-pro-semibold.woff2'
+    '*':
+      normal: 'source-code-pro/source-code-pro.woff2'
+      bold: 'source-code-pro/source-code-pro-bold.woff2'
+    Medium:
+      normal: 'source-code-pro/source-code-pro-medium.woff2'
+      bold: 'source-code-pro/source-code-pro-black.woff2'
+```
+
+It's possible to mix this with `variants` syntax, see below for an example.
+
+##### Templates
+
+It's possible to save oneself some typing when font files are named in a systematic manner close to the naming convention described above. Specifically,
+`bold`, `italic`, and `bold-italic` properties can be specified as templates based on `normal` filename using `bold-template`, `italic-template` and `bold-italic-template` properties respectively.
+
+Template syntax is as follows:
+
+- All template expressions are in braces, `{}`, expressions outside braces are literal.
+- Expressions in braces start with a variable name, and optionally contain a JavaScript RegExp replace pattern separated by forward slashes `/`
+- The following variables derived from `normal` path are available:
+    - `dir`: font directory name (e.g `source-code-pro`)
+    - `base`: font file name, including extension (e.g. `source-code-pro-medium.woff2`)
+    - `name`: font file name, excluding extension (e.g. `source-code-pro-medium`)
+    - `ext`: font file extension, including leading dot (e.g. `.woff2`)
+- All variable names must start with an ASCII letter followed by any number of ASCII letters, digits, or an ASCII dash `-`
+- Any YAML properties on the current object (including inherited ones) that satisfy naming requirements are available as variables
+- Replace pattern is applied to variable value prior to its use in the template
+- Forward slashes are not allowed anywhere in RegExp pattern or replace string
+
+So, to summarize, the template syntax is like this: either `{<variable name>}` or `{<variable name>/<search-regex>/<replace-string>/<regex-modifiers>}`.
+
+For example,
+
+```yaml
+Victor Mono:
+  names:
+    - Thin
+    - Extra Light
+    - Light
+    - '*'
+    - Medium
+  bold: 3
+  step: 1
+  italic-template: '{dir}/{name/Regular$//}{italic-name}{ext}'
+  weight:
+    - 'victor-mono/VictorMono-Thin.woff2'
+    - 'victor-mono/VictorMono-ExtraLight.woff2'
+    - 'victor-mono/VictorMono-Light.woff2'
+    - 'victor-mono/VictorMono-Regular.woff2'
+    - 'victor-mono/VictorMono-Medium.woff2'
+    - 'victor-mono/VictorMono-SemiBold.woff2'
+    - 'victor-mono/VictorMono-Bold.woff2'
+  variants:
+    '*':
+      italic-name: Italic
+    Oblique:
+      italic-name: Oblique
+```
+
+##### Advanced YAML features
+
+You can use YAML anchors, references, etc. To facilitate that, generator ignores object keys that start with `x-`.
 
 ### YAML description generator
 
@@ -136,22 +306,42 @@ Office Code Pro:
 
 This one can also be produced by running `scripts/fontDesc.py resources/office-code-pro` (which will also list all other font files as comments)
 
-For the Light version,
+Now, to define multiple font variants, we'll use the variants syntax:
 
 ```yaml
-Office Code Pro Light:
-  bold-italic: 'office-code-pro/office-code-pro-medium-italic.woff'
-  bold: 'office-code-pro/office-code-pro-medium.woff'
-  italic: 'office-code-pro/office-code-pro-light-italic.woff'
-  normal: 'office-code-pro/office-code-pro-light.woff'
+Office Code Pro:
+  variants:
+    '*':
+      bold-italic: 'office-code-pro/office-code-pro-bold-italic.woff'
+      bold: 'office-code-pro/office-code-pro-bold.woff'
+      italic: 'office-code-pro/office-code-pro-italic.woff'
+      normal: 'office-code-pro/office-code-pro.woff'
+    Light:
+      bold-italic: 'office-code-pro/office-code-pro-medium-italic.woff'
+      bold: 'office-code-pro/office-code-pro-medium.woff'
+      italic: 'office-code-pro/office-code-pro-light-italic.woff'
+      normal: 'office-code-pro/office-code-pro-light.woff'
+    Medium:
+      bold-italic: 'office-code-pro/office-code-pro-bold-italic.woff'
+      bold: 'office-code-pro/office-code-pro-bold.woff'
+      italic: 'office-code-pro/office-code-pro-medium-italic.woff'
+      normal: 'office-code-pro/office-code-pro-medium.woff'
 ```
 
-And for the Medium version:
+This can be optionally simplified using advanced syntax:
 
 ```yaml
-Office Code Pro Medium:
-  bold-italic: 'office-code-pro/office-code-pro-bold-italic.woff'
-  bold: 'office-code-pro/office-code-pro-bold.woff'
-  italic: 'office-code-pro/office-code-pro-medium-italic.woff'
-  normal: 'office-code-pro/office-code-pro-medium.woff'
+Office Code Pro:
+  names:
+    - Light
+    - '*'
+    - Medium
+  bold: 2
+  step: 1
+  italic-template: '{dir}/{name}-italic{ext}'
+  weight:
+    - 'office-code-pro/office-code-pro-light.woff2'
+    - 'office-code-pro/office-code-pro.woff2'
+    - 'office-code-pro/office-code-pro-medium.woff2'
+    - 'office-code-pro/office-code-pro-bold.woff2'
 ```
