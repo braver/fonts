@@ -1,3 +1,14 @@
+## 3.9.0
+
+### New font
+
+-   Office Code Pro D, the Office Code variant with dotted zero
+
+
+### Other
+
+-   Use more consistent order for fonts in font selection and package settings windows. 
+
 ## 3.8.0
 
 ### New font
