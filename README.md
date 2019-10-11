@@ -1,7 +1,7 @@
 # Fonts package for Atom
 
 Oh we do love our monospace fonts don't we? To celebrate typography and free choice, I've packaged all the great fonts I could get my hands on
-(<!-- BEGIN NUM_FONTS -->90<!-- END NUM_FONTS --> of them -- <!-- BEGIN NUM_VARIANTS -->123<!-- END NUM_VARIANTS --> including variants -- at this point).
+(<!-- BEGIN NUM_FONTS -->91<!-- END NUM_FONTS --> of them -- <!-- BEGIN NUM_VARIANTS -->135<!-- END NUM_VARIANTS --> including variants -- at this point).
 
 This package delivers them straight to Atom through the power of @font-face. You no longer need to hunt down and install your favourite font, instead you can now instantly try out any of the fonts in this package.
 
@@ -34,7 +34,7 @@ atom-workspace {
 ## All fonts
 
 <!-- BEGIN FONTS -->
-agave, Anka/Coder, Anonymous Pro, APL2741, APL385 Unicode, Aurulent Sans Mono, Average Mono, B612 Mono, Bedstead, Bitstream Vera Sans Mono, Borg Sans Mono, BPmono, CamingoCode, Cascadia Code, CatV 6x12 9, CMU Typewriter Text, Code New Roman, Consolamono, Corbi Mono S, Courier Prime, Courier Prime Code, Cousine, Cutive Mono, DaddyTimeMono, DejaVu Mono, DejaVu Sans Mono - Bront, Droid Sans Mono, Effects Eighty, Fairfax HD, Fantasque Sans Mono, Fifteen, FiraCode, Fira Mono, Fixedsys, Fixedsys Excelsior, Fixedsys Ligatures, Generic Mono, GNU Freefont, GNU Unifont, Gohufont, Go Mono, Hack, Hasklig, Hermit, iA Writer Mono S, IBM 3270, Inconsolata, Inconsolata-g, Iosevka, Kawkab Mono, Latin Modern Mono, League, Lekton, Liberation Mono, Libertinus Mono, Luculent, Luxi Mono, M+, Meslo, Meyrin, Monodeco, Monofur, Monoid, Mononoki, NotCourierSans, Noto, Nova Mono, Office Code Pro, OpenDyslexicMono, Overpass Mono, Oxygen Mono, Plex Mono, Press Start 2P, Profont, Proggy Clean, PT Mono, Quinze, Roboto Mono, saxMono, Share Tech Mono, SK Modernist, Source Code Pro, Space Mono, Sudo, Terminus, TeX Gyre Cursor, Ubuntu Mono, Ubuntu Mono - Bront, Verily Serif Mono, VT323
+agave, Anka/Coder, Anonymous Pro, APL2741, APL385 Unicode, Aurulent Sans Mono, Average Mono, B612 Mono, Bedstead, Bitstream Vera Sans Mono, Borg Sans Mono, BPmono, CamingoCode, Cascadia Code, CatV 6x12 9, CMU Typewriter Text, Code New Roman, Consolamono, Corbi Mono S, Courier Prime, Courier Prime Code, Cousine, Cutive Mono, DaddyTimeMono, DejaVu Mono, DejaVu Sans Mono - Bront, Droid Sans Mono, Effects Eighty, Fairfax HD, Fantasque Sans Mono, Fifteen, FiraCode, Fira Mono, Fixedsys, Fixedsys Excelsior, Fixedsys Ligatures, Generic Mono, GNU Freefont, GNU Unifont, Gohufont, Go Mono, Hack, Hasklig, Hermit, iA Writer Mono S, IBM 3270, Inconsolata, Inconsolata-g, Iosevka, Kawkab Mono, Latin Modern Mono, League, Lekton, Liberation Mono, Libertinus Mono, Luculent, Luxi Mono, M+, Meslo, Meyrin, Monodeco, Monofur, Monoid, Mononoki, NotCourierSans, Noto, Nova Mono, Office Code Pro, OpenDyslexicMono, Overpass Mono, Oxygen Mono, Plex Mono, Press Start 2P, Profont, Proggy Clean, PT Mono, Quinze, Roboto Mono, saxMono, Share Tech Mono, SK Modernist, Source Code Pro, Space Mono, Sudo, Terminus, TeX Gyre Cursor, Ubuntu Mono, Ubuntu Mono - Bront, Verily Serif Mono, Victor Mono, VT323
 <!-- END FONTS -->
 
 

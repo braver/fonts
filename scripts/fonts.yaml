@@ -370,3 +370,27 @@ Monodeco:
   - 'monodeco/monodeco.woff2'
   - 'monodeco/monodeco-bold.woff2'
 Cascadia Code: 'cascadia-code/Cascadia.woff2'
+Victor Mono:
+  names:
+    - Thin
+    - Extra Light
+    - Light
+    - '*'
+    - Medium
+    - SemiBold
+  bold: 3
+  step: 1
+  italic-template: '{dir}/{name/Regular$//}{italic-name}{ext}'
+  weight:
+    - 'victor-mono/VictorMono-Thin.woff2'
+    - 'victor-mono/VictorMono-ExtraLight.woff2'
+    - 'victor-mono/VictorMono-Light.woff2'
+    - 'victor-mono/VictorMono-Regular.woff2'
+    - 'victor-mono/VictorMono-Medium.woff2'
+    - 'victor-mono/VictorMono-SemiBold.woff2'
+    - 'victor-mono/VictorMono-Bold.woff2'
+  variants:
+    Italic:
+      italic-name: Italic
+    Oblique:
+      italic-name: Oblique
