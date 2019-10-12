@@ -230,6 +230,21 @@ Victor Mono:
       italic-name: Oblique
 ```
 
+Notice, that if a font file derived from template does not exist, the generator will produce an error. If you want to explicitly suppress some font types for a given variant, you can assign those the value `False`. For example,
+
+```yaml
+Latin Modern Mono:
+  italic-template: '{dir}/{name}-italic{ext}'
+  bold-template: '{dir}/{name}-bold{ext}'
+  bold-italic-template: '{dir}/{name}-bold-italic{ext}'
+  variants:
+    '*':
+      normal: 'latin-modern/latin-modern.woff2'
+      bold: False
+      bold-italic: False
+    Light: 'latin-modern-light/latin-modern-light.woff2'
+```
+
 Similar syntax is available in font paths, but without the predefined variables `dir`, `base`, etc. For why that could be useful, consider, for instance,
 
 ```yaml
