@@ -68,15 +68,15 @@ Effects Eighty:
   italic: 'effects-eighty/effects-eighty-italic.woff2'
   normal: 'effects-eighty/effects-eighty.woff2'
 Fantasque Sans Mono:
-  bold-italic: '{fn}/{fn}-bold-italic.woff2'
-  bold: '{fn}/{fn}-bold.woff2'
-  italic: '{fn}/{fn}-italic.woff2'
-  normal: '{fn}/{fn}.woff2'
+  bold-italic: '{font-dir}/FantasqueSansMono-BoldItalic.woff2'
+  bold: '{font-dir}/FantasqueSansMono-Bold.woff2'
+  italic: '{font-dir}/FantasqueSansMono-Italic.woff2'
+  normal: '{font-dir}/FantasqueSansMono-Regular.woff2'
   variants:
     '*':
-      fn: fantasque-sans
+      font-dir: fantasque-sans
     No Loop K:
-      fn: fantasque-sans-no-loop-k
+      font-dir: fantasque-sans/no-loop-k
 Fifteen: 'fifteen/fifteen.woff2'
 Fira Mono:
   bold: 'fira/fira-bold.woff2'
