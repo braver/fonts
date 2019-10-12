@@ -85,7 +85,7 @@ function* walkFonts(f, doc, inheritedProps, inheritedName) {
  * @param {string} path
  */
 function runPathTemplate(conf, template, path) {
-  return runTemplate(conf, template, npath.parse(runTemplate(conf, path)))
+  return runTemplate(conf, template, npath.parse(path))
 }
 
 const templateRx = /\{([a-zA-Z][a-zA-Z0-9-]*)(?:\/([^/]+)\/([^/]*)\/([gimsuy]*))?\}/g
@@ -125,11 +125,11 @@ function* addFontByDesc(addFont, font, conf, defaultStyle) {
       const tpath = runPathTemplate(
         conf,
         conf[type + '-template'],
-        conf[defaultStyle]
+        runTemplate(conf, conf[defaultStyle])
       )
       if (resourceExists(tpath)) yield* addFont(font, type, tpath)
       else
-        console.warn(
+        throw new Error(
           `${font} specified ${type} template, but computed path ${tpath} does not exist`
         )
     }
