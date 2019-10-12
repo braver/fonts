@@ -233,21 +233,20 @@ Office Code Pro:
     - Medium
   bold: 2
   step: 1
+  italic-template: '{dir}/{name}-italic{ext}'
   variants:
     '*':
-      italic-template: '{dir}/{name}-italic{ext}'
       weight:
         - 'office-code-pro/office-code-pro-light.woff2'
         - 'office-code-pro/office-code-pro.woff2'
         - 'office-code-pro/office-code-pro-medium.woff2'
         - 'office-code-pro/office-code-pro-bold.woff2'
     'D':
-      italic-template: '{dir}/{name}Italic{ext}'
       weight:
-        - 'office-code-pro-d/OfficeCodeProD-Light.woff2'
-        - 'office-code-pro-d/OfficeCodeProD-Regular.woff2'
-        - 'office-code-pro-d/OfficeCodeProD-Medium.woff2'
-        - 'office-code-pro-d/OfficeCodeProD-Bold.woff2'
+        - 'office-code-pro/office-code-pro-d-light.woff2'
+        - 'office-code-pro/office-code-pro-d.woff2'
+        - 'office-code-pro/office-code-pro-d-medium.woff2'
+        - 'office-code-pro/office-code-pro-d-bold.woff2'
 Overpass Mono:
   normal: 'overpass/overpass.woff2'
   bold: 'overpass/overpass-bold.woff2'
@@ -263,38 +262,38 @@ Proggy Clean: 'proggy-clean/proggy-clean.woff2'
 Quinze: 'quinze/quinze.woff2'
 Roboto Mono:
   names:
-  - Thin
-  - Light
-  - '*'
-  - Medium
+    - Thin
+    - Light
+    - '*'
+    - Medium
   bold: 3
   step: 1
   italic-template: '{dir}/{name}-italic{ext}'
   weight:
-  - 'roboto/roboto-thin.woff2'
-  - 'roboto/roboto-light.woff2'
-  - 'roboto/roboto.woff2'
-  - 'roboto/roboto-medium.woff2'
-  - 'roboto/roboto-bold.woff2'
+    - 'roboto/roboto-thin.woff2'
+    - 'roboto/roboto-light.woff2'
+    - 'roboto/roboto.woff2'
+    - 'roboto/roboto-medium.woff2'
+    - 'roboto/roboto-bold.woff2'
 Share Tech Mono: 'share-tech/share-tech.woff2'
 SK Modernist: 'sk-modernist/sk-modernist.woff2'
 Source Code Pro:
   names:
-  - Extra Light
-  - Light
-  - '*'
-  - Medium
+    - Extra Light
+    - Light
+    - '*'
+    - Medium
   bold: 3
   step: 1
   italic-template: '{dir}/{name}-italic{ext}'
   weight:
-  - 'source-code-pro/source-code-pro-extralight.woff2'
-  - 'source-code-pro/source-code-pro-light.woff2'
-  - 'source-code-pro/source-code-pro.woff2'
-  - 'source-code-pro/source-code-pro-medium.woff2'
-  - 'source-code-pro/source-code-pro-semibold.woff2'
-  - 'source-code-pro/source-code-pro-bold.woff2'
-  - 'source-code-pro/source-code-pro-black.woff2'
+    - 'source-code-pro/source-code-pro-extralight.woff2'
+    - 'source-code-pro/source-code-pro-light.woff2'
+    - 'source-code-pro/source-code-pro.woff2'
+    - 'source-code-pro/source-code-pro-medium.woff2'
+    - 'source-code-pro/source-code-pro-semibold.woff2'
+    - 'source-code-pro/source-code-pro-bold.woff2'
+    - 'source-code-pro/source-code-pro-black.woff2'
 Sudo:
   bold-italic: 'sudo/sudo-bold-italic.woff2'
   bold: 'sudo/sudo-bold.woff2'
@@ -363,9 +362,9 @@ Kawkab Mono:
   bold: 1
   step: 1
   weight:
-  - 'kawkab-mono/kawkab-mono-light.woff2'
-  - 'kawkab-mono/kawkab-mono-regular.woff2'
-  - 'kawkab-mono/kawkab-mono-bold.woff2'
+    - 'kawkab-mono/kawkab-mono-light.woff2'
+    - 'kawkab-mono/kawkab-mono-regular.woff2'
+    - 'kawkab-mono/kawkab-mono-bold.woff2'
 Libertinus Mono: 'libertinus-mono/libertinus-mono-regular.woff2'
 Meyrin: 'meyrin/meyrin.woff2'
 Monodeco:
@@ -375,9 +374,9 @@ Monodeco:
   bold: 1
   step: 1
   weight:
-  - 'monodeco/monodeco-light.woff2'
-  - 'monodeco/monodeco.woff2'
-  - 'monodeco/monodeco-bold.woff2'
+    - 'monodeco/monodeco-light.woff2'
+    - 'monodeco/monodeco.woff2'
+    - 'monodeco/monodeco-bold.woff2'
 Cascadia Code: 'cascadia-code/Cascadia.woff2'
 Victor Mono:
   names:
