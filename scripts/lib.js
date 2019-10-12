@@ -82,17 +82,23 @@ function* walkFonts(f, doc, inheritedProps, inheritedName) {
 /**
  * @param {Object<string, any>} conf
  * @param {string} template
+ * @param {string} path
  */
-function genTemplateFn(conf, template) {
-  const rx = /\{([a-zA-Z][a-zA-Z0-9-]*)(?:\/([^/]+)\/([^/]*)\/([gimsuy]*))?\}/g
-  return function(/**@type {string} */ path) {
-    const dict = npath.parse(path)
-    return template.replace(rx, function(_m, p1, p2, p3, p4) {
-      const val = dict[p1] || conf[p1] || ''
-      if (p2) return val.replace(new RegExp(p2, p4), p3)
-      else return val
-    })
-  }
+function runPathTemplate(conf, template, path) {
+  return runTemplate(conf, template, npath.parse(runTemplate(conf, path)))
+}
+
+const templateRx = /\{([a-zA-Z][a-zA-Z0-9-]*)(?:\/([^/]+)\/([^/]*)\/([gimsuy]*))?\}/g
+/**
+ * @param {Object<string, any>} conf
+ * @param {string} template
+ */
+function runTemplate(conf, template, dict = {}) {
+  return template.replace(templateRx, function(_m, p1, p2, p3, p4) {
+    const val = dict[p1] || conf[p1] || ''
+    if (p2) return val.replace(new RegExp(p2, p4), p3)
+    else return val
+  })
 }
 
 const resourceDir = npath.join(__dirname, '..', 'resources')
@@ -114,10 +120,13 @@ function* addFontByDesc(addFont, font, conf, defaultStyle) {
     throw new Error(`No ${defaultStyle} variant for: ${font}`)
   }
   for (const type of types) {
-    if (conf[type]) yield* addFont(font, type, conf[type])
+    if (conf[type]) yield* addFont(font, type, runTemplate(conf, conf[type]))
     else if (conf[type] == null && conf[type + '-template']) {
-      const fn = genTemplateFn(conf, conf[type + '-template'])
-      const tpath = fn(conf[defaultStyle])
+      const tpath = runPathTemplate(
+        conf,
+        conf[type + '-template'],
+        conf[defaultStyle]
+      )
       if (resourceExists(tpath)) yield* addFont(font, type, tpath)
       else
         console.warn(

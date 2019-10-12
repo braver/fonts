@@ -230,6 +230,29 @@ Victor Mono:
       italic-name: Oblique
 ```
 
+Similar syntax is available in font paths, but without the predefined variables `dir`, `base`, etc. For why that could be useful, consider, for instance,
+
+```yaml
+Office Code Pro:
+  names:
+    - Light
+    - '*'
+    - Medium
+  bold: 2
+  step: 1
+  italic-template: '{dir}/{name}-italic{ext}'
+  weight:
+    - 'office-code-pro/{font-fn}-light.woff2'
+    - 'office-code-pro/{font-fn}.woff2'
+    - 'office-code-pro/{font-fn}-medium.woff2'
+    - 'office-code-pro/{font-fn}-bold.woff2'
+  variants:
+    '*':
+      font-fn: office-code-pro
+    'D':
+      font-fn: office-code-pro-d
+```
+
 ##### Advanced YAML features
 
 You can use YAML anchors, references, etc. To facilitate that, generator ignores object keys that start with `x-`.

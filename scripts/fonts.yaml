@@ -234,19 +234,16 @@ Office Code Pro:
   bold: 2
   step: 1
   italic-template: '{dir}/{name}-italic{ext}'
+  weight:
+    - 'office-code-pro/{font-fn}-light.woff2'
+    - 'office-code-pro/{font-fn}.woff2'
+    - 'office-code-pro/{font-fn}-medium.woff2'
+    - 'office-code-pro/{font-fn}-bold.woff2'
   variants:
     '*':
-      weight:
-        - 'office-code-pro/office-code-pro-light.woff2'
-        - 'office-code-pro/office-code-pro.woff2'
-        - 'office-code-pro/office-code-pro-medium.woff2'
-        - 'office-code-pro/office-code-pro-bold.woff2'
+      font-fn: office-code-pro
     'D':
-      weight:
-        - 'office-code-pro/office-code-pro-d-light.woff2'
-        - 'office-code-pro/office-code-pro-d.woff2'
-        - 'office-code-pro/office-code-pro-d-medium.woff2'
-        - 'office-code-pro/office-code-pro-d-bold.woff2'
+      font-fn: office-code-pro-d
 Overpass Mono:
   normal: 'overpass/overpass.woff2'
   bold: 'overpass/overpass-bold.woff2'
