@@ -3,21 +3,10 @@ const fs    = require('fs')
 const npath = require('path')
 const lib   = require('./lib')
 
-const rootPath = 'atom://fonts/resources'
-
-const types = {
-  'bold-italic': ['bold', 'italic'],
-  'bold': ['bold', 'normal'],
-  'italic': ['normal', 'italic'],
-  'normal': ['normal', 'normal'],
-}
-
-function fontFace(font, type, path) {
-  if (!types[type]) throw new Error(`Unknown type for ${font}: ${type}`)
-  const [weight, style] = types[type]
-  return `.font ( '${font}', ${weight}, ${style}, '${path}' );`;
-}
-
+/**
+ * @param {string} a
+ * @param {string} b
+ */
 function cmp1(a, b) {
   return a.localeCompare(b, 'en', {
     sensitivity: 'base',
@@ -25,13 +14,7 @@ function cmp1(a, b) {
   })
 }
 
-const revtypedict = {
-  'normalnormal': 'normal',
-  'boldnormal': 'bold',
-  'normalitalic': 'italic',
-  'bolditalic': 'bold-italic',
-}
-
+const rootPath = 'atom://fonts/resources'
 const fontLessTemplate = `\
 .font(@font, @weight, @style, @path) {
   @font-face {
@@ -43,11 +26,25 @@ const fontLessTemplate = `\
 }
 `
 
+const types = {
+  'bold-italic': ['bold', 'italic'],
+  'bold': ['bold', 'normal'],
+  'italic': ['normal', 'italic'],
+  'normal': ['normal', 'normal'],
+}
+
+/**
+ * @param {string} font
+ * @param {string} type
+ * @param {string} path
+ */
 function *addFont(font, type, path) {
   if (!lib.resourceExists(path)) {
     throw new Error(`File ${path} does not exist for ${type} variant of font ${font}`)
   }
-  yield fontFace(font, type, path)
+  if (!types[type]) throw new Error(`Unknown type for ${font}: ${type}`)
+  const [weight, style] = types[type]
+  yield `.font ( '${font}', ${weight}, ${style}, '${path}' );`;
 }
 
 try {
@@ -56,7 +53,7 @@ try {
   // write styles/fonts.less
 
   const fontsless = Array.from(lib.walkFonts(
-    lib.handleFontsDefinition.bind(this, lib.addFontByDesc.bind(this, addFont)),
+    lib.handleFontsDefinition.bind(null, lib.addFontByDesc.bind(null, addFont)),
     doc, {}, null
   ))
 
@@ -68,7 +65,7 @@ try {
 
   // write package.json
   const fontVariantsSet = new Set(lib.walkFonts(
-    lib.handleFontsDefinition.bind(this, function*(font) { yield font }),
+    lib.handleFontsDefinition.bind(null, function*(/** @type {string} */font) { yield font }),
     doc, {}, null
   ))
   const packagejson = JSON.parse(fs.readFileSync('package.json', 'utf8'))

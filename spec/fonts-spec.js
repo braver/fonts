@@ -1,26 +1,35 @@
-const yaml = require("js-yaml")
-const fs = require("fs")
-const npath = require("path")
-const lib = require("../scripts/lib")
+'use babel'
 
-const doc = yaml.safeLoad(
-  fs.readFileSync(npath.join(__dirname, "..", "scripts", "fonts.yaml"), "utf8")
+import { safeLoad } from "js-yaml"
+import { readFileSync } from "fs"
+import { join } from "path"
+import { walkFonts, handleFontsDefinition, addFontByDesc } from "../scripts/lib"
+
+const doc = safeLoad(
+  readFileSync(join(__dirname, "..", "scripts", "fonts.yaml"), "utf8")
 )
-const resourceDir = npath.join(__dirname, "..", "resources")
+const resourceDir = join(__dirname, "..", "resources")
 const fontSize = '40px'
 // all printable ASCII symbols except excludedChars
 const excludedChars =
   '^`' // these two are missing in Lekton
   + '~' // this one's missing in League
 const testString =
-  Array(127-32).fill().map((_, i) => String.fromCharCode(32+i))
+  Array(127-32).fill(null).map((_, i) => String.fromCharCode(32+i))
   .filter(x => !excludedChars.includes(x))
   .join('')
 
+/**
+ * @param {string} fontName
+ * @param {string} fallback
+ * @param {string} fontStyle
+ * @returns {Promise<[Uint8ClampedArray, HTMLCanvasElement]>}
+ */
 async function getFontImage(fontName, fallback, fontStyle) {
   const body = document.body
   const canvas = document.createElement("canvas")
   const ctx = canvas.getContext("2d")
+  if (!ctx) throw new Error('Failed to create canvas')
   body.appendChild(canvas)
   canvas.width = 8000
   canvas.height = 60
@@ -36,6 +45,7 @@ async function getFontImage(fontName, fallback, fontStyle) {
     default: throw new Error(`Unknown font style ${fontStyle}`)
   }
   const fontSpec = `${fontSpecStyle} ${fontSize} "${fontName}", ${fallback}`
+  // @ts-ignore
   await document.fonts.load(fontSpec)
   ctx.font = fontSpec
   ctx.fillStyle = "#ffffff";
@@ -46,16 +56,24 @@ async function getFontImage(fontName, fallback, fontStyle) {
   return [data, canvas]
 }
 
+/**
+ * @param {string} fontName
+ * @param {string} fontPath
+ * @param {string} fontStyle
+ */
 async function compareFonts(fontName, fontPath, fontStyle) {
   const tempFontName = 'Temp Font'
-  const fontBuf = fs.readFileSync(npath.join(resourceDir, ...fontPath.split('/')))
+  const fontBuf = readFileSync(join(resourceDir, ...fontPath.split('/')))
+  // @ts-ignore
   const f = new FontFace(tempFontName, fontBuf)
   await f.load()
+  // @ts-ignore
   document.fonts.add(f)
 
   const [nameIm, nic] = await getFontImage(fontName, 'monospace', fontStyle)
   const [fileIm, fic] = await getFontImage(tempFontName, 'monospace', '')
 
+  // @ts-ignore
   document.fonts.delete(f)
 
   nic.remove()
@@ -72,13 +90,18 @@ async function compareFonts(fontName, fontPath, fontStyle) {
 
 describe("Fonts from resources/ are distinct from fallback serif (i.e. they load)", function() {
   beforeEach(function() {
-    let package
-    waitsForPromise(async () => package = await atom.packages.activatePackage('fonts'))
+    let pkg
+    waitsForPromise(async () => pkg = await atom.packages.activatePackage('fonts'))
     waitsFor(() => atom.packages.isPackageActive('fonts'))
-    waitsFor(() => package.stylesheetsActivated)
+    waitsFor(() => pkg.stylesheetsActivated)
   })
 
-  const testFont = function (font, style, file) {
+  /**
+   * @param {any} font
+   * @param {string} style
+   * @param {string} file
+   */
+  function *testFont(font, style, file) {
     let result
     it(`Loads ${font} with ${style} from ${file}`, function() {
       waitsForPromise(async function() {
@@ -88,24 +111,28 @@ describe("Fonts from resources/ are distinct from fallback serif (i.e. they load
         expect(result).toBe(false)
       })
     })
-    return []
   }
 
-  Array.from(lib.walkFonts(
-    lib.handleFontsDefinition.bind(this, lib.addFontByDesc.bind(this, testFont)),
+  Array.from(walkFonts(
+    handleFontsDefinition.bind(null, addFontByDesc.bind(null, testFont)),
     doc, {}, null
   ))
 })
 
 describe("Font rendering", function() {
   beforeEach(function() {
-    let package
-    waitsForPromise(async () => package = await atom.packages.activatePackage('fonts'))
+    let pkg
+    waitsForPromise(async () => pkg = await atom.packages.activatePackage('fonts'))
     waitsFor(() => atom.packages.isPackageActive('fonts'))
-    waitsFor(() => package.stylesheetsActivated)
+    waitsFor(() => pkg.stylesheetsActivated)
   })
 
-  function testFont(font, style, file) {
+  /**
+   * @param {string} font
+   * @param {string} style
+   * @param {string} file
+   */
+  function *testFont(font, style, file) {
     let result
     it(`matches between named '${font}' with style '${style}' and file '${file}'`, function() {
       waitsForPromise(async function() {
@@ -115,11 +142,10 @@ describe("Font rendering", function() {
         expect(result).toBe(true)
       })
     })
-    return []
   }
 
-  Array.from(lib.walkFonts(
-    lib.handleFontsDefinition.bind(this, lib.addFontByDesc.bind(this, testFont)),
+  Array.from(walkFonts(
+    handleFontsDefinition.bind(null, addFontByDesc.bind(null, testFont)),
     doc, {}, null
   ))
 })
@@ -127,12 +153,12 @@ describe("Font rendering", function() {
 describe("Computed TextEditor font family", function() {
   let editor
   beforeEach(function() {
-    let package
+    let pkg
     waitsForPromise(async () => editor = await atom.workspace.open())
     runs(() => editor.setText(testString))
-    waitsForPromise(async () => package = await atom.packages.activatePackage('fonts'))
+    waitsForPromise(async () => pkg = await atom.packages.activatePackage('fonts'))
     waitsFor(() => atom.packages.isPackageActive('fonts'))
-    waitsFor(() => package.stylesheetsActivated)
+    waitsFor(() => pkg.stylesheetsActivated)
     runs(() => {
       document.body.appendChild(atom.views.getView(atom.workspace))
     })
@@ -143,8 +169,8 @@ describe("Computed TextEditor font family", function() {
     })
   })
 
-  const fontVariantsSet = new Set(lib.walkFonts(
-    lib.handleFontsDefinition.bind(this, function*(font) { yield font }),
+  const fontVariantsSet = new Set(walkFonts(
+    handleFontsDefinition.bind(null, function*(/** @type {string} */ font) { yield font }),
     doc, {}, null
   ))
 
