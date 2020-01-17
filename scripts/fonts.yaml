@@ -154,7 +154,7 @@ Iosevka:
     - 'iosevka/iosevka-regular.woff2'
     - 'iosevka/iosevka-medium.woff2'
     - 'iosevka/iosevka-bold.woff2'
-jetbrains-mono:
+JetBrains Mono:
   names:
     - '*'
     - Medium
@@ -162,10 +162,10 @@ jetbrains-mono:
   bold: 2
   step: 1
   weight:
-    - 'jetbrains-mono/jetbrains-mono.ttf'
-    - 'jetbrains-mono/jetbrains-mono-medium.ttf'
-    - 'jetbrains-mono/jetbrains-mono-bold.ttf'
-    - 'jetbrains-mono/jetbrains-mono-extrabold.ttf'
+    - 'jetbrains-mono/jetbrains-mono.woff2'
+    - 'jetbrains-mono/jetbrains-mono-medium.woff2'
+    - 'jetbrains-mono/jetbrains-mono-bold.woff2'
+    - 'jetbrains-mono/jetbrains-mono-extrabold.woff2'
 Inconsolata: 'inconsolata/inconsolata.woff2'
 Inconsolata-g: 'inconsolata-g/inconsolata-g.woff2'
 Latin Modern Mono:
