@@ -1,3 +1,23 @@
+## 3.10.0
+
+### New font
+
+-   JetBrains Mono (PR #96) (thanks Amin Mahmudian)
+
+### Updated fonts
+
+-   Fantasque Sans Mono
+
+### Maintenance
+
+-   Add note on disabling templates for certain variants
+-   Shorten Fantaque Sans Mono definition
+-   Error out if template-derived file does not exist
+-   Allow templates in font paths
+-   Fix up Office Code Pro D file naming scheme
+-   Format code with prettier
+-   Type annotations, refactors, remove unused definitions, mionr fixes, etc
+
 ## 3.9.0
 
 ### New font
@@ -7,7 +27,7 @@
 
 ### Other
 
--   Use more consistent order for fonts in font selection and package settings windows. 
+-   Use more consistent order for fonts in font selection and package settings windows.
 
 ## 3.8.0
 
