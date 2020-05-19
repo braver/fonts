@@ -138,22 +138,32 @@ Hermit:
     - 'hermit/hermit.woff2'
     - 'hermit/hermit-bold.woff2'
 Iosevka:
+  variants:
+    '*':
+      ft: normal/iosevka-
+    Extended:
+      ft: extended/iosevka-extended
+      regular: ''
   names:
     - Thin
     - Extra Light
     - Light
     - '*'
     - Medium
-  italic-template: '{dir}/{name}-italic{ext}'
+  regular: regular
+  italic-template: '{dir}/{name/regular//}italic{ext}'
   bold: 5
   step: 1
   weight:
-    - 'iosevka/iosevka-thin.woff2'
-    - 'iosevka/iosevka-extralight.woff2'
-    - 'iosevka/iosevka-light.woff2'
-    - 'iosevka/iosevka-regular.woff2'
-    - 'iosevka/iosevka-medium.woff2'
-    - 'iosevka/iosevka-bold.woff2'
+    - 'iosevka/{ft}thin.woff2'
+    - 'iosevka/{ft}extralight.woff2'
+    - 'iosevka/{ft}light.woff2'
+    - 'iosevka/{ft}{regular}.woff2'
+    - 'iosevka/{ft}medium.woff2'
+    - 'iosevka/{ft}semibold.woff2'
+    - 'iosevka/{ft}bold.woff2'
+    - 'iosevka/{ft}extrabold.woff2'
+    - 'iosevka/{ft}heavy.woff2'
 JetBrains Mono:
   names:
     - '*'
