@@ -1,3 +1,19 @@
+## 3.11.0
+
+### Updated Fonts
+
+-   Updated FiraCode to v4
+-   Updated Iosevka to 3.0.0
+
+### New font variants
+
+-   FiraCode Medium (weight 500)
+-   Iosevka Extended (wider than regular Iosevka)
+
+### Changes
+
+-   FiraCode Light now uses a slightly heavier weight (600 instead of 500) for the bold font-face.
+
 ## 3.10.0
 
 ### New font
