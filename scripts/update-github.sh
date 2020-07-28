@@ -18,18 +18,22 @@ if [ -z "$needs_update" -a -r ".tag" -a "$(cat .tag)" == $tag ]; then
   exit 0
 fi
 
-filter=${filter:-.}
-url="$(jq -r ".assets[].browser_download_url | $filter" <<< "$info")"
-echo -e "Found urls:\n$url"
+if [ "$(type -t url_override)" = "function" ]; then
+  url="$(url_override)"
+else
+  filter=${filter:-.}
+  url="$(jq -r ".assets[].browser_download_url | $filter" <<< "$info")"
+  echo -e "Found urls:\n$url"
 
-nl="$(wc -l <<< "$url")"
+  nl="$(wc -l <<< "$url")"
 
-if [ $nl -gt 1 ]; then
-  echo -e "\e[1m\e[31mFound $nl files, but expected 1\e[0m\e[39m"
-  exit
+  if [ $nl -gt 1 ]; then
+    echo -e "\e[1m\e[31mFound $nl files, but expected 1\e[0m\e[39m"
+    exit
+  fi
+
+  url="$(head -n1 <<< "$url")"
 fi
-
-url="$(head -n1 <<< "$url")"
 
 file="$(mktemp)"
 exec 5<>$file
