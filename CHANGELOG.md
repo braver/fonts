@@ -1,3 +1,16 @@
+## 3.12.0
+
+### Updated fonts
+
+-   Update victor-mono to v1.4.1
+-   Update fantasque-sans to v1.8.0
+-   Update iosevka to v3.3.1
+-   Update firacode to 5.2
+
+### Maintenance
+
+-   Add semi-automated update scripts for some fonts
+
 ## 3.11.0
 
 ### Updated Fonts
