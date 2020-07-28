@@ -7,7 +7,7 @@ extract() {
   for i in *.woff2; do
     curfiles+=("Webfonts/$(basename $i)")
   done
-  7z -y e -o"." "$file" "${curfiles[@]}"
+  7z -y e -o"." "$file" "${curfiles[@]}" || exit 1
 }
 
 repo="belluzj/fantasque-sans"
