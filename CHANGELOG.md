@@ -1,3 +1,15 @@
+## 3.13.0
+
+### Updated fonts
+
+-   Update iosevka to v4.5.0
+-   Update victor-mono to v1.4.2
+-   Update fira to 4.202
+
+### Maintenance
+
+-   Make update-github.sh a little more flexible
+
 ## 3.12.0
 
 ### Updated fonts
