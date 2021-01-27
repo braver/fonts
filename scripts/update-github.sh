@@ -22,7 +22,8 @@ if [ "$(type -t url_override)" = "function" ]; then
   url="$(url_override)"
 else
   filter=${filter:-.}
-  url="$(jq -r ".assets[].browser_download_url | $filter" <<< "$info")"
+  downloadurl="${downloadurl:-.assets[].browser_download_url}"
+  url="$(jq -r "$downloadurl | $filter" <<< "$info")"
   echo -e "Found urls:\n$url"
 
   nl="$(wc -l <<< "$url")"
@@ -35,8 +36,10 @@ else
   url="$(head -n1 <<< "$url")"
 fi
 
-file="$(mktemp)"
-exec 5<>$file
-rm "$file"
-file="/proc/$$/fd/5"
-wget "$url" -O "$file"
+if [ -n "$url" ]; then
+  file="$(mktemp)"
+  exec 5<>$file
+  rm "$file"
+  file="/proc/$$/fd/5"
+  wget "$url" -O "$file"
+fi
