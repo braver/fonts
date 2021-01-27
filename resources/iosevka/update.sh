@@ -3,7 +3,9 @@
 cd "$(dirname "$0")"
 
 repo="be5invis/Iosevka"
-filter='match(".*/ttf-iosevka-[^-]+\\.zip$"; "i").string'
+# CHANGE ME!!!
+#tag_uri="tags/v4.5.0"
+filter='match(".*/webfont-iosevka-[^-]+\\.zip$"; "i").string'
 source "../../scripts/update-github.sh"
 
 curfiles=()
