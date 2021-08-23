@@ -22,14 +22,24 @@ Alternatively, open the interactive font selector by choosing "Packages" → "Fo
 Disable the package to re-enable the normal font settings.
 
 # How to change the UI font
+fonts defaultly change `Syntax` To change UI font
 
-Add this rule (with your favorite font-family) to your style.less file
+Add this rule (with your favorite font-family) to your `style.less` file
 
 ```css
 atom-workspace {
     font-family: Mononoki;
 }
 ```
+Alternatively if you want to test fonts fastly and 
+
+***don't want diffrent fonts for `UI` `Syntax` then add this to `style.less`***
+```css
+atom-workspace {
+  font-family: var(--fonts-package-editorfont);
+}
+```
+- _this code works with `fonts:open-font-selector` command (e.g. from command palette)_
 
 ## All fonts
 
